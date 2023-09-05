@@ -4,10 +4,185 @@
 }
 
 :root {
+    /* Définition des variables du design system */
+    /* Variables relatives aux couleurs */
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+
+    /* Variables relatives au texte */
+    /* Tailles de texte */
+    --main-title-size: 22px;
+    --content-text-size: 18px;
+    --filter-title-size: 17px;
+    --article-title-size: 16px;
+    --main-subtitle-size: 16px;
+    --article-subtitle-size: 14px;
+
+    /* Graisses de texte */
+    --main-title-weight: 700;
+    --content-text-weight: 700;
+    --filter-title-weight: 700;
+    --article-title-weight: 700;
+    --main-subtitle-weight: 400;
+    --article-subtitle-weight: 400;
+
+    /* Couleur du texte */
+    --text-color: black;
+    --search-button-text-color: white;
+
+    /* Type du boutton de recherche (mobile ou desktop) */
+    --search-button-mobile: none;
+    --search-button-desktop: inline;
 }
+
+/* Header */
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    height: 79px;
+}
+
+.header-section img {
+    width: 61px;
+}
+
+.header-section nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.header-section nav ul li {
+    margin: 0 25px;
+    font-size: var(--main-subtitle-size);
+    font-weight: var(--main-subtitle-weight);
+    position: relative; 
+}
+
+
+.header-section nav ul li::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--main-color);
+    top: -20px;
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+}
+
+.header-section nav ul li:hover {
+    color: var(--main-color);
+}
+
+.header-section nav ul li:hover::before {
+    opacity: 1;
+}
+
+/* Partie de recherche (search section) */
+#search-section form .fa-location-dot {
+    color: var(--text-color);
+    width: 50px;
+    padding-left: 15px;
+}
+
+#search-section form {
+    width: 380px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+button.desktop-search-button {
+    color: var(--search-button-text-color);
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 0 15px 15px 0;
+    width: 132px;
+    height: 49px;
+    display: var(--search-button-desktop);
+}
+
+button.mobile-search-button i {
+    color: var(--search-button-text-color);
+}
+
+button.mobile-search-button {
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 15px;
+    width: 49px;
+    height: 49px;
+    display: var(--search-button-mobile);
+}
+
+.searchbar {
+    border: none;
+    outline: none;
+}
+
+
+
+
+.filters-section {
+    display: flex;
+}
+
+.filters-section-button {
+    border: none;
+    display: flex;
+}
+
+img.filters-section-button {
+    margin-top: 10px;       /*ne fonctionne pas*/
+}
+
+
+/* Partie principale de la page */
+
+/* Définition du style du texte */
+.main-title {
+    color: var(--text-color);
+    font-size: var(--main-title-size);
+    font-weight: var(--main-title-weight);
+}
+ 
+.main-subtitle {
+    color: var(--text-color);
+    font-size: var(--main-subtitle-size);
+    font-weight: var(--main-subtitle-weight);
+}
+ 
+.content-text {
+    color: var(--text-color);
+    font-size: var(--content-text-size);
+    font-weight: var(--content-text-weight);
+}
+
+.content-text::placeholder {
+    color: var(--text-color);
+    font-size: var(--content-text-size);
+    font-weight: var(--content-text-weight);
+}
+ 
+.filter-title {
+    color: var(--text-color);
+    font-size: var(--filter-title-size);
+    font-weight: var(--filter-title-weight);
+}
+ 
+.article-title {
+    color: var(--text-color);
+    font-size: var(--article-title-size);
+    font-weight: var(--article-title-weight);
+}
+ 
+.article-subtitle {
+    color: var(--text-color);
+    font-size: var(--article-subtitle-size);
+    font-weight: var(--article-subtitle-weight);
+}
+ 
 
 .fa-solid {
     color: var(--main-color);
@@ -16,6 +191,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin:15px 0;
 }
 
 .main-container {

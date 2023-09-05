@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booki</title>
+    <!-- Titre de la page -->
+    <title>Booki - Agence de voyage</title>
+    <!-- Lien vers l'icône de la page -->
+    <link rel="shortcut icon" type="image/png" href="./images/logo/favicon.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
@@ -12,14 +15,68 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+    <!--Kit Google Fonts icones et polices-->
+    <script src="https://kit.fontawesome.com/1f1aa7bd3e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="main-container">
-        <header></header>
+
+        <header class="header-section">
+            <!--Logo Booki-->
+            <a href="#">
+                <img src="./images/logo/Booki.png" alt="logo Booki">
+            </a>
+            <!--Menu de navigation du site-->
+            <nav>
+                <ul>
+                    <li id="hebergement_link">
+                        <a href="#hebergements">Hébérgements</a>
+                    </li>
+                    <li id="activités_link">
+                        <a href="#activites">Activités</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
         <main>
+            <section id="search-section">
+                <h1 class="main-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <h3 class="main-subtitle">En plein centre-ville ou en pleine nature</h3>
+                <form>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="search" class="content-text searchbar" name="searchbar" aria-label="Recherche de destinations de vacances en France" placeholder="Marseille, France">
+                        <button type="submit" class="desktop-search-button content-text">Rechercher</button>
+                        <button type="submit" class="mobile-search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </input>
+                </form>
+
+
+                
+                <div class="filters-section">
+                    <p class="content-text">Filtres</p>
+                    <button class="filters-section-button">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                        <p class="filter-title">Économique</p>
+                    </button>
+                    <button class="filters-section-button">
+                        <i class="fa-solid fa-person"></i>
+                        <p class="filter-title">Familial</p>
+                    </button>
+                    <button class="filters-section-button">
+                        <i class="fa-solid fa-heart"></i>
+                        <p class="filter-title">Romantique</p>
+                    </button>
+                    <button class="filters-section-button">
+                        <i class="fa-solid fa-fire"></i>
+                        <p class="filter-title">Nos pépites</p>
+                    </button>
+                </div>
+            </section>
+            
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section id="hebergements">
 
                 </section>
                 <section class="populaires">
@@ -88,6 +145,9 @@
                     </div>
                 </section>
             </div>
+            <section id="activites">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </section>
         </main>
         <footer></footer>
     </div>
