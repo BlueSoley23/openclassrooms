@@ -3,7 +3,7 @@
 <p>Ce projet est le premier de ma formation de développeur web full stack chez OpenClassrooms. Il consiste à créer la page d'accueil d'une agence de voyage appelée Booki.</p>
 
 <h2>Maquette découpée</h2>
-<p>Vous pouvez consulter la maquette découpée de Booki dans le dossier images/maaquettes.</p>
+<p>Vous pouvez consulter la maquette découpée de Booki dans le dossier images/maquettes.</p>
 
 <h2>Structure de la page</h2>
 
