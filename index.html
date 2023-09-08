@@ -4,29 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Titre de la page -->
     <title>Booki - Agence de voyage</title>
+
     <!-- Lien vers l'icône de la page -->
     <link rel="shortcut icon" type="image/png" href="./images/logo/favicon.png"/>
+
+    <!-- Chargements des polices et icônes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Lien vers le fichier CSS principal -->
     <link rel="stylesheet" href="./css/style.css">
+
     <!--Kit Google Fonts icones et polices-->
     <script src="https://kit.fontawesome.com/1f1aa7bd3e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- Conteneur principal -->
     <div class="main-container">
-
+        <!-- Section d'en-tête (Menu et logo)-->
         <header class="header-section">
             <!--Logo Booki-->
             <a href="#">
                 <img src="./images/logo/Booki.png" alt="logo Booki">
             </a>
+
             <!--Menu de navigation du site-->
             <nav>
                 <ul>
@@ -40,7 +49,9 @@
             </nav>
         </header>
 
+        <!-- Contenu principal de la page : 3 sections (recherche, hébergements et activités)-->
         <main>
+            <!-- Section recherche: Barre de recherche -->
             <section id="search-section">
                 <h1 class="main-title">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <h3 class="main-subtitle">En plein centre-ville ou en pleine nature</h3>
@@ -52,8 +63,7 @@
                     </input>
                 </form>
 
-
-                
+                <!-- Définitions des boutons de filtres avec icones-->
                 <div class="filters-section">
                     <p class="content-text">Filtres</p>
                     <button class="filters-section-button">
@@ -76,15 +86,22 @@
             </section>
             
             <div class="hebergements-and-populaires">
+                <!-- Définition de la section principale : cartes de présentation des hôtels à gauche et une selection des plus populaires à droite-->
+                <!-- Cartes composées d'un titre, d'un sous-titre, d'une image et d'une ligne d'icones étoile (note sur 5) -->
+                <!-- Cartes des hebergements -->
                 <section id="hebergements">
 
                 </section>
+
+                <!-- Cartes des plus populaires -->
                 <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
                     <div class="populaires-cards">
+                        
+                        <!-- Carte d'un hôtel populaire -->
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
@@ -104,6 +121,7 @@
                                 </div>
                             </article>
                         </a>
+
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
@@ -145,10 +163,12 @@
                     </div>
                 </section>
             </div>
+            <!-- Présentation des activités sous forme de cartes composées d'images accompagnées d'un titre en dessous-->
             <section id="activites">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </section>
         </main>
+        <!-- Pied de page : infos utiles, contacts,... -->
         <footer></footer>
     </div>
 </body>
