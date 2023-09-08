@@ -50,12 +50,13 @@
     .header-section {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         height: 79px;
     }
 
     /* Logo Booki */
     .header-section img {
-        width: 161px;
+        width: 60px;
     }
 
     /* Définitions des propriétés du menu de navigation */
@@ -75,7 +76,7 @@
     .header-section nav ul li::before {
         content: "";
         position: absolute;
-        width: 100%;DEEBFF
+        width: 100%;
         height: 2px;
         background-color: var(--main-color);
         top: -20px;
@@ -156,7 +157,7 @@
         padding: 4px 19px;
     }
 
-    .filtersn jb -section-button:hover {
+    .filters-section-button:hover {
         background-color: #DEEBFF;
     }
     .filters-section-button i {
@@ -219,7 +220,7 @@
     body {
         display: flex;
         justify-content: center;
-        margin:15px 0;
+        margin: 0;
     }
 
     /* Largeur maximale et marges latterales incluant les bordures */
