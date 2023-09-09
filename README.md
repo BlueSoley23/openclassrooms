@@ -52,3 +52,13 @@
 <h2>Contact</h2>
 
 <p>Ce projet a été réalisé par Antoine Gauer. Si vous avez des questions ou des commentaires, n'hésitez pas à me contacter à l'adresse e-mail suivante : <a href="mailto:bluegauer@gmail.com">bluegauer@gmail.com</a>.</p>
+
+
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="CSS Valide !" />
+    </a>
+</p>
+      
