@@ -98,9 +98,9 @@
         color: var(--text-color);
         width: 50px;
         padding-left: 15px;
-        padding: 15px;
+        padding-right: 15px;
     }
-    
+
     #search-section form {
         max-width: 380px;
         width: 100%;
