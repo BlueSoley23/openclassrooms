@@ -26,7 +26,9 @@
   <li>Le contenu principal de la page est défini dans la balise <code>&lt;main&gt;</code>. Il est divisé en trois sections : recherche, hébergements et activités.</li>
   <li>La section de recherche contient une barre de recherche avec un titre principal.</li>
   <li>La section des hébergements présente des cartes d'hébergement avec des images, des titres, des sous-titres et des évaluations.</li>
-  <li>La section des activités contient un texte de démonstration.</li>
+  <li>La section populaires présente des cartes d'hébergements populaires</li>
+  <li>La section des activités contient des cartes présentant des activités sur Marseille.</li>
+  <li>La section footer propose des liens utiles (aide, contact, à propos, etc...)</li>
 </ul>
 
 <h2>Structure du fichier CSS</h2>
@@ -37,7 +39,7 @@
   <li>La police de la page est définie comme étant 'Raleway', sans-serif.</li>
   <li>Le fichier CSS utilise des variables CSS pour définir les couleurs, les tailles de police et d'autres propriétés réutilisables.</li>
   <li>Les styles sont organisés en sections, avec des commentaires pour faciliter la compréhension.</li>
-  <li>Des règles de média queries sont utilisées pour appliquer des styles spécifiques aux petits appareils (téléphones avec une largeur inférieure à 768px).</li>
+  <li>Des règles de média queries sont utilisées pour appliquer des styles spécifiques aux petits appareils (téléphones avec une largeur inférieure à 768px & tablettes avec une largeur inférieure à 1024px).</li>
 </ul>
 
 <p>N'hésitez pas à explorer le code HTML et CSS pour voir comment les différentes sections et cartes sont structurées et stylisées.</p>
