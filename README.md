@@ -47,7 +47,7 @@
 <h2>Liens utiles</h2>
 
 <ul>
-  <li><a href="https://bluesoley23.github.io/OpenClassrooms_Project-1_HTML-CSS_Booki/">Voir le site sur GitHub Pages</a></li>
+  <strong><li><a href="https://bluesoley23.github.io/OpenClassrooms_Project-1_HTML-CSS_Booki/](https://bluesoley23.github.io/OC_P1_HTML-CSS_Booki/">Voir le site sur GitHub Pages</a></li></strong>
   <li><a href="https://github.com/BlueSoley23/OpenClassrooms_Project-1_HTML-CSS_Booki.git">Dépôt GitHub du projet</a></li>
 </ul>
 
