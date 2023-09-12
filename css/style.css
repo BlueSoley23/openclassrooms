@@ -136,13 +136,6 @@
         padding-left: 40px;
     }
 
-
-    Auberge Le Panier
-    Nuit à partir de 23€
-    
-        Note de 4 sur 5
-    Afficher plus
-    
     .searchbar {
         border: none;
         outline: none;
@@ -156,8 +149,7 @@
         justify-content: space-between;
         width: 758px;
         height: 50px;
-        padding: 15px 0;
-        margin: 5
+        padding: 20px 0;
     }
 
     .filters-section-button {
@@ -415,7 +407,7 @@
         box-sizing: border-box;
 
     }
-    380px
+
 
     .activites {
         width: 100%;
