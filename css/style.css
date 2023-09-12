@@ -67,7 +67,11 @@
 
     .header-section nav ul li {
         margin: 0 25px;
+<<<<<<< HEAD
         font-size: var(--main-subtitle-size);
+=======
+        font-size: var(--main-        padding: 15px 0;subtitle-size);
+>>>>>>> fdbc6166fefd20d45cb140ad6f9e6217d6345c6f
         font-weight: var(--main-subtitle-weight);
         position: relative; 
     }
@@ -106,7 +110,10 @@
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
+<<<<<<< HEAD
         padding: 15px;
+=======
+>>>>>>> fdbc6166fefd20d45cb140ad6f9e6217d6345c6f
     }
 
     /* Propriétés permettant de commuter entre le bouton rechercher pour le desktop
@@ -147,7 +154,11 @@
         width: 758px;
         height: 50px;
         padding: 15px 0;
+<<<<<<< HEAD
         margin: 5
+=======
+
+>>>>>>> fdbc6166fefd20d45cb140ad6f9e6217d6345c6f
     }
 
     .filters-section-button {
@@ -167,7 +178,10 @@
 
     .infobar {
         display: flex;
+<<<<<<< HEAD
         padding-bottom: 30px;
+=======
+>>>>>>> fdbc6166fefd20d45cb140ad6f9e6217d6345c6f
     }
 
     .infobar .main-subtitle {
@@ -246,10 +260,13 @@
         text-decoration: none;
     }
 
+<<<<<<< HEAD
     u {
         text-decoration: none;
     }
 
+=======
+>>>>>>> fdbc6166fefd20d45cb140ad6f9e6217d6345c6f
     .section-title {
         margin: 0;
         font-size: var(--main-title-size);
@@ -326,7 +343,11 @@
 
     .hebergements-cards .card-content {
         width: 67%; 
+<<<<<<< HEAD
         padding-left: 15px;
+=======
+        padding-left: 15px; 
+>>>>>>> fdbc6166fefd20d45cb140ad6f9e6217d6345c6f
         display: flex; 
         flex-direction: column;
         justify-content: space-between; 
@@ -360,7 +381,11 @@
 
     .populaires-cards .card {
         display: flex; 
+<<<<<<< HEAD
         margin-top: 33px;
+=======
+        margin-top: 33px
+>>>>>>> fdbc6166fefd20d45cb140ad6f9e6217d6345c6f
     }
 
     .populaires-cards img {
@@ -392,6 +417,7 @@
         margin-bottom: 5px;
     }
 
+<<<<<<< HEAD
 /* ============= ACTIVITÉS ============ */
     .activites {
         display: flex;
@@ -467,6 +493,8 @@
         margin: 0 250px 0 0;
     }
 
+=======
+>>>>>>> fdbc6166fefd20d45cb140ad6f9e6217d6345c6f
 /* ==========MEDIAS QUERIES ============*/
 
 
@@ -510,3 +538,7 @@
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> fdbc6166fefd20d45cb140ad6f9e6217d6345c6f
