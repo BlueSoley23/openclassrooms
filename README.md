@@ -1,4 +1,4 @@
-<h1>Booki - Agence de voyage</h1>
+<h1><a href="https://bluesoley23.github.io/OC_P1_HTML-CSS_Booki/">Booki - Agence de voyage</a></h1>
 
 <p>Ce projet est le premier de ma formation de développeur web full stack chez OpenClassrooms. Il consiste à créer la page d'accueil d'une agence de voyage appelée Booki.</p>
 
@@ -47,7 +47,7 @@
 <h2>Liens utiles</h2>
 
 <ul>
-  <strong><li><a href="https://bluesoley23.github.io/OpenClassrooms_Project-1_HTML-CSS_Booki/">>> Voir le site sur GitHub Pages ! </a></li></strong>
+  <strong><li><a href="https://bluesoley23.github.io/OC_P1_HTML-CSS_Booki/">>> Voir le site sur GitHub Pages ! </a></li></strong>
   <br>
   <li><a href="https://github.com/BlueSoley23/OpenClassrooms_Project-1_HTML-CSS_Booki.git">Dépôt GitHub du projet</a></li>
 </ul>
