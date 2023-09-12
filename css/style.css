@@ -98,8 +98,9 @@
         color: var(--text-color);
         width: 50px;
         padding-left: 15px;
+        padding: 15px;
     }
-
+    
     #search-section form {
         max-width: 380px;
         width: 100%;
@@ -109,6 +110,9 @@
         padding: 15px;
     }
 
+    #search-section input { 
+        border: none;
+    }
     /* Propriétés permettant de commuter entre le bouton rechercher pour le desktop
         et l'icone de recherche pour le mobile en modifiant les variables --search-button */
     button.desktop-search-button {
@@ -133,6 +137,12 @@
     }
 
 
+    Auberge Le Panier
+    Nuit à partir de 23€
+    
+        Note de 4 sur 5
+    Afficher plus
+    
     .searchbar {
         border: none;
         outline: none;
@@ -374,7 +384,7 @@
         width: 67%; 
         padding-left: 15px; 
         display: flex; 
-        flex-direction: column;
+        flex-direction: column;380px
         justify-content: space-between; 
         box-sizing: border-box; 
     }
@@ -405,7 +415,7 @@
         box-sizing: border-box;
 
     }
-
+    380px
 
     .activites {
         width: 100%;
@@ -419,7 +429,6 @@
 
     .activites-cards {
         width: 100%;
-        min-height: 439px;
         display: flex;
         justify-content: space-between;
     }
