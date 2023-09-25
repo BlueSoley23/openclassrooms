@@ -517,7 +517,7 @@
     @media (min-width: 1440px) {
         .main-container {
             transform: scale(0.85);
-            margin: -19vh auto;
+            margin: -9.75% auto;
         }
     }
 
