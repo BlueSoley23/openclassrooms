@@ -56,6 +56,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-left: 35px;
     }
 
     /* Logo Booki */
@@ -98,6 +99,10 @@
 
 
 /* =========  SEARCHBAR SECTION  ========== */
+    #search-section {
+        margin-left: 35px;
+    }
+
     #search-section form .fa-location-dot {
         color: var(--text-color);
         width: 50px;
@@ -267,7 +272,7 @@
     .main-container {
         width: 100%; 
         max-width: 1440px; 
-        padding: 0 50px; 
+        padding: 0 1em; 
         box-sizing: border-box; 
     }
 
@@ -325,9 +330,10 @@
     .hebergements-and-populaires section {
         background-color: var(--main-bg-color); 
         border-radius: 15px; 
-        padding: 30px;
-        margin: 15px;
+        padding: 1.5em;
+        margin: 1em;
         box-sizing: border-box;
+        
     }
 
     .hebergements-and-populaires .card {
@@ -337,7 +343,7 @@
 
     /****** Hebergements ***********/
     .hebergements {
-        min-width: 58.5vw;
+        width: 75em;
         display: flex;
         flex-direction: column;
     }
@@ -352,17 +358,17 @@
         flex-direction: column;
         margin-top: 33px;
         width: 31%;
-        height: 200px;
+        height: 12em;
     }
 
     .hebergements-cards img { 
         border-radius: 20px 20px 0 0;
         width: 100%;
-        height: 110px;
+        height: 6.5em;
     }
 
     .hebergements-cards .card-content {
-        padding-left: 15px;
+        padding-left: 0.5em;
         display: flex; 
         flex-direction: column;
         justify-content: space-between; 
@@ -403,12 +409,12 @@
 
     .populaires-cards .card {
         display: flex; 
-        height: 144px;
+        height: 8.5em;
     }
 
     .populaires-cards img {
         width: 33%; 
-        height: 136px;
+        height: 8em;
         margin: 0 auto;
         border-top-left-radius: 20px; 
         border-bottom-left-radius: 20px;
@@ -446,23 +452,25 @@
 
     .activites section {
         border-radius: 20px 20px 0 0; 
-        padding: 30px; 
         box-sizing: border-box;
 
     }
 
 
     .activites {
-        width: 100%;
+        max-width: 100%;
         display: flex;
         flex-direction: column;
         align-items: stretch; 
-        overflow: visible; 
+    }
+
+    .activites .section-title {
+        padding-left: 1.5em;
     }
 
     .activites-cards {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
 
@@ -470,13 +478,14 @@
         filter: drop-shadow(none);
         display: inline-block; 
         margin-top: 33px;
-        width: 19vw;    
+        width: 22.5vw;    
+        height: 57vh;
         border-radius: 20px;  
         overflow: hidden; /* Ajouté pour s'assurer que l'image respecte le border-radius de la carte */    }
     
     .activites-cards .card-content img {
         width: 100%;
-        height: 380px; /* Ajouté pour définir une hauteur à l'image */
+        height: 50vh; /* Ajouté pour définir une hauteur à l'image */
     }
 
     .activites-cards .card-content {
@@ -488,12 +497,12 @@
     }
 
     .activites-cards .card-title {
-        margin-top: 10px;
+        margin-top: 7px;
         margin-bottom: 4px;
     }
 
     .activites-cards .card-txt {
-        padding: 15px;
+        padding: 1px 5px 1px 10px;
     }
 
 /* ============= FOOTER ============ */
@@ -515,9 +524,25 @@
 
     /* Larges devices (desktops, more than 1440px) */
     @media (min-width: 1440px) {
+
         .main-container {
-            transform: scale(0.85);
-            margin: -9.75% auto;
+            padding: 0 8em;
+        }
+
+        .hebergements {
+            min-width: 65%;
+        }
+
+        .populaires {
+            min-width: 30%;
+        }
+
+        .activites .card {
+            width: 17em;
+        }
+
+        .activites .card img {
+            height: 22em;
         }
     }
 
@@ -554,6 +579,14 @@
 
         .populaires-cards .card-subtitle {
             font-size: 13px; 
+        }
+
+        .activites .card {
+            height: 23.5em;
+        }
+
+        .activites .card img {
+            height: 21em;
         }
     }
 
