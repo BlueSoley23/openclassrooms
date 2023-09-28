@@ -153,6 +153,7 @@
     }
 
     button.mobile-search-button {
+        background-color: white;
         border: none;
     }
 
@@ -458,7 +459,7 @@
 
 
     .activites {
-        max-width: 100%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: stretch; 
@@ -474,18 +475,21 @@
     }
 
 
+    .activites .card {
+        width: 20vw;
+        height: auto;
+    }
+
     .activites-cards .card {
         filter: drop-shadow(none);
         display: inline-block; 
         margin-top: 33px;
-        width: 22.5vw;    
-        height: 57vh;
         border-radius: 20px;  
         overflow: hidden; /* Ajouté pour s'assurer que l'image respecte le border-radius de la carte */    }
     
     .activites-cards .card-content img {
         width: 100%;
-        height: 50vh; /* Ajouté pour définir une hauteur à l'image */
+        height: 37vh;
     }
 
     .activites-cards .card-content {
@@ -496,14 +500,15 @@
         box-sizing: border-box; 
     }
 
-    .activites-cards .card-title {
-        margin-top: 7px;
-        margin-bottom: 4px;
+    .activites .card-txt {
+        height: 3em;
+        margin-left: 1em;
+        display: flex;
+        align-items: center;
+
     }
 
-    .activites-cards .card-txt {
-        padding: 1px 5px 1px 10px;
-    }
+
 
 /* ============= FOOTER ============ */
  
@@ -539,10 +544,19 @@
 
         .activites .card {
             width: 17em;
+            height: auto;
+        }
+
+        .activites .card-txt {
+            height: 3em;
+            margin-left: 1em;
+            display: flex;
+            align-items: center;
+
         }
 
         .activites .card img {
-            height: 22em;
+            height: 23em;
         }
     }
 
