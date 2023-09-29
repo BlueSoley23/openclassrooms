@@ -127,6 +127,7 @@
         height: 49px;
         border-radius: 15px;
         display: flex;
+        background-color: white;
     }
 
     #search-section form i {
