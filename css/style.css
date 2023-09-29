@@ -311,7 +311,7 @@
     }
 
     .euro {
-        font-weight: var(--article-title-weight);
+        font-weight: var(--artic100vwle-title-weight);
     }
 
     .neutral-star {
@@ -459,7 +459,9 @@
     }
 
 
-    .activites {
+    .activites {            display: flex;
+        justify-content:center;
+        box-sizing: border-box;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -667,7 +669,96 @@
         body {
             --search-button-mobile: inline;
             --search-button-desktop: none;
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            box-sizing: border-box;
         }
+
+        .main-container {
+            padding: 0 5vw;
+            margin: 0;
+            width: 100vw;
+            box-sizing: border-box;
+        }
+
+        .header-section {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-left: -5vw;
+            margin-right: -5vw;
+            box-sizing: border-box;
+        }
+
+        .header-section a {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+        }
+
+        .navbar {
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            margin-left: -6vw;
+        }
+
+        .navbar ul {
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            width: 50%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #search-section {
+            margin: 0;
+            padding: 0;
+        }
+
+        .hebergements-and-populaires {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .filters-section {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+        }
+
+            /* Effets au survol de la souris : trait bleu au dessus du texte et coloration du texte en bleu */
+    .header-section nav ul li::before {
+        content: "";
+        position: absolute;
+        width: 50vw;
+        height: 2px;
+        background-color: var(--main-color);
+        top: 50px;
+        opacity: 0;
+        transition: opacity 0.3s ease; 
+    }
+
+    .header-section nav ul li:hover {
+        color: var(--main-color);
+    }
+
+    .header-section nav ul li:hover::before {
+        opacity: 1;
+    }
+
 
         }
     
