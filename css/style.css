@@ -715,7 +715,7 @@
             padding: 0;
         }
 
-        /* Effets au survol de la souris : trait bleu au dessus du texte et coloration du texte en bleu */
+        /* Effets au survol de la souris : trait bleu au dessous du texte et coloration du texte en bleu */
         .header-section nav ul li::before {
             content: "";
             position: absolute;
