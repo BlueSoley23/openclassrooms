@@ -715,8 +715,34 @@
             padding: 0;
         }
 
+        /* Effets au survol de la souris : trait bleu au dessus du texte et coloration du texte en bleu */
+        .header-section nav ul li::before {
+            content: "";
+            position: absolute;
+            width: 50vw; /* Ajustez la largeur en fonction de la largeur souhaitée pour le trait */
+            height: 2px; /* Ajustez la hauteur en fonction de l'épaisseur souhaitée pour le trait */
+            background-color: var(--main-bg-color); /* Couleur du trait lorsqu'il n'est pas survolé */
+            top: 5vh; /* Positionne le trait en bas */
+            right: 3vw; /* Aligne le trait à gauche */
+            opacity: 1; /* Assurez-vous que le trait est visible lorsqu'il n'est pas survolé */
+            transition: background-color 0.3s ease; /* Transition pour la couleur de fond */
+            
+        
+        .header-section nav ul li:hover::before {
+            background-color: var(--main-color); /* Couleur du trait lorsqu'il est survolé */
+        }
+        
+        .header-section nav ul li:hover {
+            color: var(--main-color); /* Couleur du texte lorsqu'il est survolé */
+        }
+        
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+        }
+
         #search-section {
-            margin: 0;
+            margin: 0; 
             padding: 0;
         }
 
@@ -740,7 +766,31 @@
         .filters-section {
             width: 100%;
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: wrap;            /* Effets au survol de la souris : trait bleu au dessus du texte et coloration du texte en bleu */
+            .header-section nav ul li::before {
+                content: "";
+                position: absolute;
+                width: 50vw; /* Ajustez la largeur en fonction de la largeur souhaitée pour le trait */
+                height: 2px; /* Ajustez la hauteur en fonction de l'épaisseur souhaitée pour le trait */
+                background-color: var(--main-bg-color); /* Couleur du trait lorsqu'il n'est pas survolé */
+                top: 5vh; /* Positionne le trait en bas */
+                right: 3vw; /* Aligne le trait à gauche */
+                opacity: 1; /* Assurez-vous que le trait est visible lorsqu'il n'est pas survolé */
+                transition: background-color 0.3s ease; /* Transition pour la couleur de fond */
+            }
+            
+            .header-section nav ul li:hover::before {
+                background-color: var(--main-color); /* Couleur du trait lorsqu'il est survolé */
+            }
+            
+            .header-section nav ul li:hover {
+                color: var(--main-color); /* Couleur du texte lorsqu'il est survolé */
+            }
+
+            .footer-section {
+                display: flex;
+                flex-direction: column;
+            }
         }
 
         .filters-section button {
@@ -809,37 +859,7 @@
         .activites .card {
             width: 100%;
         }
-
-
-
-
-
-            /* Effets au survol de la souris : trait bleu au dessus du texte et coloration du texte en bleu */
-            .header-section nav ul li::before {
-                content: "";
-                position: absolute;
-                width: 50vw; /* Ajustez la largeur en fonction de la largeur souhaitée pour le trait */
-                height: 2px; /* Ajustez la hauteur en fonction de l'épaisseur souhaitée pour le trait */
-                background-color: var(--main-bg-color); /* Couleur du trait lorsqu'il n'est pas survolé */
-                top: 5vh; /* Positionne le trait en bas */
-                right: 3vw; /* Aligne le trait à gauche */
-                opacity: 1; /* Assurez-vous que le trait est visible lorsqu'il n'est pas survolé */
-                transition: background-color 0.3s ease; /* Transition pour la couleur de fond */
-            }
-            
-            .header-section nav ul li:hover::before {
-                background-color: var(--main-color); /* Couleur du trait lorsqu'il est survolé */
-            }
-            
-            .header-section nav ul li:hover {
-                color: var(--main-color); /* Couleur du texte lorsqu'il est survolé */
-            }
-
-            .footer-section {
-                display: flex;
-                flex-direction: column;
-            }
-        }
+    }
     
     
 
