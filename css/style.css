@@ -724,6 +724,11 @@ u {
         border-radius: 0;
     }
 
+    .populaires .section-title {
+        padding-top: 10px;
+        padding-bottom: 7px;
+    }
+    
     .populaires-title i {
         padding-bottom: 1.5em;
     }
@@ -740,6 +745,11 @@ u {
 
     section.hebergements {
         background-color: white;
+        padding-top: 0;
+    }
+
+    .hebergements-cards .card {
+        margin-top: 15px;
     }
     
     .hebergements-cards .card {
