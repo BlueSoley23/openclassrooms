@@ -1,3 +1,4 @@
+
 <h1><a href="https://bluesoley23.github.io/OC_P1_HTML-CSS_Booki/">Booki - Agence de voyage</a></h1>
 
 <p>Ce projet est le premier de ma formation de développeur web full stack chez OpenClassrooms. Il consiste à créer la page d'accueil d'une agence de voyage appelée Booki.</p>
@@ -51,7 +52,7 @@
   <br>
   <li><a href="https://github.com/BlueSoley23/OpenClassrooms_Project-1_HTML-CSS_Booki.git">Dépôt GitHub du projet</a></li>
 </ul>
-
+https://w7.pngwing.com/pngs/34/1010/png-transparent-web-development-world-wide-web-consortium-w3c-markup-validation-service-computer-icons-validator-c-blue-search-engine-optimization-web-design-thumbnail.png
 <h2>Contact</h2>
 
 <p>Ce projet a été réalisé par Antoine Gauer. Si vous avez des questions ou des commentaires, n'hésitez pas à me contacter à l'adresse e-mail suivante : <a href="mailto:bluegauer@gmail.com">bluegauer@gmail.com</a>.</p>
@@ -60,7 +61,7 @@
 <p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
-            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            src="https://w7.pngwing.com/pngs/34/1010/png-transparent-web-development-world-wide-web-consortium-w3c-markup-validation-service-computer-icons-validator-c-blue-search-engine-optimization-web-design-thumbnail.png+"
             alt="CSS Valide !" />
     </a>
 </p>
