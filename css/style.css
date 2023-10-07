@@ -752,7 +752,7 @@ u {
         width: 50vw;
         height: 2px;
         background-color: var(--main-bg-color);
-        top: 5vh;
+        top: 4vh;
         right: 3vw;
         opacity: 1;
         transition: background-color .3s ease;
@@ -770,3 +770,4 @@ u {
         display: flex;
         flex-direction: column;
     }
+}
