@@ -363,7 +363,6 @@ u {
     height: auto;
 }
 .activites-cards .card {
-    filter: drop-shadow(none);
     display: inline-block;
     margin-top: 33px;
     border-radius: 20px;
@@ -429,9 +428,7 @@ u {
         padding-left: 1%;
     }
     #search-section form {
-        pnpm install --save-dev --save-exact prettier
-￼
-adding: 35px 0;
+        padding: 35px 0;
     }
     .infobar {
         padding-bottom: 0;
