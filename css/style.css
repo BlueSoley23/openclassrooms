@@ -89,7 +89,7 @@
     }
 
     .card img {
-        /* Les images dans les cartes sont stylisées ici. L'ajustement de l'objet est défini. */
+        /* Les images dans les cartes sont stylisées ici. Un object-fit sur cover permet que l'image recouvre tout l'espace qui lui est alloué. */
         object-fit: cover;
     }
 
@@ -155,10 +155,10 @@
 
 
 
-/* ########## STYLES DES TITRES DE FILTRE ############# */
+/* ########## STYLES DU TITRE DES FILTRES ############# */
 
     .filter-title {
-        /* Les titres de filtre sont stylisés ici. La couleur, la taille de la police et le poids de la police sont définis. */
+        /* Le titre des filtres est stylisé ici. La couleur, la taille de la police et le poids de la police sont définis. */
         color: var(--text-color);
         font-size: var(--filter-title-size);
         font-weight: var(--filter-title-weight);
@@ -191,7 +191,7 @@
 /* ########## STYLES DES ICÔNES ############# */
 
     .fa-solid {
-        /* Les icônes avec la classe .fa-solid sont stylisées ici. La couleur est définie. */
+        /* Les icônes (avec la classe .fa-solid) sont stylisées ici. La couleur est définie. */
         color: var(--main-color);
     }
 
