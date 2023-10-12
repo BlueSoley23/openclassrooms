@@ -1,831 +1,1038 @@
-:root {
-	--main-color: #0065fc;
-	--main-bg-color: #f2f2f2;
-	--filter-bg-color: #deebff;
-	--main-title-size: 22px;
-	--content-text-size: 18px;
-	--filter-title-size: 17px;
-	--article-title-size: 16px;
-	--main-subtitle-size: 16px;
-	--article-subtitle-size: 14px;
-	--main-title-weight: 700;
-	--content-text-weight: 700;
-	--filter-title-weight: 700;
-	--article-title-weight: 700;
-	--main-subtitle-weight: 400;
-	--article-subtitle-weight: 400;
-	--text-color: black;
-	--search-button-text-color: white;
-	--main-font: "Raleway", sans-serif;
-	--search-button-mobile: none;
-	--search-button-desktop: inline;
-}
-
-
-.main-title {
-	color: var(--text-color);
-	font-size: var(--main-title-size);
-	font-weight: var(--main-title-weight);
-	padding-top: 30px;
-}
-
-.main-subtitle {
-	color: var(--text-color);
-	font-size: var(--main-subtitle-size);
-	font-weight: var(--main-subtitle-weight);
-}
-
-.content-text {
-	color: var(--text-color);
-	font-size: var(--content-text-size);
-	font-weight: var(--content-text-weight);
-}
-
-.content-text::placeholder {
-	opacity: 1;
-	color: var(--text-color);
-	font-size: var(--content-text-size);
-	font-weight: var(--content-text-weight);
-}
-
-.filter-title {
-	color: var(--text-color);
-	font-size: var(--filter-title-size);
-	font-weight: var(--filter-title-weight);
-}
-
-.article-title {
-	color: var(--text-color);
-	font-size: var(--article-title-size);
-	font-weight: var(--article-title-weight);
-}
-
-.article-subtitle {
-	color: var(--text-color);
-	font-size: var(--article-subtitle-size);
-	font-weight: var(--article-subtitle-weight);
-}
-
-.fa-solid {
-	color: var(--main-color);
-}
-
-
-* {
-	font-family: Raleway, sans-serif;
-    box-sizing: border-box;
-}
-
-body {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	margin: 0;
-}
-
-.main-container {
-	width: 100%;
-	max-width: 1440px;
-	padding: 0 1em;
-}
-
-a {
-	color: inherit;
-	text-decoration: none;
-}
-
-u {
-	text-decoration: none;
-}
-
-.section-title {
-	margin: 0;
-	font-size: var(--main-title-size);
-	font-weight: var(--main-title-weight);
-}
-
-.card {
-	background-color: #fff;
-	border-radius: 20px;
-	filter: drop-shadow(0 3px 15px rgba(0, 0, 0, 0.1));
-}
-
-.card img {
-	object-fit: cover;
-}
-
-.card-title {
-	font-size: var(--article-title-size);
-	font-weight: var(--article-title-weight);
-}
-
-.euro {
-	font-weight: var(--article-title-weight);
-}
-
-.neutral-star {
-	color: var(--main-bg-color);
-}
-
-
-.main-title {
-	color: var(--text-color);
-	font-size: var(--main-title-size);
-	font-weight: var(--main-title-weight);
-	padding-top: 30px;
-}
-
-.main-subtitle {
-	color: var(--text-color);
-	font-size: var(--main-subtitle-size);
-	font-weight: var(--main-subtitle-weight);
-}
-
-.content-text {
-	color: var(--text-color);
-	font-size: var(--content-text-size);
-	font-weight: var(--content-text-weight);
-}
-
-.content-text::placeholder {
-	opacity: 1;
-	color: var(--text-color);
-	font-size: var(--content-text-size);
-	font-weight: var(--content-text-weight);
-}
-
-.filter-title {
-	color: var(--text-color);
-	font-size: var(--filter-title-size);
-	font-weight: var(--filter-title-weight);
-}
-
-.article-title {
-	color: var(--text-color);
-	font-size: var(--article-title-size);
-	font-weight: var(--article-title-weight);
-}
-
-.article-subtitle {
-	color: var(--text-color);
-	font-size: var(--article-subtitle-size);
-	font-weight: var(--article-subtitle-weight);
-}
-
-.fa-solid {
-	color: var(--main-color);
-}
-
-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-left: 35px;
-}
-
-header img {
-	width: 60px;
-}
-
-header ul {
-	display: flex;
-	list-style-type: none;
-}
-
-header li {
-	margin: 0 25px;
-	font-size: var(--main-subtitle-size);
-	font-weight: var(--main-subtitle-weight);
-	position: relative;
-}
-
-header li::before {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 2px;
-	background-color: var(--main-color);
-	top: -15px;
-	opacity: 0;
-	transition: opacity 0.3s ease;
-}
-
-header li:hover {
-	color: var(--main-color);
-}
-
-header li:hover::before {
-	opacity: 1;
-}
-
-.search-section {
-	margin-left: 35px;
-}
-
-.search-section .fa-location-dot {
-	color: var(--text-color);
-	width: 50px;
-	padding-left: 17px;
-	padding-right: 17px;
-}
-
-.search-section form {
-	width: 100%;
-    height: 49px;
-	display: flex;
-	flex-wrap: nowrap;
-	align-items: center;
-	padding: 50px 0;
-	border-radius: 15px;
-	background-color: #ffffff;
-}
-
-.search-section form i {
-    height: 49px;
-	display: flex;
-	align-items: center;
-	border-radius: 15px 0 0 15px;
-	background-color: var(--main-bg-color);
-}
-
-
-.search-section input {	
-    width: 200px;
-	border: none;
-}
-
-button.desktop-search-button {
-	color: var(--search-button-text-color);
-	background-color: var(--main-color);
-	border: none;
-	border-radius: 0 15px 15px 0;
-	width: 132px;
-	height: 49px;
-	display: var(--search-button-desktop);
-}
-
-button.mobile-search-button {
-	background-color: #fff;
-	border: none;
-}
-
-button.mobile-search-button img {
-	width: 49px;
-	height: 49px;
-	display: var(--search-button-mobile);
-}
-
-.searchbar {
-	border: none;
-	outline: 0;
-	padding-left: 30px;
-}
-
-.filters-section {
-	display: flex;
-	justify-content: space-between;
-	width: 758px;
-	height: 50px;
-	margin: 20px 0;
-}
-
-.filters-section i {
-	font-size: large;
-}
-
-.filters-section-button {
-	background-color: #fff;
-	border: solid 2px #d9d9d9;
-	border-radius: 25px;
-	display: flex;
-	align-items: center;
-	padding: 4px 19px;
-}
-
-.filters-section-button:hover {
-	background-color: var(--filter-bg-color);
-}
-
-.filters-section-button i {
-	margin: 0 10px 0 0;
-}
-
-.infobar {
-	display: flex;
-	padding-bottom: 30px;
-}
-
-.infobar .main-subtitle {
-	padding-left: 10px;
-}
-
-.hebergements-and-populaires {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: stretch;
-	overflow: visible;
-}
-
-.hebergements-and-populaires section {
-	background-color: var(--main-bg-color);
-	border-radius: 15px;
-	padding: 1.5em;
-	margin: 1em;
-}
-
-.hebergements-and-populaires .card {
-	padding: 4px;
-	height: 100%;
-}
-
-.hebergements {
-	width: 75em;
-	display: flex;
-	flex-direction: column;
-}
-
-.hebergements-cards-first-group,
-.hebergements-cards-last-group {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
-.hebergements-cards .card {
-	display: flex;
-	flex-direction: column;
-	margin-top: 33px;
-	width: 31%;
-	height: 12em;
-}
-
-.hebergements-cards img {
-	border-radius: 20px 20px 0 0;
-	width: 100%;
-	height: 6.5em;
-}
-
-.hebergements-cards .card-content {
-	padding-left: 0.5em;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.hebergements-cards .card-title {
-	margin-top: 10px;
-	margin-bottom: 4px;
-	width: 125%;
-}
-
-.hebergements-cards .card-subtitle {
-	margin: 0;
-}
-
-.hebergements-cards .card-rating {
-	margin-bottom: 5px;
-}
-
-.hebergements .section-subtitle h3 {
-	padding-top: 30px;
-}
-
-.populaires-title {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.populaires-cards {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	height: 100%;
-}
-
-.populaires-cards .card {
-	display: flex;
-	height: 8.5em;
-}
-
-.populaires-cards img {
-	width: 33%;
-	height: 8em;
-	margin: 0 auto;
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
-}
-
-.populaires-cards .card-content {
-	width: 67%;
-	padding-left: 15px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.populaires-cards .card-title {
-	margin-top: 10px;
-	margin-bottom: 4px;
-}
-
-.populaires-cards .card-subtitle {
-	margin: 0;
-}
-
-.populaires-cards .card-rating {
-	margin-bottom: 5px;
-}
-
-.activites {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	margin: 5vh 0;
-}
-
-.activites section {
-	border-radius: 20px 20px 0 0;
-}
-
-.activites {
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: stretch;
-}
-
-.activites .section-title {
-	padding-left: 1.5em;
-}
-
-.activites-cards {
-	display: flex;
-	justify-content: space-around;
-}
-
-.activites .card {
-	width: 20vw;
-	height: auto;
-}
-
-.activites-cards .card {
-	display: inline-block;
-	margin-top: 33px;
-	border-radius: 20px;
-	overflow: hidden;
-}
-
-.activites-cards .card-content img {
-	width: 100%;
-	height: 37vh;
-	min-height: 250px;
-}
-
-.activites-cards .card-content {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.activites .card-txt {
-	height: 3em;
-	margin-left: 1em;
-	display: flex;
-	align-items: center;
-}
-
-footer {
-	background-color: var(--main-bg-color);
-	padding: 35px 0;
-	display: flex;
-	justify-content: flex-start;
-	padding: 20px;
-}
-
-footer div {
-	margin: 0 250px 0 0;
-}
-
-@media (min-width: 1440px) {
-	.main-container {
-		padding: 0 8em;
-	}
-
-	.hebergements {
-		min-width: 65%;
-	}
-
-	.populaires {
-		min-width: 30%;
-	}
-
-	.activites .card {
-		width: 17em;
-		height: auto;
-	}
-
-	.activites .card-txt {
-		height: 3em;
-		margin-left: 1em;
-		display: flex;
-		align-items: center;
-	}
-
-	.activites .card img {
-		height: 23em;
-	}
-}
-
-@media (max-width: 1024px) {
-	body {
-		padding-right: 1%;
-		padding-left: 1%;
-	}
-
-	.search-section form {
-		padding: 35px 0;
-	}
-
-	.infobar {
-		padding-bottom: 0;
-	}
-
-	.filters-section .content-text {
-		width: 100%;
-		margin: 0 0 1em 0;
-	}
-
-	.filters-section {
-		display: flex;
-		flex-wrap: wrap;
-		width: 670px;
-		justify-content: space-between;
-		height: 90px;
-	}
-
-	.hebergements-and-populaires {
-		flex-direction: column;
-		padding-right: 3.5%;
-	}
-
-	.hebergements {
-		width: 100%;
-	}
-
-	.populaires {
-		width: 100%;
-		margin-top: 50px;
-	}
-
-	.populaires .section-title {
-		padding-bottom: 20px;
-	}
-
-	.populaires-cards {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-	.populaires-cards a {
-		width: 30%;
-	}
-
-	.populaires-cards .card-title {
-		font-size: 14px;
-	}
-
-	.populaires-cards .card-subtitle {
-		font-size: 13px;
-	}
-
-	.activites .card {
-		height: 22vh;
-		min-height: 200px;
-	}
-
-	.activites .card img {
-		height: 17vh;
-		min-height: 150px;
-	}
-
-	.activites .card-txt {
-		height: 5vh;
-		min-height: 50px;
-		margin-left: 1em;
-		display: flex;
-		align-items: center;
-	}
-
-	footer {
-		padding: 5px 125px 0 15px;
-		justify-content: space-between;
-	}
-
-	footer div {
-		margin: 0;
-	}
-}
-
-@media (max-width: 767.98px) {
-    /*git add . && git commit -m "Optimisations de spécificité CSS: suppression des IDs (trop lourds, remplacement par des classes) et suppression des classes sur des élements sémentiques - first commit"*/
-	body {
-		--search-button-mobile: inline;
-		--search-button-desktop: none;
-		margin: 0;
-		padding: 0;
-		width: 100%;
-	}
-
-	.main-container {
-		padding: 0 5vw;
-		margin: 0;
-		width: 100%;
-        overflow-x: hidden;
-	}
-
-	header {
-		display: flex;
-		flex-wrap: wrap;
-		width: 100%;
-		margin: 0 -5vw;
-	}
-
-	.logo-booki {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		padding: 2vh 0 1vh 0;
-	}
+/* ########## DÉFINITION DES VARIABLES CSS ############# */
+
+    :root {
+        /* Les variables CSS sont définies ici. Ces variables peuvent être réutilisées dans tout le fichier CSS. */
+        --main-color: #0065fc;
+        --main-bg-color: #f2f2f2;
+        --filter-bg-color: #deebff;
+        --main-title-size: 22px;
+        --content-text-size: 18px;
+        --filter-title-size: 17px;
+        --article-title-size: 16px;
+        --main-subtitle-size: 16px;
+        --article-subtitle-size: 14px;
+        --main-title-weight: 700;
+        --content-text-weight: 700;
+        --filter-title-weight: 700;
+        --article-title-weight: 700;
+        --main-subtitle-weight: 400;
+        --article-subtitle-weight: 400;
+        --text-color: black;
+        --search-button-text-color: white;
+        --main-font: "Raleway", sans-serif;
+        --search-button-mobile: none;
+        --search-button-desktop: inline;
+    }
+
+
+
+
+
+/* ########## STYLES GLOBAUX ############# */
+
+    * {
+        /* La police par défaut et le box-sizing (pour inclure les margins et paddings dans l'élement) sont définies pour tous les éléments. */
+        font-family: Raleway, sans-serif;
+        box-sizing: border-box;
+    }
+
+    body {
+        /* Le corps du document est stylisé ici. Le contenu est centré et les marges par défaut sont supprimées. */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .main-container {
+        /* Le conteneur principal est stylisé ici. La largeur maximale est définie et le padding est ajouté. */
+        width: 100%;
+        max-width: 1440px;
+        padding: 0 1em;
+    }
+
+    a {
+        /* Tous les liens héritent de leur couleur parente et la décoration de lien par défaut est supprimée. */
+        color: inherit;
+        text-decoration: none;
+    }
+
+    u {
+        /* La décoration de soulignement est supprimée pour les éléments <u>. */
+        text-decoration: none;
+    }
+
+
+
+
+
+/* ########## STYLES DES TITRES ############# */
+
+    .section-title {
+        /* Les titres de section sont stylisés ici. La marge, la taille de la police et le poids de la police sont définis. */
+        margin: 0;
+        font-size: var(--main-title-size);
+        font-weight: var(--main-title-weight);
+    }
+
+
+
+
+
+/* ########## STYLES DES CARTES ############# */
+
+    .card {
+        /* Les cartes sont stylisées ici. La couleur de fond, le rayon de la bordure et le filtre d'ombre sont définis. */
+        background-color: #fff;
+        border-radius: 20px;
+        filter: drop-shadow(0 3px 15px rgba(0, 0, 0, 0.1));
+    }
+
+    .card img {
+        /* Les images dans les cartes sont stylisées ici. L'ajustement de l'objet est défini. */
+        object-fit: cover;
+    }
+
+    .card-title {
+        /* Les titres dans les cartes sont stylisés ici. La taille de la police et le poids de la police sont définis. */
+        font-size: var(--article-title-size);
+        font-weight: var(--article-title-weight);
+    }
+
+    .euro {
+        /* Les éléments avec la classe .euro sont stylisés ici. Le poids de la police est défini. */
+        font-weight: var(--article-title-weight);
+    }
+
+    .neutral-star {
+        /* Les éléments avec la classe .neutral-star sont stylisés ici. La couleur est définie. */
+        color: var(--main-bg-color);
+    }
+
+
+
+
+
+/* ########## STYLES DES TITRES PRINCIPAUX ############# */
+
+    .main-title {
+        /* Les titres principaux sont stylisés ici. La couleur, la taille de la police, le poids de la police et le padding sont définis. */
+        color: var(--text-color);
+        font-size: var(--main-title-size);
+        font-weight: var(--main-title-weight);
+        padding-top: 30px;
+    }
+
+    .main-subtitle {
+        /* Les sous-titres principaux sont stylisés ici. La couleur, la taille de la police et le poids de la police sont définis. */
+        color: var(--text-color);
+        font-size: var(--main-subtitle-size);
+        font-weight: var(--main-subtitle-weight);
+    }
+
+
+
+
+
+/* ########## STYLES DU TEXTE DE CONTENU ############# */
     
+    .content-text {
+        /* Le texte de contenu est stylisé ici. La couleur, la taille de la police et le poids de la police sont définis. */
+        color: var(--text-color);
+        font-size: var(--content-text-size);
+        font-weight: var(--content-text-weight);
+    }
+
+    .content-text::placeholder {
+        /* L'espace réservé dans les champs de saisie est stylisé ici. L'opacité, la couleur, la taille de la police et le poids de la police sont définis. */
+        opacity: 1;
+        color: var(--text-color);
+        font-size: var(--content-text-size);
+        font-weight: var(--content-text-weight);
+    }
+
+
+
+
+
+/* ########## STYLES DES TITRES DE FILTRE ############# */
+
+    .filter-title {
+        /* Les titres de filtre sont stylisés ici. La couleur, la taille de la police et le poids de la police sont définis. */
+        color: var(--text-color);
+        font-size: var(--filter-title-size);
+        font-weight: var(--filter-title-weight);
+    }
+
+
+
+
+
+/* ########## STYLES DES TITRES D'ARTICLE ############# */
+
+    .article-title {
+        /* Les titres d'article sont stylisés ici. La couleur, la taille de la police et le poids de la police sont définis. */
+        color: var(--text-color);
+        font-size: var(--article-title-size);
+        font-weight: var(--article-title-weight);
+    }
+
+    .article-subtitle {
+        /* Les sous-titres d'article sont stylisés ici. La couleur, la taille de la police et le poids de la police sont définis. */
+        color: var(--text-color);
+        font-size: var(--article-subtitle-size);
+        font-weight: var(--article-subtitle-weight);
+    }
+
+
+
+
+
+/* ########## STYLES DES ICÔNES ############# */
+
+    .fa-solid {
+        /* Les icônes avec la classe .fa-solid sont stylisées ici. La couleur est définie. */
+        color: var(--main-color);
+    }
+
+
+
+
+
+/* ########## STYLES DE L'EN-TÊTE ############# */
+
+    header {
+        /* L'en-tête est affiché en flex pour aligner les éléments horizontalement. L'espace entre les éléments est maximisé et ils sont alignés au centre verticalement. Une marge à gauche est ajoutée pour l'espacement. */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 35px;
+    }
+
+    header img {
+        /* La largeur des images dans l'en-tête est définie à 60px. */
+        width: 60px;
+    }
+
+    header ul {
+        /* La liste dans l'en-tête est affichée en flex pour aligner les éléments horizontalement. Le style de liste par défaut est supprimé. */
+        display: flex;
+        list-style-type: none;
+    }
+
+    header li {
+        /* Les éléments de liste dans l'en-tête ont une marge définie, une taille de police, un poids de police et une position relative pour le pseudo-élément ::before. */
+        margin: 0 25px;
+        font-size: var(--main-subtitle-size);
+        font-weight: var(--main-subtitle-weight);
+        position: relative;
+    }
+
     header li::before {
+        /* Le pseudo-élément ::before est utilisé pour créer un effet de soulignement lors du survol. Il est positionné absolument par rapport à l'élément de liste parent. */
         content: "";
         position: absolute;
         width: 100%;
         height: 2px;
-        background-color: var(--main-bg-color); /* Couleur de la barre lorsqu'elle n'est pas survolée */
-        top: auto;
-        bottom: -15px;
-        opacity: 1;
-        transition: background-color 0.3s ease; /* Transition pour changer la couleur de la barre */
+        background-color: var(--main-color);
+        top: -15px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
     }
-    
+
+    header li:hover {
+        /* Lorsqu'un élément de liste est survolé, sa couleur change. */
+        color: var(--main-color);
+    }
+
     header li:hover::before {
-        background-color: var(--main-color); /* Couleur de la barre lorsqu'elle est survolée */
+        /* Lorsqu'un élément de liste est survolé, l'opacité du pseudo-élément ::before change pour créer un effet de soulignement. */
+        opacity: 1;
     }
 
-    .hebergements-link::before {
-        width: 52vw;
-        left: -17vw;
-        /* ... vos autres styles ... */
+
+
+
+
+/* ########## STYLES DE LA SECTION DE RECHERCHE ############# */
+
+    .search-section {
+        /* Une marge à gauche est ajoutée à la section de recherche pour l'espacement. */
+        margin-left: 35px;
     }
 
-    .hebergements-link a {
-        position: relative;
-        right: 4vw;
-    }
-    
-    .activites-link::before {
-        width: 52vw;
-        left: -8vw;
-        /* ... vos autres styles ... */
+    .search-section .fa-location-dot {
+        /* L'icône de localisation dans la section de recherche a une couleur définie et un padding pour l'espacement. */
+        color: var(--text-color);
+        width: 50px;
+        padding-left: 17px;
+        padding-right: 17px;
     }
 
-    .activites-link a {
-        position: relative;
-        left: 7vw;
+    .search-section form {
+        /* Le formulaire dans la section de recherche est affiché en flex pour aligner les éléments horizontalement. Il a une largeur et une hauteur définies, un padding pour l'espacement, un rayon de bordure pour les coins arrondis et une couleur de fond. */
+        width: 100%;
+        height: 49px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 50px 0;
+        border-radius: 15px;
+        background-color: #ffffff;
     }
 
-	.search-section {
-		margin: 0;
-		padding: 0;
-	}
+    .search-section form i {
+        /* L'icône dans le formulaire est affichée en flex pour centrer le texte verticalement. Elle a une hauteur définie, un rayon de bordure pour les coins arrondis et une couleur de fond. */
+        height: 49px;
+        display: flex;
+        align-items: center;
+        border-radius: 15px 0 0 15px;
+        background-color: var(--main-bg-color);
+    }
 
-    .search-section .main-title {
+    .search-section input {	
+        /* L'input dans le formulaire a une largeur définie et la bordure par défaut est supprimée. */
+        width: 200px;
+        border: none;
+    }
+
+    button.desktop-search-button {
+        /* Le bouton de recherche pour les appareils de bureau a une couleur de texte, une couleur de fond, une bordure, un rayon de bordure, une largeur, une hauteur et un affichage définis. */
+        color: var(--search-button-text-color);
+        background-color: var(--main-color);
+        border: none;
+        border-radius: 0 15px 15px 0;
+        width: 132px;
+        height: 49px;
+        display: var(--search-button-desktop);
+    }
+
+    button.mobile-search-button {
+        /* Le bouton de recherche pour les appareils mobiles a une couleur de fond définie et la bordure par défaut est supprimée. */
+        background-color: #fff;
+        border: none;
+    }
+
+    button.mobile-search-button img {
+        /* L'image dans le bouton de recherche pour les appareils mobiles a une largeur et une hauteur définies et un affichage défini. */
+        width: 49px;
+        height: 49px;
+        display: var(--search-button-mobile);
+    }
+
+    .searchbar {
+        /* La barre de recherche a la bordure et le contour par défaut supprimés et un padding à gauche pour l'espacement. */
+        border: none;
+        outline: 0;
+        padding-left: 30px;
+    }
+
+
+
+
+
+/* ########## STYLES DE LA SECTION DES FILTRES ############# */
+
+    .filters-section {
+        /* La section des filtres est affichée en flex pour aligner les éléments horizontalement. L'espace entre les éléments est maximisé. La largeur, la hauteur et la marge sont définies. */
+        display: flex;
+        justify-content: space-between;
+        width: 758px;
+        height: 50px;
+        margin: 20px 0;
+    }
+
+    .filters-section i {
+        /* La taille de la police des icônes dans la section des filtres est définie à grande. */
+        font-size: large;
+    }
+
+    .filters-section-button {
+        /* Le bouton dans la section des filtres a une couleur de fond, une bordure, un rayon de bordure, un affichage, un alignement des éléments et un padding définis. */
+        background-color: #fff;
+        border: solid 2px #d9d9d9;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        padding: 4px 19px;
+    }
+
+    .filters-section-button:hover {
+        /* Lorsqu'on survole le bouton dans la section des filtres, sa couleur de fond change. */
+        background-color: var(--filter-bg-color);
+    }
+
+    .filters-section-button i {
+        /* La marge de l'icône dans le bouton de la section des filtres est définie. */
+        margin: 0 10px 0 0;
+    }
+
+
+
+
+
+/* ########## STYLES DE LA BARRE D'INFORMATIONS ############# */
+
+    .infobar {
+        /* La barre d'informations est affichée en flex pour aligner les éléments horizontalement. Un padding en bas est ajouté pour l'espacement. */
+        display: flex;
+        padding-bottom: 30px;
+    }
+
+    .infobar .main-subtitle {
+        /* Le sous-titre principal dans la barre d'informations a un padding à gauche pour l'espacement. */
+        padding-left: 10px;
+    }
+
+
+
+
+
+/* ########## STYLES DES SECTIONS HÉBERGEMENTS ET POPULAIRES ############# */
+
+    .hebergements-and-populaires {
+        /* Les sections hébergements et populaires sont affichées en flex pour aligner les éléments horizontalement. L'espace entre les éléments est maximisé et ils sont étirés pour prendre toute la hauteur disponible. Le débordement est visible. La largeur est définie à 100%. */
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        overflow: visible;
+    }
+
+    .hebergements-and-populaires section {
+        /* Les sections dans les sections hébergements et populaires ont une couleur de fond, un rayon de bordure, un padding et une marge définis. */
+        background-color: var(--main-bg-color);
+        border-radius: 15px;
+        padding: 1.5em;
+        margin: 1em;
+    }
+
+    .hebergements-and-populaires .card {
+        /* Les cartes dans les sections hébergements et populaires ont un padding et une hauteur définis. */
+        padding: 4px;
+        height: 100%;
+    }
+
+
+
+
+
+/* ########## STYLES DE LA SECTION HÉBERGEMENTS ############# */
+
+    .hebergements {
+        /* La section hébergements est affichée en flex pour aligner les éléments verticalement. La largeur est définie. */
+        width: 75em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hebergements-cards-first-group,
+    .hebergements-cards-last-group {
+        /* Les premiers et derniers groupes de cartes dans la section hébergements sont affichés en flex pour aligner les éléments horizontalement. L'espace entre les éléments est maximisé. */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hebergements-cards .card {
+        /* Les cartes dans la section hébergements sont affichées en flex pour aligner les éléments verticalement. La marge en haut, la largeur et la hauteur sont définies. */
+        display: flex;
+        flex-direction: column;
+        margin-top: 33px;
+        width: 31%;
+        height: 12em;
+    }
+
+    .hebergements-cards img {
+        /* Les images dans les cartes de la section hébergements ont un rayon de bordure, une largeur et une hauteur définis. */
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+        height: 6.5em;
+    }
+
+    .hebergements-cards .card-content {
+        /* Le contenu des cartes dans la section hébergements est affiché en flex pour aligner les éléments verticalement. L'espace entre les éléments est maximisé. Un padding à gauche est ajouté pour l'espacement. */
+        padding-left: 0.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hebergements-cards .card-title {
+        /* Les titres dans les cartes de la section hébergements ont une marge en haut et en bas, et une largeur définies. */
+        margin-top: 10px;
+        margin-bottom: 4px;
+        width: 125%;
+    }
+
+    .hebergements-cards .card-subtitle {
+        /* Les sous-titres dans les cartes de la section hébergements ont une marge définie à 0. */
         margin: 0;
     }
 
-    .search-section .main-subtitle {
-        margin: 1vh 0 2vh 0;
+    .hebergements-cards .card-rating {
+        /* Les évaluations dans les cartes de la section hébergements ont une marge en bas définie. */
+        margin-bottom: 5px;
     }
 
-	.infobar {
-		margin-top: 5em;
-	}
+    .hebergements .section-subtitle h3 {
+        /* Les sous-titres de section dans la section hébergements ont un padding en haut pour l'espacement. */
+        padding-top: 30px;
+    }
 
-	.filters-section {
-		width: 100%;
-		display: flex;
-		flex-wrap: wrap;
-	}
 
-	.filters-section button {
-		padding: 0.75em;
-		margin: 0.5em;
-		width: 40vw;
-		height: 50px;
-	}
 
-	.filters-section i {
-		width: 22px;
-		margin: 5px 0 5px 5px;
-	}
 
-	.filter-title {
-		position: relative;
-		left: 7%;
-		font-size: var(--article-subtitle-size);
-		font-weight: var(--article-title-weight);
-	}
 
-	.hebergements-and-populaires {
-		width: 100%;
-		display: flex;
+/* ########## STYLES DE LA SECTION POPULAIRES ############# */
+
+    .populaires-title {
+        /* Le titre de la section populaires est affiché en flex pour aligner les éléments horizontalement. L'espace entre les éléments est maximisé et ils sont alignés au centre verticalement. */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .populaires-cards {
+        /* Les cartes dans la section populaires sont affichées en flex pour aligner les éléments verticalement. L'espace entre les éléments est réparti également. La hauteur est définie à 100%. */
+        display: flex;
         flex-direction: column;
-		justify-content: center;
-		margin: 0;
-		padding: 0;
-	}
+        justify-content: space-evenly;
+        height: 100%;
+    }
 
-	.hebergements-and-populaires section {
-		margin: 1em 0;
-	}
+    .populaires-cards .card {
+        /* Les cartes dans la section populaires sont affichées en flex. La hauteur est définie. */
+        display: flex;
+        height: 8.5em;
+    }
 
-	.hebergements {
-		order: 2;
-	}
+    .populaires-cards img {
+        /* Les images dans les cartes de la section populaires ont une largeur, une hauteur, une marge et un rayon de bordure définis. */
+        width: 33%;
+        height: 8em;
+        margin: 0 auto;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
 
-	.hebergements-cards-first-group {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-	}
+    .populaires-cards .card-content {
+        /* Le contenu des cartes dans la section populaires est affiché en flex pour aligner les éléments verticalement. L'espace entre les éléments est maximisé. La largeur et un padding à gauche sont définis. */
+        width: 67%;
+        padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
-	.hebergements-cards-last-group {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-	}
+    .populaires-cards .card-title {
+        /* Les titres dans les cartes de la section populaires ont une marge en haut et en bas définies. */
+        margin-top: 10px;
+        margin-bottom: 4px;
+    }
 
-	.populaires {
-		width: 100vw;
-		order: 1;
-	}
+    .populaires-cards .card-subtitle {
+        /* Les sous-titres dans les cartes de la section populaires ont une marge définie à 0. */
+        margin: 0;
+    }
 
-	section.populaires {
-		margin-left: -5vw;
-		border-radius: 0;
-	}
+    .populaires-cards .card-rating {
+        /* Les évaluations dans les cartes de la section populaires ont une marge en bas définie. */
+        margin-bottom: 5px;
+    }
 
-	.populaires .section-title {
-		padding-top: 10px;
-		padding-bottom: 7px;
-	}
 
-	.populaires-title i {
-		padding-bottom: 1.5em;
-	}
 
-	.populaires-cards {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-	}
 
-	section.hebergements {
-		background-color: #fff;
-		padding-top: 0;
-	}
 
-	.hebergements-cards .card {
-		margin-top: 15px;
-		width: 100%;
-	}
+/* ########## STYLES DE LA SECTION ACTIVITÉS ############# */
 
-	.populaires-cards .card {
-		width: 330%;
-		margin: 7px 0;
-	}
+    .activites {
+        /* La section activités est affichée en flex pour aligner les éléments horizontalement. L'espace entre les éléments est maximisé et ils sont alignés au début verticalement. Une marge verticale est ajoutée pour l'espacement. */
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 5vh 0;
+    }
 
-	.activites-cards {
-		display: flex;
-		flex-direction: column;
-	}
+    .activites section {
+        /* Les sections dans la section activités ont un rayon de bordure défini pour les coins supérieurs. */
+        border-radius: 20px 20px 0 0;
+    }
 
-	.activites .card {
-		width: 100%;
-	}
+    .activites {
+        /* La section activités est affichée en flex pour aligner les éléments verticalement. L'espace entre les éléments est centré. La largeur est définie à 100%. */
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
 
-	footer {
-		display: flex;
-		flex-direction: column;
-		width: 100vw;
-		margin-left: -5vw;
-		padding-left: 2em;
-	}
-}
+    .activites .section-title {
+        /* Les titres de section dans la section activités ont un padding à gauche pour l'espacement. */
+        padding-left: 1.5em;
+    }
+
+    .activites-cards {
+        /* Les cartes dans la section activités sont affichées en flex pour aligner les éléments horizontalement. L'espace entre les éléments est réparti également. */
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .activites .card {
+        /* Les cartes dans la section activités ont une largeur et une hauteur définies. */
+        width: 20vw;
+        height: auto;
+    }
+
+    .activites-cards .card {
+        /* Les cartes dans la section activités sont affichées en bloc en ligne. Une marge en haut, un rayon de bordure et un débordement sont définis. */
+        display: inline-block;
+        margin-top: 33px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .activites-cards .card-content img {
+        /* Les images dans le contenu des cartes de la section activités ont une largeur, une hauteur et une hauteur minimale définies. */
+        width: 100%;
+        height: 37vh;
+        min-height: 250px;
+    }
+
+    .activites-cards .card-content {
+        /* Le contenu des cartes dans la section activités est affiché en flex pour aligner les éléments verticalement. L'espace entre les éléments est maximisé. La largeur est définie à 100%. */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .activites .card-txt {
+        /* Le texte dans les cartes de la section activités a une hauteur, une marge à gauche et un affichage définis. Les éléments sont alignés au centre verticalement. */
+        height: 3em;
+        margin-left: 1em;
+        display: flex;
+        align-items: center;
+    }
+
+
+
+
+
+/* ########## STYLES DU PIED DE PAGE ############# */
+
+    footer {
+        /* Le pied de page a une couleur de fond, un padding et un affichage définis. Les éléments sont alignés au début horizontalement. */
+        background-color: var(--main-bg-color);
+        padding: 35px 0;
+        display: flex;
+        justify-content: flex-start;
+        padding: 20px;
+    }
+
+    footer div {
+        /* Les divs dans le pied de page ont une marge définie. */
+        margin: 0 250px 0 0;
+    }
+
+
+
+
+
+/* ########## STYLES POUR LES GRANDS ÉCRANS ############# */
+
+    @media (min-width: 1440px) {
+        /* Ces styles s'appliquent lorsque la largeur de la fenêtre est d'au moins 1440px. */
+
+        .main-container {
+            /* Le conteneur principal a un padding défini. */
+            padding: 0 8em;
+        }
+
+        .hebergements {
+            /* La section hébergements a une largeur minimale définie. */
+            min-width: 65%;
+        }
+
+        .populaires {
+            /* La section populaires a une largeur minimale définie. */
+            min-width: 30%;
+        }
+
+        .activites .card {
+            /* Les cartes dans la section activités ont une largeur et une hauteur définies. */
+            width: 17em;
+            height: auto;
+        }
+
+        .activites .card-txt {
+            /* Le texte dans les cartes de la section activités a une hauteur, une marge à gauche et un affichage définis. Les éléments sont alignés au centre verticalement. */
+            height: 3em;
+            margin-left: 1em;
+            display: flex;
+            align-items: center;
+        }
+
+        .activites .card img {
+            /* Les images dans les cartes de la section activités ont une hauteur définie. */
+            height: 23em;
+        }
+    }
+
+
+
+
+
+/* ########## STYLES POUR LES ÉCRANS MOYENS ############# */
+
+    @media (max-width: 1024px) {
+        /* Ces styles s'appliquent lorsque la largeur de la fenêtre est au maximum de 1024px. */
+
+        body {
+            /* Le corps de la page a un padding à droite et à gauche définis. */
+            padding-right: 1%;
+            padding-left: 1%;
+        }
+
+        .search-section form {
+            /* Le formulaire dans la section de recherche a un padding en haut et en bas définis. */
+            padding: 35px 0;
+        }
+
+        .infobar {
+            /* La barre d'informations a un padding en bas défini à 0. */
+            padding-bottom: 0;
+        }
+
+        .filters-section .content-text {
+            /* Le texte de contenu dans la section des filtres a une largeur et une marge définies. */
+            width: 100%;
+            margin: 0 0 1em 0;
+        }
+
+        .filters-section {
+            /* La section des filtres est affichée en flex pour aligner les éléments horizontalement. Les éléments sont enveloppés si nécessaire. La largeur, l'espacement entre les éléments et la hauteur sont définis. */
+            display: flex;
+            flex-wrap: wrap;
+            width: 670px;
+            justify-content: space-between;
+            height: 90px;
+        }
+
+        .hebergements-and-populaires {
+            /* Les sections hébergements et populaires sont affichées en colonne. Un padding à droite est ajouté pour l'espacement. */
+            flex-direction: column;
+            padding-right: 3.5%;
+        }
+
+        .hebergements {
+            /* La section hébergements a une largeur définie à 100%. */
+            width: 100%;
+        }
+
+        .populaires {
+            /* La section populaires a une largeur définie à 100% et une marge en haut définie. */
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        .populaires .section-title {
+            /* Le titre de la section populaires a un padding en bas défini. */
+            padding-bottom: 20px;
+        }
+
+        .populaires-cards {
+            /* Les cartes dans la section populaires sont affichées en ligne. L'espace entre les éléments est maximisé. */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .populaires-cards a {
+            /* Les liens dans les cartes de la section populaires ont une largeur définie. */
+            width: 30%;
+        }
+
+        .populaires-cards .card-title {
+            /* Les titres dans les cartes de la section populaires ont une taille de police définie. */
+            font-size: 14px;
+        }
+
+        .populaires-cards .card-subtitle {
+            /* Les sous-titres dans les cartes de la section populaires ont une taille de police définie. */
+            font-size: 13px;
+        }
+
+        .activites .card {
+            /* Les cartes dans la section activités ont une hauteur et une hauteur minimale définies. */
+            height: 22vh;
+            min-height: 200px;
+        }
+
+        .activites .card img {
+            /* Les images dans les cartes de la section activités ont une hauteur et une hauteur minimale définies. */
+            height: 17vh;
+            min-height: 150px;
+        }
+
+        .activites .card-txt {
+            /* Le texte dans les cartes de la section activités a une hauteur, une hauteur minimale, une marge à gauche et un affichage définis. Les éléments sont alignés au centre verticalement. */
+            height: 5vh;
+            min-height: 50px;
+            margin-left: 1em;
+            display: flex;
+            align-items: center;
+        }
+
+        footer {
+            /* Le pied de page a un padding et un affichage définis. Les éléments sont répartis également. */
+            padding: 5px 125px 0 15px;
+            justify-content: space-between;
+        }
+
+        footer div {
+            /* Les divs dans le pied de page ont une marge définie à 0. */
+            margin: 0;
+        }
+    }
+
+
+
+
+
+/* ########## STYLES POUR LES PETITS ÉCRANS ############# */
+
+    @media (max-width: 767.98px) {
+        /* Ces styles s'appliquent lorsque la largeur de la fenêtre est au maximum de 767.98px. */
+        
+        body {
+            /* Le corps de la page a des variables CSS, une marge, un padding et une largeur définis. */
+            --search-button-mobile: inline;
+            --search-button-desktop: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        
+        .main-container {
+            /* Le conteneur principal a un padding, une marge, une largeur et un débordement en x définis. */
+            padding: 0 5vw;
+            margin: 0;
+            width: 100%;
+            overflow-x: hidden;
+        }
+        
+        header {
+            /* L'en-tête est affiché en flex pour aligner les éléments horizontalement. Les éléments sont enveloppés si nécessaire. La largeur et la marge sont définies. */
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 0 -5vw;
+        }
+        
+        .logo-booki {
+            /* Le logo Booki est affiché en flex pour aligner les éléments horizontalement. Les éléments sont centrés horizontalement. Un padding en haut et en bas est ajouté pour l'espacement. */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 2vh 0 1vh 0;
+        }
+        
+        header li::before {
+            /* Les éléments de liste dans l'en-tête ont un contenu, une position, une largeur, une hauteur, une couleur de fond, une position en haut, une position en bas, une opacité et une transition définis. */
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: var(--main-bg-color); /* Couleur de la barre lorsqu'elle n'est pas survolée */
+            top: auto;
+            bottom: -15px;
+            opacity: 1;
+            transition: background-color 0.3s ease; /* Transition pour changer la couleur de la barre */
+        }
+        
+        header li:hover::before {
+            /* Lorsqu'un élément de liste dans l'en-tête est survolé, la couleur de fond change. */
+            background-color: var(--main-color); /* Couleur de la barre lorsqu'elle est survolée */
+        }
+        
+        .hebergements-link::before {
+            /* Les liens d'hébergement ont une largeur et une position à gauche définies. */
+            width: 52vw;
+            left: -17vw;
+            /* ... vos autres styles ... */
+        }
+        
+        .hebergements-link a {
+            /* Les liens dans les liens d'hébergement ont une position et une position à droite définies. */
+            position: relative;
+            right: 4vw;
+        }
+        
+        .activites-link::before {
+            /* Les liens d'activités ont une largeur et une position à gauche définies. */
+            width: 52vw;
+            left: -8vw;
+            /* ... vos autres styles ... */
+        }
+        
+        .activites-link a {
+            /* Les liens dans les liens d'activités ont une position et une position à gauche définies. */
+            position: relative;
+            left: 7vw;
+        }
+        
+        .search-section {
+            /* La section de recherche a une marge et un padding définis. */
+            margin: 0;
+            padding: 0;
+        }
+        
+        .search-section .main-title {
+            /* Le titre principal dans la section de recherche a une marge définie. */
+            margin: 0;
+        }
+        
+        .search-section .main-subtitle {
+            /* Le sous-titre principal dans la section de recherche a une marge en haut et en bas définies. */
+            margin: 1vh 0 2vh 0;
+        }
+        
+        .infobar {
+            /* La barre d'informations a une marge en haut définie. */
+            margin-top: 5em;
+        }
+        
+        .filters-section {
+            /* La section des filtres a une largeur et un affichage définis. Les éléments sont enveloppés si nécessaire. */
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .filters-section button {
+            /* Les boutons dans la section des filtres ont un padding, une marge, une largeur et une hauteur définis. */
+            padding: 0.75em;
+            margin: 0.5em;
+            width: 40vw;
+            height: 50px;
+        }
+        
+        .filters-section i {
+            /* Les icônes dans la section des filtres ont une largeur et une marge définies. */
+            width: 22px;
+            margin: 5px 0 5px 5px;
+        }
+        
+        .filter-title {
+            /* Les titres de filtre ont une position, une position à gauche, une taille de police et un poids de police définis. */
+            position: relative;
+            left: 7%;
+            font-size: var(--article-subtitle-size);
+            font-weight: var(--article-title-weight);
+        }
+        
+        .hebergements-and-populaires {
+            /* Les sections hébergements et populaires ont une largeur, un affichage, une direction de flex, une justification du contenu, une marge et un padding définis. */
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .hebergements-and-populaires section {
+            /* Les sections dans les sections hébergements et populaires ont une marge en haut et en bas définies. */
+            margin: 1em 0;
+        }
+        
+        .hebergements {
+            /* La section hébergements a un ordre défini. */
+            order: 2;
+        }
+
+        .hebergements-cards-first-group {
+            /* Le premier groupe de cartes dans la section hébergements est affiché en colonne. La largeur est définie à 100%. */
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .hebergements-cards-last-group {
+            /* Le dernier groupe de cartes dans la section hébergements est affiché en colonne. La largeur est définie à 100%. */
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .populaires {
+            /* La section populaires a une largeur et un ordre définis. */
+            width: 100vw;
+            order: 1;
+        }
+
+        section.populaires {
+            /* La section populaires a une marge à gauche et un rayon de bordure définis. */
+            margin-left: -5vw;
+            border-radius: 0;
+        }
+
+        .populaires .section-title {
+            /* Le titre de la section populaires a un padding en haut et en bas définis. */
+            padding-top: 10px;
+            padding-bottom: 7px;
+        }
+
+        .populaires-title i {
+            /* Les icônes dans le titre de la section populaires ont un padding en bas défini. */
+            padding-bottom: 1.5em;
+        }
+
+        .populaires-cards {
+            /* Les cartes dans la section populaires sont affichées en colonne. La largeur est définie à 100%. */
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        section.hebergements {
+            /* La section hébergements a une couleur de fond, un padding en haut définis. */
+            background-color: #fff;
+            padding-top: 0;
+        }
+
+        .hebergements-cards .card {
+            /* Les cartes dans la section hébergements ont une marge en haut et une largeur définies. */
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        .populaires-cards .card {
+            /* Les cartes dans la section populaires ont une largeur et une marge définies. */
+            width: 330%;
+            margin: 7px 0;
+        }
+
+        .activites-cards {
+            /* Les cartes dans la section activités sont affichées en colonne. */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .activites .card {
+            /* Les cartes dans la section activités ont une largeur définie. */
+            width: 100%;
+        }
+
+        footer {
+            /* Le pied de page est affiché en colonne. La largeur, la marge à gauche et le padding à gauche sont définis. */
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            margin-left: -5vw;
+            padding-left: 2em;
+        }
+    }
