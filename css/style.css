@@ -585,6 +585,7 @@ u {
 }
 
 @media (max-width: 767.98px) {
+    /*git add . && git commit -m "Optimisations de spécificité CSS: suppression des IDs (trop lourds, remplacement par des classes) et suppression des classes sur des élements sémentiques - first commit"*/
 	body {
 		--search-button-mobile: inline;
 		--search-button-desktop: none;
