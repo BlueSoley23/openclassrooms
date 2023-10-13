@@ -5,7 +5,7 @@
 <h2>Maquette découpée</h2>
 <p>Vous pouvez consulter la maquette découpée de Booki dans le dossier images/maquettes.</p>
 
-<p>Le style d'écriture du code est très aéré et très commenté pour une bonne lisibilité et une maintenance facilitée. Les sélecteurs CSS sont optimisé en fonction de leur spécificité et regroupés dans l'ordre du DOM.</p>
+<p>Le style d'écriture du code est très aéré et très commenté pour une bonne lisibilité et une maintenance facilitée. Les sélecteurs CSS sont optimisés en fonction de leur spécificité et regroupés dans l'ordre du DOM.</p>
 
 <h2>Structure de la page</h2>
 
