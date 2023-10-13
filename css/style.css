@@ -171,16 +171,12 @@
 
 
 
-
-
 /* ####################### STYLES DES ICÔNES ####################### */
 
     .fa-solid {
         /* Les icônes (avec la classe .fa-solid) sont stylisées ici. La couleur est définie. */
         color: var(--main-color);
     }
-
-
 
 
 
@@ -237,8 +233,6 @@
         /* Lorsqu'un élément de liste est survolé, l'opacité du pseudo-élément ::before change pour créer un effet de soulignement. */
         opacity: 1;
     }
-
-
 
 
 
@@ -320,8 +314,6 @@
 
 
 
-
-
 /* ####################### STYLES DE LA SECTION DES FILTRES ####################### */
 
     .filters-section {
@@ -361,8 +353,6 @@
 
 
 
-
-
 /* ####################### STYLES DE LA BARRE D'INFORMATIONS ####################### */
 
     .infobar {
@@ -375,8 +365,6 @@
         /* Le sous-titre principal dans la barre d'informations a un padding à gauche pour l'espacement. */
         padding-left: 10px;
     }
-
-
 
 
 
@@ -406,8 +394,6 @@
         padding: 4px;
         height: 100%;
     }
-
-
 
 
 
@@ -479,8 +465,6 @@
 
 
 
-
-
 /* ####################### STYLES DE LA SECTION POPULAIRES ####################### */
 
     .populaires-title {
@@ -540,8 +524,6 @@
         /* Les évaluations dans les cartes de la section populaires ont une marge en bas définie. */
         margin-bottom: 5px;
     }
-
-
 
 
 
@@ -624,8 +606,6 @@
 
 
 
-
-
 /* ####################### STYLES DU PIED DE PAGE ####################### */
 
     footer {
@@ -645,7 +625,8 @@
 
 
 
-/* ####################### MEDIA QUERIES ( LARGE DESKTOP / TABLET / PHONE ) ####################### */
+/* ############################### MEDIA QUERIES ############################### */
+/* ####################### LARGE DESKTOP / TABLET / PHONE ####################### */
 
 
 
