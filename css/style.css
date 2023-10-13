@@ -45,10 +45,9 @@
     }
 
     .main-container {
-        /* Le conteneur principal est stylisé ici. La largeur maximale est définie et le padding est ajouté. */
+        /* Le conteneur principal est stylisé ici. La largeur maximale est définie. */
         width: 100%;
         max-width: 1440px;
-        padding: 0 1em;
     }
 
     a {
@@ -202,7 +201,8 @@
 /* ########## STYLES DE L'EN-TÊTE ############# */
 
     header {
-        /* L'en-tête est affiché en flex pour aligner les éléments horizontalement. L'espace entre les éléments est maximisé et ils sont alignés au centre verticalement. Une marge à gauche est ajoutée pour l'espacement. */
+        /* L'en-tête est affiché en flex pour aligner les éléments horizontalement. L'espace entre les éléments est maximisé et ils sont alignés */
+        /* au centre verticalement. Une marge à gauche est ajoutée pour l'espacement. */
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -221,7 +221,8 @@
     }
 
     header li {
-        /* Les éléments de liste dans l'en-tête ont une marge définie, une taille de police, un poids de police et une position relative pour le pseudo-élément ::before. */
+        /* Les éléments de liste dans l'en-tête ont une marge définie, une taille de police, un poids de police et une position relative pour */
+        /* le pseudo-élément ::before. */
         margin: 0 25px;
         font-size: var(--main-subtitle-size);
         font-weight: var(--main-subtitle-weight);
@@ -229,7 +230,8 @@
     }
 
     header li::before {
-        /* Le pseudo-élément ::before est utilisé pour créer un effet de soulignement lors du survol. Il est positionné absolument par rapport à l'élément de liste parent. */
+        /* Le pseudo-élément ::before est utilisé pour créer un effet de soulignement lors du survol. Il est positionné absolument par rapport à */
+        /* l'élément de liste parent. */
         content: "";
         position: absolute;
         width: 100%;
@@ -270,7 +272,8 @@
     }
 
     .search-section form {
-        /* Le formulaire dans la section de recherche est affiché en flex pour aligner les éléments horizontalement. Il a une largeur et une hauteur définies, un padding pour l'espacement, un rayon de bordure pour les coins arrondis et une couleur de fond. */
+        /* Le formulaire dans la section de recherche est affiché en flex pour aligner les éléments horizontalement. Il a une largeur et */
+        /* une hauteur définies, un padding pour l'espacement, un rayon de bordure pour les coins arrondis et une couleur de fond. */
         width: 100%;
         height: 49px;
         display: flex;
@@ -282,7 +285,8 @@
     }
 
     .search-section form i {
-        /* L'icône dans le formulaire est affichée en flex pour centrer le texte verticalement. Elle a une hauteur définie, un rayon de bordure pour les coins arrondis et une couleur de fond. */
+        /* L'icône dans le formulaire est affichée en flex pour centrer le texte verticalement. Elle a une hauteur définie, un rayon de bordure */
+        /*  pour les coins arrondis et une couleur de fond. */
         height: 49px;
         display: flex;
         align-items: center;
@@ -296,8 +300,10 @@
         border: none;
     }
 
+    /* Le bouton rechercher se change de texte en icône grace aux variables --search-button-desktop / --search-button--mobile (en les passant sur none ou inline) */ 
     button.desktop-search-button {
-        /* Le bouton de recherche pour les appareils de bureau a une couleur de texte, une couleur de fond, une bordure, un rayon de bordure, une largeur, une hauteur et un affichage définis. */
+        /* Le bouton de recherche pour les appareils de bureau a une couleur de texte, une couleur de fond, une bordure, un rayon de bordure, une largeur, */
+        /* une hauteur et un affichage définis. */
         color: var(--search-button-text-color);
         background-color: var(--main-color);
         border: none;
@@ -334,7 +340,8 @@
 /* ########## STYLES DE LA SECTION DES FILTRES ############# */
 
     .filters-section {
-        /* La section des filtres est affichée en flex pour aligner les éléments horizontalement. L'espace entre les éléments est maximisé. La largeur, la hauteur et la marge sont définies. */
+        /* La section des filtres est affichée en flex pour aligner les éléments horizontalement. L'espace entre les éléments est maximisé. La largeur, */
+        /*  la hauteur et la marge sont définies. */
         display: flex;
         justify-content: space-between;
         width: 758px;
@@ -348,7 +355,8 @@
     }
 
     .filters-section-button {
-        /* Le bouton dans la section des filtres a une couleur de fond, une bordure, un rayon de bordure, un affichage, un alignement des éléments et un padding définis. */
+        /* Le bouton dans la section des filtres a une couleur de fond, une bordure, un rayon de bordure, un affichage, un alignement des éléments */
+        /* et un padding définis. */
         background-color: #fff;
         border: solid 2px #d9d9d9;
         border-radius: 25px;
@@ -391,7 +399,8 @@
 /* ########## STYLES DES SECTIONS HÉBERGEMENTS ET POPULAIRES ############# */
 
     .hebergements-and-populaires {
-        /* Les sections hébergements et populaires sont affichées en flex pour aligner les éléments horizontalement. L'espace entre les éléments est maximisé et ils sont étirés pour prendre toute la hauteur disponible. Le débordement est visible. La largeur est définie à 100%. */
+        /* Les sections hébergements et populaires sont affichées en flex pour aligner les éléments horizontalement. L'espace entre les éléments est maximisé */
+        /* et ils sont étirés pour prendre toute la hauteur disponible. Le débordement est visible. La largeur est définie à 100%. */
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -428,14 +437,16 @@
 
     .hebergements-cards-first-group,
     .hebergements-cards-last-group {
-        /* Les premiers et derniers groupes de cartes dans la section hébergements sont affichés en flex pour aligner les éléments horizontalement. L'espace entre les éléments est maximisé. */
+        /* Les premiers et derniers groupes de cartes dans la section hébergements sont affichés en flex pour aligner les éléments horizontalement. */
+        /* L'espace entre les éléments est maximisé. */
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
     .hebergements-cards .card {
-        /* Les cartes dans la section hébergements sont affichées en flex pour aligner les éléments verticalement. La marge en haut, la largeur et la hauteur sont définies. */
+        /* Les cartes dans la section hébergements sont affichées en flex pour aligner les éléments verticalement. La marge en haut, */
+        /* la largeur et la hauteur sont définies. */
         display: flex;
         flex-direction: column;
         margin-top: 33px;
@@ -451,7 +462,8 @@
     }
 
     .hebergements-cards .card-content {
-        /* Le contenu des cartes dans la section hébergements est affiché en flex pour aligner les éléments verticalement. L'espace entre les éléments est maximisé. Un padding à gauche est ajouté pour l'espacement. */
+        /* Le contenu des cartes dans la section hébergements est affiché en flex pour aligner les éléments verticalement. */
+        /* L'espace entre les éléments est maximisé. Un padding à gauche est ajouté pour l'espacement. */
         padding-left: 0.5em;
         display: flex;
         flex-direction: column;
@@ -487,14 +499,16 @@
 /* ########## STYLES DE LA SECTION POPULAIRES ############# */
 
     .populaires-title {
-        /* Le titre de la section populaires est affiché en flex pour aligner les éléments horizontalement. L'espace entre les éléments est maximisé et ils sont alignés au centre verticalement. */
+        /* Le titre de la section populaires est affiché en flex pour aligner les éléments horizontalement. */
+        /* L'espace entre les éléments est maximisé et ils sont alignés au centre verticalement. */
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
     .populaires-cards {
-        /* Les cartes dans la section populaires sont affichées en flex pour aligner les éléments verticalement. L'espace entre les éléments est réparti également. La hauteur est définie à 100%. */
+        /* Les cartes dans la section populaires sont affichées en flex pour aligner les éléments verticalement. */
+        /*L'espace entre les éléments est réparti également. La hauteur est définie à 100%. */
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -517,7 +531,8 @@
     }
 
     .populaires-cards .card-content {
-        /* Le contenu des cartes dans la section populaires est affiché en flex pour aligner les éléments verticalement. L'espace entre les éléments est maximisé. La largeur et un padding à gauche sont définis. */
+        /* Le contenu des cartes dans la section populaires est affiché en flex pour aligner les éléments verticalement. */
+        /* L'espace entre les éléments est maximisé. La largeur et un padding à gauche sont définis. */
         width: 67%;
         padding-left: 15px;
         display: flex;
@@ -548,7 +563,8 @@
 /* ########## STYLES DE LA SECTION ACTIVITÉS ############# */
 
     .activites {
-        /* La section activités est affichée en flex pour aligner les éléments horizontalement. L'espace entre les éléments est maximisé et ils sont alignés au début verticalement. Une marge verticale est ajoutée pour l'espacement. */
+        /* La section activités est affichée en flex pour aligner les éléments horizontalement. L'espace entre les éléments est maximisé */
+        /* et ils sont alignés au début verticalement. Une marge verticale est ajoutée pour l'espacement. */
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -561,7 +577,8 @@
     }
 
     .activites {
-        /* La section activités est affichée en flex pour aligner les éléments verticalement. L'espace entre les éléments est centré. La largeur est définie à 100%. */
+        /* La section activités est affichée en flex pour aligner les éléments verticalement. L'espace entre les éléments est centré. */
+        /* La largeur est définie à 100%. */
         display: flex;
         justify-content: center;
         width: 100%;
@@ -575,7 +592,8 @@
     }
 
     .activites-cards {
-        /* Les cartes dans la section activités sont affichées en flex pour aligner les éléments horizontalement. L'espace entre les éléments est réparti également. */
+        /* Les cartes dans la section activités sont affichées en flex pour aligner les éléments horizontalement. */
+        /* L'espace entre les éléments est réparti également. */
         display: flex;
         justify-content: space-around;
     }
@@ -602,7 +620,8 @@
     }
 
     .activites-cards .card-content {
-        /* Le contenu des cartes dans la section activités est affiché en flex pour aligner les éléments verticalement. L'espace entre les éléments est maximisé. La largeur est définie à 100%. */
+        /* Le contenu des cartes dans la section activités est affiché en flex pour aligner les éléments verticalement. */
+        /* L'espace entre les éléments est maximisé. La largeur est définie à 100%. */
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -610,7 +629,8 @@
     }
 
     .activites .card-txt {
-        /* Le texte dans les cartes de la section activités a une hauteur, une marge à gauche et un affichage définis. Les éléments sont alignés au centre verticalement. */
+        /* Le texte dans les cartes de la section activités a une hauteur, une marge à gauche et un affichage définis. */
+        /* Les éléments sont alignés au centre verticalement. */
         height: 3em;
         margin-left: 1em;
         display: flex;
@@ -641,13 +661,14 @@
 
 
 
-/* ########## STYLES POUR LES GRANDS ÉCRANS ############# */
+/* ########## STYLES POUR LES ÉCRANS DE TYPE "LARGE DESKTOP" ############# */
 
     @media (min-width: 1440px) {
         /* Ces styles s'appliquent lorsque la largeur de la fenêtre est d'au moins 1440px. */
 
         .main-container {
-            /* Le conteneur principal a un padding défini. */
+            /* Le conteneur principal a un padding défini. Si l'écran est de type "large desktop", le contenu de la page sera centré avec des marges */
+            /* latérales pour une meilleure visibilité. */
             padding: 0 8em;
         }
 
@@ -668,7 +689,8 @@
         }
 
         .activites .card-txt {
-            /* Le texte dans les cartes de la section activités a une hauteur, une marge à gauche et un affichage définis. Les éléments sont alignés au centre verticalement. */
+            /* Le texte dans les cartes de la section activités a une hauteur, une marge à gauche et un affichage définis. */
+            /* Les éléments sont alignés au centre verticalement. */
             height: 3em;
             margin-left: 1em;
             display: flex;
@@ -685,7 +707,7 @@
 
 
 
-/* ########## STYLES POUR LES ÉCRANS MOYENS ############# */
+/* ########## STYLES POUR LES ÉCRANS DE TYPE "TABLET" ############# */
 
     @media (max-width: 1024px) {
         /* Ces styles s'appliquent lorsque la largeur de la fenêtre est au maximum de 1024px. */
@@ -713,7 +735,8 @@
         }
 
         .filters-section {
-            /* La section des filtres est affichée en flex pour aligner les éléments horizontalement. Les éléments sont enveloppés si nécessaire. La largeur, l'espacement entre les éléments et la hauteur sont définis. */
+            /* La section des filtres est affichée en flex pour aligner les éléments horizontalement. Les éléments reviennent à la ligne en cas */
+            /* de débordement. La largeur, l'espacement entre les éléments et la hauteur sont définis. */
             display: flex;
             flex-wrap: wrap;
             width: 670px;
@@ -778,7 +801,8 @@
         }
 
         .activites .card-txt {
-            /* Le texte dans les cartes de la section activités a une hauteur, une hauteur minimale, une marge à gauche et un affichage définis. Les éléments sont alignés au centre verticalement. */
+            /* Le texte dans les cartes de la section activités a une hauteur, une hauteur minimale, une marge à gauche et un affichage définis. */
+            /* Les éléments sont alignés au centre verticalement. */
             height: 5vh;
             min-height: 50px;
             margin-left: 1em;
@@ -802,7 +826,7 @@
 
 
 
-/* ########## STYLES POUR LES PETITS ÉCRANS ############# */
+/* ########## STYLES POUR LES ÉCRANS DE TYPE "PHONE" ############# */
 
     @media (max-width: 767.98px) {
         /* Ces styles s'appliquent lorsque la largeur de la fenêtre est au maximum de 767.98px. */
@@ -817,7 +841,7 @@
         }
         
         .main-container {
-            /* Le conteneur principal a un padding, une marge, une largeur et un débordement en x définis. */
+            /* Le conteneur principal a un padding, une marge, une largeur et un débordement horizontal définis. */
             padding: 0 5vw;
             margin: 0;
             width: 100%;
@@ -825,7 +849,8 @@
         }
         
         header {
-            /* L'en-tête est affiché en flex pour aligner les éléments horizontalement. Les éléments sont enveloppés si nécessaire. La largeur et la marge sont définies. */
+            /* L'en-tête est affiché en flex pour aligner les éléments horizontalement. Les éléments sont enveloppés si nécessaire. */
+            /* La largeur et la marge sont définies. */
             display: flex;
             flex-wrap: wrap;
             width: 100%;
@@ -833,15 +858,17 @@
         }
         
         .logo-booki {
-            /* Le logo Booki est affiché en flex pour aligner les éléments horizontalement. Les éléments sont centrés horizontalement. Un padding en haut et en bas est ajouté pour l'espacement. */
+            /* Le logo Booki est affiché en flex pour aligner les éléments horizontalement. Les éléments sont centrés horizontalement. */
+            /* Un padding en haut et en bas est ajouté pour l'espacement. */
             width: 100%;
             display: flex;
             justify-content: center;
-            padding: 2vh 0 1vh 0;
+            padding: 2vh 0 1vh 8vw;
         }
         
         header li::before {
-            /* Les éléments de liste dans l'en-tête ont un contenu, une position, une largeur, une hauteur, une couleur de fond, une position en haut, une position en bas, une opacité et une transition définis. */
+            /* Les éléments de liste dans l'en-tête ont un contenu, une position, une largeur, une hauteur, une couleur de fond, une position en haut, */
+            /* une position en bas, une opacité et une transition définis. */
             content: "";
             position: absolute;
             width: 100%;
@@ -862,7 +889,6 @@
             /* Les liens d'hébergement ont une largeur et une position à gauche définies. */
             width: 52vw;
             left: -17vw;
-            /* ... vos autres styles ... */
         }
         
         .hebergements-link a {
@@ -875,7 +901,6 @@
             /* Les liens d'activités ont une largeur et une position à gauche définies. */
             width: 52vw;
             left: -8vw;
-            /* ... vos autres styles ... */
         }
         
         .activites-link a {
@@ -935,7 +960,8 @@
         }
         
         .hebergements-and-populaires {
-            /* Les sections hébergements et populaires ont une largeur, un affichage, une direction de flex, une justification du contenu, une marge et un padding définis. */
+            /* Les sections hébergements et populaires ont une largeur, un affichage, une direction de flex, un centrage de l'élément flex, */
+            /* une marge et un padding définis. */
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -950,7 +976,7 @@
         }
         
         .hebergements {
-            /* La section hébergements a un ordre défini. */
+            /* La section hébergements a un ordre défini. Elle passe en-dessous de la section "populaires" en mode mobile. */
             order: 2;
         }
 
