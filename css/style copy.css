@@ -269,7 +269,7 @@ button.mobile-search-button img {
 	display: var(--search-button-mobile);
 }
 
-.searchbar {
+form input {
 	/* La barre de recherche a la bordure et le contour par défaut supprimés et un padding à gauche pour l'espacement. */
 	border: none;
 	outline: 0;

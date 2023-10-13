@@ -211,7 +211,7 @@
 
     header img {
         /* La largeur des images dans l'en-tête est définie à 60px. */
-        width: 60px;
+        width: 4em;
     }
 
     header ul {
@@ -266,20 +266,19 @@
     .search-section .fa-location-dot {
         /* L'icône de localisation dans la section de recherche a une couleur définie et un padding pour l'espacement. */
         color: var(--text-color);
-        width: 50px;
+        width: 3em;
         padding-left: 17px;
         padding-right: 17px;
     }
 
     .search-section form {
-        /* Le formulaire dans la section de recherche est affiché en flex pour aligner les éléments horizontalement. Il a une largeur et */
-        /* une hauteur définies, un padding pour l'espacement, un rayon de bordure pour les coins arrondis et une couleur de fond. */
+        /* Le formulaire dans la section de recherche est affiché en flex pour aligner les éléments horizontalement. Il a une largeur définie et */
+        /* un padding pour l'espacement, un rayon de bordure pour les coins arrondis et une couleur de fond. */
         width: 100%;
-        height: 49px;
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
-        padding: 50px 0;
+        padding: 15px 0;
         border-radius: 15px;
         background-color: #ffffff;
     }
@@ -287,7 +286,7 @@
     .search-section form i {
         /* L'icône dans le formulaire est affichée en flex pour centrer le texte verticalement. Elle a une hauteur définie, un rayon de bordure */
         /*  pour les coins arrondis et une couleur de fond. */
-        height: 49px;
+        height: 3em;
         display: flex;
         align-items: center;
         border-radius: 15px 0 0 15px;
@@ -296,7 +295,7 @@
 
     .search-section input {	
         /* L'input dans le formulaire a une largeur définie et la bordure par défaut est supprimée. */
-        width: 200px;
+        width: 11em;
         border: none;
     }
 
@@ -308,8 +307,8 @@
         background-color: var(--main-color);
         border: none;
         border-radius: 0 15px 15px 0;
-        width: 132px;
-        height: 49px;
+        width: 7em;
+        height: 2.75em;
         display: var(--search-button-desktop);
     }
 
@@ -321,12 +320,12 @@
 
     button.mobile-search-button img {
         /* L'image dans le bouton de recherche pour les appareils mobiles a une largeur et une hauteur définies et un affichage défini. */
-        width: 49px;
-        height: 49px;
+        width: 3.75em;
+        height: 3.75em;
         display: var(--search-button-mobile);
     }
 
-    .searchbar {
+    form input {
         /* La barre de recherche a la bordure et le contour par défaut supprimés et un padding à gauche pour l'espacement. */
         border: none;
         outline: 0;
@@ -340,12 +339,11 @@
 /* ########## STYLES DE LA SECTION DES FILTRES ############# */
 
     .filters-section {
-        /* La section des filtres est affichée en flex pour aligner les éléments horizontalement. L'espace entre les éléments est maximisé. La largeur, */
-        /*  la hauteur et la marge sont définies. */
+        /* La section des filtres est affichée en flex pour aligner les éléments horizontalement. L'espace entre les éléments est maximisé. La largeur */
+        /*  et la marge sont définies. */
         display: flex;
         justify-content: space-between;
-        width: 758px;
-        height: 50px;
+        width: 50em;
         margin: 20px 0;
     }
 
@@ -409,7 +407,8 @@
     }
 
     .hebergements-and-populaires section {
-        /* Les sections dans les sections hébergements et populaires ont une couleur de fond, un rayon de bordure, un padding et une marge définis. */
+        /* Les sections dans les sections hébergements et populaires ont une couleur de fond, un rayon de bordure, */
+        /* un padding et une marge définis en unités relatives pour que les sections s'adaptent a toutes les largeurs d'écran. */
         background-color: var(--main-bg-color);
         border-radius: 15px;
         padding: 1.5em;
@@ -568,7 +567,7 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        margin: 5vh 0;
+        margin: 60px 0;
     }
 
     .activites section {
@@ -646,7 +645,6 @@
     footer {
         /* Le pied de page a une couleur de fond, un padding et un affichage définis. Les éléments sont alignés au début horizontalement. */
         background-color: var(--main-bg-color);
-        padding: 35px 0;
         display: flex;
         justify-content: flex-start;
         padding: 20px;
@@ -654,7 +652,7 @@
 
     footer div {
         /* Les divs dans le pied de page ont une marge définie. */
-        margin: 0 250px 0 0;
+        margin-right: 250px;
     }
 
 
@@ -720,7 +718,7 @@
 
         .search-section form {
             /* Le formulaire dans la section de recherche a un padding en haut et en bas définis. */
-            padding: 35px 0;
+            padding: 20px 0;
         }
 
         .infobar {
@@ -849,8 +847,8 @@
         }
         
         header {
-            /* L'en-tête est affiché en flex pour aligner les éléments horizontalement. Les éléments sont enveloppés si nécessaire. */
-            /* La largeur et la marge sont définies. */
+            /* L'en-tête est affiché en flex pour aligner les éléments horizontalement. Les éléments passent à la ligne en cas de débordement */
+            /* (Logo et menu de navigation sur deux lignes). La largeur et la marge sont définies. */
             display: flex;
             flex-wrap: wrap;
             width: 100%;
@@ -858,8 +856,7 @@
         }
         
         .logo-booki {
-            /* Le logo Booki est affiché en flex pour aligner les éléments horizontalement. Les éléments sont centrés horizontalement. */
-            /* Un padding en haut et en bas est ajouté pour l'espacement. */
+            /* Le logo Booki est affiché en flex pour aligner l'élément horizontalement. L'élément est centré. */
             width: 100%;
             display: flex;
             justify-content: center;
@@ -910,13 +907,13 @@
         }
         
         .search-section {
-            /* La section de recherche a une marge et un padding définis. */
+            /* La section de recherche a une marge et un padding définis à 0. */
             margin: 0;
             padding: 0;
         }
         
         .search-section .main-title {
-            /* Le titre principal dans la section de recherche a une marge définie. */
+            /* Le titre principal dans la section de recherche a une marge définie à 0. */
             margin: 0;
         }
         
@@ -925,6 +922,11 @@
             margin: 1vh 0 2vh 0;
         }
         
+        .search-section form {
+            /* Le formulaire dans la section de recherche a un padding en haut et en bas définis. */
+            padding: 10px 0;
+        }
+
         .infobar {
             /* La barre d'informations a une marge en haut définie. */
             margin-top: 5em;
