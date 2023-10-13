@@ -854,56 +854,65 @@
             width: 100%;
             margin: 0 -5vw;
         }
+
         
+
+        /* Insérer ici le code pour changer l'apparence dynamique des élements du menu de navigation */
+        /* (trait et coloration bleue au survol / gris quand ils ne sont pas survolés) */
+
+        /* ##############################   CODE CSS GÉNÉRÉ PAR GPT-4   ################################## */
+
+            header ul {
+                /* Le conteneur de la liste est affiché en flex pour aligner les éléments horizontalement. */
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+            
+            header li {
+                /* Les éléments de liste dans l'en-tête ont une marge définie, une taille de police, un poids de police et une position relative pour */
+                /* le pseudo-élément ::before. */
+                margin: 0 25px;
+                font-size: var(--main-subtitle-size);
+                font-weight: var(--main-subtitle-weight);
+                position: relative;
+                width: 50%; /* Chaque élément de liste prend 50% de la largeur du conteneur ul */
+            }
+            
+            header li::before {
+                /* Le pseudo-élément ::before est utilisé pour créer un effet de soulignement lors du survol. Il est positionné absolument par rapport à */
+                /* l'élément de liste parent. */
+                content: "";
+                position: absolute;
+                width: 100%; /* La largeur est définie à 100% de la largeur de l'élément parent */
+                height: 2px;
+                background-color: var(--main-bg-color); /* Couleur de la barre lorsqu'elle n'est pas survolée */
+                top: calc(100% + 5px); /* Positionne la barre 5px en dessous de l'élément de liste */
+                opacity: 1;
+                transition: background-color 0.3s ease; /* Transition pour changer la couleur de la barre */
+            }
+            
+            header li:hover {
+                /* Lorsqu'un élément de liste est survolé, sa couleur change. */
+                color: var(--main-color);
+            }
+            
+            header li:hover::before {
+                /* Lorsqu'un élément de liste est survolé, la couleur du pseudo-élément ::before change pour créer un effet de soulignement. */
+                background-color: var(--main-color);
+            }
+
+        /* ##############################   CODE CSS GÉNÉRÉ PAR GPT-4   ################################## */
+
+
+
+
         .logo-booki {
             /* Le logo Booki est affiché en flex pour aligner l'élément horizontalement. L'élément est centré. */
             width: 100%;
             display: flex;
             justify-content: center;
             padding: 2vh 0 1vh 8vw;
-        }
-        
-        header li::before {
-            /* Les éléments de liste dans l'en-tête ont un contenu, une position, une largeur, une hauteur, une couleur de fond, une position en haut, */
-            /* une position en bas, une opacité et une transition définis. */
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            background-color: var(--main-bg-color); /* Couleur de la barre lorsqu'elle n'est pas survolée */
-            top: auto;
-            bottom: -15px;
-            opacity: 1;
-            transition: background-color 0.3s ease; /* Transition pour changer la couleur de la barre */
-        }
-        
-        header li:hover::before {
-            /* Lorsqu'un élément de liste dans l'en-tête est survolé, la couleur de fond change. */
-            background-color: var(--main-color); /* Couleur de la barre lorsqu'elle est survolée */
-        }
-        
-        .hebergements-link::before {
-            /* Les liens d'hébergement ont une largeur et une position à gauche définies. */
-            width: 52vw;
-            left: -17vw;
-        }
-        
-        .hebergements-link a {
-            /* Les liens dans les liens d'hébergement ont une position et une position à droite définies. */
-            position: relative;
-            right: 4vw;
-        }
-        
-        .activites-link::before {
-            /* Les liens d'activités ont une largeur et une position à gauche définies. */
-            width: 52vw;
-            left: -8vw;
-        }
-        
-        .activites-link a {
-            /* Les liens dans les liens d'activités ont une position et une position à gauche définies. */
-            position: relative;
-            left: 7vw;
         }
         
         .search-section {
