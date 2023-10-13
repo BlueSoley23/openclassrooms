@@ -683,7 +683,7 @@
                     /* Les images dans les cartes de la section activités ont une hauteur définie. */
                     height: 23em;
                 }
-            }
+        }
 
 
 
@@ -692,114 +692,134 @@
         @media (max-width: 1024px) {
             /* Ces styles s'appliquent lorsque la largeur de la fenêtre est au maximum de 1024px. */
 
-            body {
-                /* Le corps de la page a un padding à droite et à gauche définis. */
-                padding-right: 1%;
-                padding-left: 1%;
-            }
 
-            .search-section form {
-                /* Le formulaire dans la section de recherche a un padding en haut et en bas définis. */
-                padding: 20px 0;
-            }
 
-            .infobar {
-                /* La barre d'informations a un padding en bas défini à 0. */
-                padding-bottom: 0;
-            }
+            /* ####################### STYLES GLOBAUX ####################### */
 
-            .filters-section .content-text {
-                /* Le texte de contenu dans la section des filtres a une largeur et une marge définies. */
-                width: 100%;
-                margin: 0 0 1em 0;
-            }
+                body {
+                    /* Le corps de la page a un padding à droite et à gauche définis. */
+                    padding-right: 1%;
+                    padding-left: 1%;
+                }
 
-            .filters-section {
-                /* La section des filtres est affichée en flex pour aligner les éléments horizontalement. Les éléments reviennent à la ligne en cas */
-                /* de débordement. La largeur, l'espacement entre les éléments et la hauteur sont définis. */
-                display: flex;
-                flex-wrap: wrap;
-                width: 670px;
-                justify-content: space-between;
-                height: 90px;
-            }
 
-            .hebergements-and-populaires {
-                /* Les sections hébergements et populaires sont affichées en colonne. Un padding à droite est ajouté pour l'espacement. */
-                flex-direction: column;
-                padding-right: 3.5%;
-            }
 
-            .hebergements {
-                /* La section hébergements a une largeur définie à 100%. */
-                width: 100%;
-            }
+            /* ####################### STYLES DE LA PARTIE RECHERCHE (BARRE DE RECHERCHE, BARRE D'INFORMATION & BOUTONS DE FILTRES) ####################### */
 
-            .populaires {
-                /* La section populaires a une largeur définie à 100% et une marge en haut définie. */
-                width: 100%;
-                margin-top: 50px;
-            }
+                .search-section form {
+                    /* Le formulaire dans la section de recherche a un padding en haut et en bas définis. */
+                    padding: 20px 0;
+                }
 
-            .populaires .section-title {
-                /* Le titre de la section populaires a un padding en bas défini. */
-                padding-bottom: 20px;
-            }
+                .infobar {
+                    /* La barre d'informations a un padding en bas défini à 0. */
+                    padding-bottom: 0;
+                }
 
-            .populaires-cards {
-                /* Les cartes dans la section populaires sont affichées en ligne. L'espace entre les éléments est maximisé. */
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-            }
+                .filters-section .content-text {
+                    /* Le texte de contenu dans la section des filtres a une largeur et une marge définies. */
+                    width: 100%;
+                    margin: 0 0 1em 0;
+                }
 
-            .populaires-cards a {
-                /* Les liens dans les cartes de la section populaires ont une largeur définie. */
-                width: 30%;
-            }
+                .filters-section {
+                    /* La section des filtres est affichée en flex pour aligner les éléments horizontalement. Les éléments reviennent à la ligne en cas */
+                    /* de débordement. La largeur, l'espacement entre les éléments et la hauteur sont définis. */
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 670px;
+                    justify-content: space-between;
+                    height: 90px;
+                }
 
-            .populaires-cards .card-title {
-                /* Les titres dans les cartes de la section populaires ont une taille de police définie. */
-                font-size: 14px;
-            }
 
-            .populaires-cards .card-subtitle {
-                /* Les sous-titres dans les cartes de la section populaires ont une taille de police définie. */
-                font-size: 13px;
-            }
 
-            .activites .card {
-                /* Les cartes dans la section activités ont une hauteur et une hauteur minimale définies. */
-                height: 22vh;
-                min-height: 200px;
-            }
+            /* ####################### STYLES DE LA SECTION HÉBERGEMENTS & POPULAIRES ####################### */
 
-            .activites .card img {
-                /* Les images dans les cartes de la section activités ont une hauteur et une hauteur minimale définies. */
-                height: 17vh;
-                min-height: 150px;
-            }
+                    .hebergements-and-populaires {
+                        /* Les sections hébergements et populaires sont affichées en colonne. Un padding à droite est ajouté pour l'espacement. */
+                        flex-direction: column;
+                        padding-right: 3.5%;
+                    }
 
-            .activites .card-txt {
-                /* Le texte dans les cartes de la section activités a une hauteur, une hauteur minimale, une marge à gauche et un affichage définis. */
-                /* Les éléments sont alignés au centre verticalement. */
-                height: 5vh;
-                min-height: 50px;
-                margin-left: 1em;
-                display: flex;
-                align-items: center;
-            }
+                    .hebergements {
+                        /* La section hébergements a une largeur définie à 100%. */
+                        width: 100%;
+                    }
 
-            footer {
-                /* Le pied de page a un padding et un affichage définis. Les éléments sont répartis également. */
-                padding: 5px 125px 0 15px;
-                justify-content: space-between;
-            }
+                    .populaires {
+                        /* La section populaires a une largeur définie à 100% et une marge en haut définie. */
+                        width: 100%;
+                        margin-top: 50px;
+                    }
 
-            footer div {
-                /* Les divs dans le pied de page ont une marge définie à 0. */
-                margin: 0;
-            }
+                    .populaires .section-title {
+                        /* Le titre de la section populaires a un padding en bas défini. */
+                        padding-bottom: 20px;
+                    }
+
+                    .populaires-cards {
+                        /* Les cartes dans la section populaires sont affichées en ligne. L'espace entre les éléments est maximisé. */
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+
+                    .populaires-cards a {
+                        /* Les liens dans les cartes de la section populaires ont une largeur définie. */
+                        width: 30%;
+                    }
+
+                    .populaires-cards .card-title {
+                        /* Les titres dans les cartes de la section populaires ont une taille de police définie. */
+                        font-size: 14px;
+                    }
+
+                    .populaires-cards .card-subtitle {
+                        /* Les sous-titres dans les cartes de la section populaires ont une taille de police définie. */
+                        font-size: 13px;
+                    }
+
+
+
+            /* ####################### STYLES DE LA SECTION ACTIVITES ####################### */
+
+                .activites .card {
+                    /* Les cartes dans la section activités ont une hauteur et une hauteur minimale définies. */
+                    height: 22vh;
+                    min-height: 200px;
+                }
+
+                .activites .card img {
+                    /* Les images dans les cartes de la section activités ont une hauteur et une hauteur minimale définies. */
+                    height: 17vh;
+                    min-height: 150px;
+                }
+
+                .activites .card-txt {
+                    /* Le texte dans les cartes de la section activités a une hauteur, une hauteur minimale, une marge à gauche et un affichage définis. */
+                    /* Les éléments sont alignés au centre verticalement. */
+                    height: 5vh;
+                    min-height: 50px;
+                    margin-left: 1em;
+                    display: flex;
+                    align-items: center;
+                }
+
+
+
+            /* ####################### STYLES DU FOOTER ####################### */
+
+                footer {
+                    /* Le pied de page a un padding et un affichage définis. Les éléments sont répartis également. */
+                    padding: 5px 125px 0 15px;
+                    justify-content: space-between;
+                }
+
+                footer div {
+                    /* Les divs dans le pied de page ont une marge définie à 0. */
+                    margin: 0;
+                }
         }
 
 
@@ -810,8 +830,6 @@
         @media (max-width: 767.98px) {
         /* Ces styles s'appliquent lorsque la largeur de la fenêtre est au maximum de 767.98px. */
         
-
-
 
 
             /* ####################### STYLES GLOBAUX ####################### */
@@ -832,233 +850,252 @@
                     width: 100%;
                     overflow-x: hidden;
                 }
+
+
             
             /* ####################### STYLES DU HEADER (LOGO, MENU, TEXTE ET BARRE DE RECHERCHE AVEC FILTRES) ####################### */
-            
-            header {
-                /* L'en-tête est affiché en flex pour aligner les éléments horizontalement. Les éléments passent à la ligne en cas de débordement */
-                /* (Logo et menu de navigation sur deux lignes). La largeur et la marge sont définies. */
-                display: flex;
-                flex-wrap: wrap;
-                width: 100%;
-                margin: 0 -5vw;
-            }
+                
+                header {
+                    /* L'en-tête est affiché en flex pour aligner les éléments horizontalement. Les éléments passent à la ligne en cas de débordement */
+                    /* (Logo et menu de navigation sur deux lignes). La largeur et la marge sont définies. */
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    margin: 0 -5vw;
+                }
 
             
 
-            /* Insérer ici le code pour changer l'apparence dynamique des élements du menu de navigation */
+            /* Code pour changer l'apparence dynamique des élements du menu de navigation */
             /* (trait et coloration bleue au survol / gris quand ils ne sont pas survolés) */
 
-            /* ##############################   CODE CSS GÉNÉRÉ PAR GPT-4   ################################## */
+                /* ##############################   CODE CSS GÉNÉRÉ PAR GPT-4   ################################## */
 
-                header ul {
-                    /* Le conteneur de la liste est affiché en flex pour aligner les éléments horizontalement. */
+                    header ul {
+                        /* Le conteneur de la liste est affiché en flex pour aligner les éléments horizontalement. */
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                    }
+                    
+                    header li {
+                        /* Les éléments de liste dans l'en-tête ont une marge définie, une taille de police, un poids de police et une position relative pour */
+                        /* le pseudo-élément ::before. */
+                        margin: 0 25px;
+                        font-size: var(--main-subtitle-size);
+                        font-weight: var(--main-subtitle-weight);
+                        position: relative;
+                        width: 50%; /* Chaque élément de liste prend 50% de la largeur du conteneur ul */
+                    }
+                    
+                    header li::before {
+                        /* Le pseudo-élément ::before est utilisé pour créer un effet de soulignement lors du survol. Il est positionné absolument par rapport à */
+                        /* l'élément de liste parent. */
+                        content: "";
+                        position: absolute;
+                        width: 100%; /* La largeur est définie à 100% de la largeur de l'élément parent */
+                        height: 2px;
+                        background-color: var(--main-bg-color); /* Couleur de la barre lorsqu'elle n'est pas survolée */
+                        top: calc(100% + 5px); /* Positionne la barre 5px en dessous de l'élément de liste */
+                        opacity: 1;
+                        transition: background-color 0.3s ease; /* Transition pour changer la couleur de la barre */
+                    }
+                    
+                    header li:hover {
+                        /* Lorsqu'un élément de liste est survolé, sa couleur change. */
+                        color: var(--main-color);
+                    }
+                    
+                    header li:hover::before {
+                        /* Lorsqu'un élément de liste est survolé, la couleur du pseudo-élément ::before change pour créer un effet de soulignement. */
+                        background-color: var(--main-color);
+                    }
+
+                /* ##############################   CODE CSS GÉNÉRÉ PAR GPT-4   ################################## */
+
+
+
+            /* ####################### STYLES DU HEADER ####################### */
+
+                .logo-booki {
+                    /* Le logo Booki est affiché en flex pour aligner l'élément horizontalement. L'élément est centré. */
+                    width: 100%;
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: center;
+                    padding: 2vh 0 1vh 8vw;
+                }
+
+
+
+            /* ####################### STYLES DE PARTIE RECHERCHE (BARRE DE RECHERCHE, BARRE D'INFORMATION & BOUTONS DE FILTRES) ####################### */
+
+                .search-section {
+                    /* La section de recherche a une marge et un padding définis à 0. */
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                .search-section .main-title {
+                    /* Le titre principal dans la section de recherche a une marge définie à 0. */
+                    margin: 0;
+                }
+                
+                .search-section .main-subtitle {
+                    /* Le sous-titre principal dans la section de recherche a une marge en haut et en bas définies. */
+                    margin: 1vh 0 2vh 0;
+                }
+                
+                .search-section form {
+                    /* Le formulaire dans la section de recherche a un padding en haut et en bas définis. */
+                    padding: 10px 0;
+                }
+
+                .infobar {
+                    /* La barre d'informations a une marge en haut définie. */
+                    margin-top: 5em;
+                }
+                
+                .filters-section {
+                    /* La section des filtres a une largeur et un affichage définis. Les éléments sont enveloppés si nécessaire. */
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                
+                .filters-section button {
+                    /* Les boutons dans la section des filtres ont un padding, une marge, une largeur et une hauteur définis. */
+                    padding: 0.75em;
+                    margin: 0.5em;
+                    width: 40vw;
+                    height: 50px;
+                }
+                
+                .filters-section i {
+                    /* Les icônes dans la section des filtres ont une largeur et une marge définies. */
+                    width: 22px;
+                    margin: 5px 0 5px 5px;
+                }
+                
+                .filter-title {
+                    /* Les titres de filtre ont une position, une position à gauche, une taille de police et un poids de police définis. */
+                    position: relative;
+                    left: 7%;
+                    font-size: var(--article-subtitle-size);
+                    font-weight: var(--article-title-weight);
+                }
+            
+
+
+            /* ####################### STYLES DE LA SECTION HÉBERGEMENTS & POPULAIRES ####################### */
+
+                .hebergements-and-populaires {
+                    /* Les sections hébergements et populaires ont une largeur, un affichage, une direction de flex, un centrage de l'élément flex, */
+                    /* une marge et un padding définis. */
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                .hebergements-and-populaires section {
+                    /* Les sections dans les sections hébergements et populaires ont une marge en haut et en bas définies. */
+                    margin: 1em 0;
+                }
+                
+                .hebergements {
+                    /* La section hébergements a un ordre défini. Elle passe en-dessous de la section "populaires" en mode mobile. */
+                    order: 2;
+                }
+
+                .hebergements-cards-first-group {
+                    /* Le premier groupe de cartes dans la section hébergements est affiché en colonne. La largeur est définie à 100%. */
+                    display: flex;
+                    flex-direction: column;
                     width: 100%;
                 }
-                
-                header li {
-                    /* Les éléments de liste dans l'en-tête ont une marge définie, une taille de police, un poids de police et une position relative pour */
-                    /* le pseudo-élément ::before. */
-                    margin: 0 25px;
-                    font-size: var(--main-subtitle-size);
-                    font-weight: var(--main-subtitle-weight);
-                    position: relative;
-                    width: 50%; /* Chaque élément de liste prend 50% de la largeur du conteneur ul */
-                }
-                
-                header li::before {
-                    /* Le pseudo-élément ::before est utilisé pour créer un effet de soulignement lors du survol. Il est positionné absolument par rapport à */
-                    /* l'élément de liste parent. */
-                    content: "";
-                    position: absolute;
-                    width: 100%; /* La largeur est définie à 100% de la largeur de l'élément parent */
-                    height: 2px;
-                    background-color: var(--main-bg-color); /* Couleur de la barre lorsqu'elle n'est pas survolée */
-                    top: calc(100% + 5px); /* Positionne la barre 5px en dessous de l'élément de liste */
-                    opacity: 1;
-                    transition: background-color 0.3s ease; /* Transition pour changer la couleur de la barre */
-                }
-                
-                header li:hover {
-                    /* Lorsqu'un élément de liste est survolé, sa couleur change. */
-                    color: var(--main-color);
-                }
-                
-                header li:hover::before {
-                    /* Lorsqu'un élément de liste est survolé, la couleur du pseudo-élément ::before change pour créer un effet de soulignement. */
-                    background-color: var(--main-color);
+
+                .hebergements-cards-last-group {
+                    /* Le dernier groupe de cartes dans la section hébergements est affiché en colonne. La largeur est définie à 100%. */
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
                 }
 
-            /* ##############################   CODE CSS GÉNÉRÉ PAR GPT-4   ################################## */
+                .populaires {
+                    /* La section populaires a une largeur et un ordre définis. */
+                    width: 100vw;
+                    order: 1;
+                }
+
+                section.populaires {
+                    /* La section populaires a une marge à gauche et un rayon de bordure définis. */
+                    margin-left: -5vw;
+                    border-radius: 0;
+                }
+
+                .populaires .section-title {
+                    /* Le titre de la section populaires a un padding en haut et en bas définis. */
+                    padding-top: 10px;
+                    padding-bottom: 7px;
+                }
+
+                .populaires-title i {
+                    /* Les icônes dans le titre de la section populaires ont un padding en bas défini. */
+                    padding-bottom: 1.5em;
+                }
+
+                .populaires-cards {
+                    /* Les cartes dans la section populaires sont affichées en colonne. La largeur est définie à 100%. */
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                }
+
+                section.hebergements {
+                    /* La section hébergements a une couleur de fond, un padding en haut définis. */
+                    background-color: #fff;
+                    padding-top: 0;
+                }
+
+                .hebergements-cards .card {
+                    /* Les cartes dans la section hébergements ont une marge en haut et une largeur définies. */
+                    margin-top: 15px;
+                    width: 100%;
+                }
+
+                .populaires-cards .card {
+                    /* Les cartes dans la section populaires ont une largeur et une marge définies. */
+                    width: 330%;
+                    margin: 7px 0;
+                }
 
 
 
+            /* ####################### STYLES DE LA SECTION ACTIVITÉS ####################### */
+                
+                .activites-cards {
+                    /* Les cartes dans la section activités sont affichées en colonne. */
+                    display: flex;
+                    flex-direction: column;
+                }
 
-            .logo-booki {
-                /* Le logo Booki est affiché en flex pour aligner l'élément horizontalement. L'élément est centré. */
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                padding: 2vh 0 1vh 8vw;
-            }
-            
-            .search-section {
-                /* La section de recherche a une marge et un padding définis à 0. */
-                margin: 0;
-                padding: 0;
-            }
-            
-            .search-section .main-title {
-                /* Le titre principal dans la section de recherche a une marge définie à 0. */
-                margin: 0;
-            }
-            
-            .search-section .main-subtitle {
-                /* Le sous-titre principal dans la section de recherche a une marge en haut et en bas définies. */
-                margin: 1vh 0 2vh 0;
-            }
-            
-            .search-section form {
-                /* Le formulaire dans la section de recherche a un padding en haut et en bas définis. */
-                padding: 10px 0;
-            }
+                .activites .card {
+                    /* Les cartes dans la section activités ont une largeur définie. */
+                    width: 100%;
+                }
 
-            .infobar {
-                /* La barre d'informations a une marge en haut définie. */
-                margin-top: 5em;
-            }
-            
-            .filters-section {
-                /* La section des filtres a une largeur et un affichage définis. Les éléments sont enveloppés si nécessaire. */
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap;
-            }
-            
-            .filters-section button {
-                /* Les boutons dans la section des filtres ont un padding, une marge, une largeur et une hauteur définis. */
-                padding: 0.75em;
-                margin: 0.5em;
-                width: 40vw;
-                height: 50px;
-            }
-            
-            .filters-section i {
-                /* Les icônes dans la section des filtres ont une largeur et une marge définies. */
-                width: 22px;
-                margin: 5px 0 5px 5px;
-            }
-            
-            .filter-title {
-                /* Les titres de filtre ont une position, une position à gauche, une taille de police et un poids de police définis. */
-                position: relative;
-                left: 7%;
-                font-size: var(--article-subtitle-size);
-                font-weight: var(--article-title-weight);
-            }
-            
-            .hebergements-and-populaires {
-                /* Les sections hébergements et populaires ont une largeur, un affichage, une direction de flex, un centrage de l'élément flex, */
-                /* une marge et un padding définis. */
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                margin: 0;
-                padding: 0;
-            }
-            
-            .hebergements-and-populaires section {
-                /* Les sections dans les sections hébergements et populaires ont une marge en haut et en bas définies. */
-                margin: 1em 0;
-            }
-            
-            .hebergements {
-                /* La section hébergements a un ordre défini. Elle passe en-dessous de la section "populaires" en mode mobile. */
-                order: 2;
-            }
 
-            .hebergements-cards-first-group {
-                /* Le premier groupe de cartes dans la section hébergements est affiché en colonne. La largeur est définie à 100%. */
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-            }
 
-            .hebergements-cards-last-group {
-                /* Le dernier groupe de cartes dans la section hébergements est affiché en colonne. La largeur est définie à 100%. */
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-            }
+            /* ####################### STYLES DU FOOTER ####################### */
 
-            .populaires {
-                /* La section populaires a une largeur et un ordre définis. */
-                width: 100vw;
-                order: 1;
-            }
-
-            section.populaires {
-                /* La section populaires a une marge à gauche et un rayon de bordure définis. */
-                margin-left: -5vw;
-                border-radius: 0;
-            }
-
-            .populaires .section-title {
-                /* Le titre de la section populaires a un padding en haut et en bas définis. */
-                padding-top: 10px;
-                padding-bottom: 7px;
-            }
-
-            .populaires-title i {
-                /* Les icônes dans le titre de la section populaires ont un padding en bas défini. */
-                padding-bottom: 1.5em;
-            }
-
-            .populaires-cards {
-                /* Les cartes dans la section populaires sont affichées en colonne. La largeur est définie à 100%. */
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-            }
-
-            section.hebergements {
-                /* La section hébergements a une couleur de fond, un padding en haut définis. */
-                background-color: #fff;
-                padding-top: 0;
-            }
-
-            .hebergements-cards .card {
-                /* Les cartes dans la section hébergements ont une marge en haut et une largeur définies. */
-                margin-top: 15px;
-                width: 100%;
-            }
-
-            .populaires-cards .card {
-                /* Les cartes dans la section populaires ont une largeur et une marge définies. */
-                width: 330%;
-                margin: 7px 0;
-            }
-
-            .activites-cards {
-                /* Les cartes dans la section activités sont affichées en colonne. */
-                display: flex;
-                flex-direction: column;
-            }
-
-            .activites .card {
-                /* Les cartes dans la section activités ont une largeur définie. */
-                width: 100%;
-            }
-
-            footer {
-                /* Le pied de page est affiché en colonne. La largeur, la marge à gauche et le padding à gauche sont définis. */
-                display: flex;
-                flex-direction: column;
-                width: 100vw;
-                margin-left: -5vw;
-                padding-left: 2em;
-            }
+                footer {
+                    /* Le pied de page est affiché en colonne. La largeur, la marge à gauche et le padding à gauche sont définis. */
+                    display: flex;
+                    flex-direction: column;
+                    width: 100vw;
+                    margin-left: -5vw;
+                    padding-left: 2em;
+                }
         }
