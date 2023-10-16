@@ -901,7 +901,7 @@
                     padding: 0;
                 }
 
-                .nav-ul {
+                nav ul {
                     /* La largeur de l'ensemble des éléments du menu de navigation est définie à 100% de la largeur 
                        de la fenêtre (100vw), et aucune marge ou padding n'est appliquée. */
                     width: 100vw;
@@ -909,7 +909,7 @@
                     padding: 0;
                 }      
 
-                .nav-li {
+                nav li {
                     /* La largeur des éléments est définie à 50% de la largeur de l'élément parent, et aucune marge 
                        ou padding n'est appliquée. */
                     width: 50%;
@@ -917,7 +917,7 @@
                     padding: 0;
                 }
 
-                .nav-li::before {
+                nav li::before {
                     /* Un contenu vide est inséré, la largeur est définie à 50% de la largeur de la fenêtre (50vw), 
                        et une couleur est appliquée afin de créer la barre dynamique en-dessous des éléments du menu,
                        au survol. Le pseudo-élément est positionné à 4vh du haut et à 7vw de la droite de l'élément parent.
@@ -930,12 +930,12 @@
                     opacity: 1;
                 }
 
-                .nav-li:hover::before {
+                nav li:hover::before {
                     /* On cible l'élément du menu lorsqu'il est survolé. La couleur est modifiée. */
                     background-color: var(--main-color);
                 }
 
-                .nav-a {
+                nav a {
                     /* Le titre de l'élément du menu est affiché en flex pour aligner les éléments enfants horizontalement,
                        et est positionné absolument à 5vw de la gauche de l'élément parent. */
                     display: flex;
