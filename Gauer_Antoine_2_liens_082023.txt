@@ -1,4 +1,4 @@
-Projet 2 : Créez la page d'accueil d'une agence de voyage avec HTML & CSS - Projet Booki - Gauer Antoine :
+Projet 2 : Créez la page d'accueil d'une agence de voyage avec HTML 5 & CSS 3 - Projet Booki - Gauer Antoine :
 
 
 -> Dépot GitHub : https://github.com/BlueSoley23/OC_P2_HTML-CSS_Booki.git
