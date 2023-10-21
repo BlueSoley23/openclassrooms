@@ -5,7 +5,8 @@
             /* ########################################################################################################################### */      
             /* ############### Voici le "design system". C'est un ensemble de variables definissant les valeurs des styles. ############## */        
             /* ########################################################################################################################### */                
-            /* ########################################################################################################################### */                
+            /* ########################################################################################################################### */ 
+            /***/                                                                                                                       /***/               
             /***/    /* ####################### DÉFINITION DES VARIABLES CSS ####################### */                                 /***/
             /***/                                                                                                                       /***/
             /***/    :root {                                                                                                            /***/
@@ -259,7 +260,7 @@
             /***/                                                                                                                       /***/
             /***/        header li:hover::before {                                                                                      /***/
             /***/            /* Lorsqu'un élément de liste est survolé, l'opacité du pseudo-élément ::before change pour créer un effet /***/ 
-            /***/               de soulignement. */                                                                                     /***/
+            /***/            /* de soulignement. */                                                                                     /***/
             /***/            opacity: 1;                                                                                                /***/
             /***/        }                                                                                                              /***/
             /***/                                                                                                                       /***/       
@@ -315,35 +316,50 @@
         border: none;
     }
 
-    /* Le bouton rechercher se change de texte en icône grace aux variables 
-       --search-button-desktop / --search-button--mobile (en les passant sur none ou inline) */ 
-    button.desktop-search-button {
-        /* Le bouton de recherche pour les appareils de bureau a une couleur de texte, une couleur de fond, une bordure,
-           un rayon de bordure, une largeur, une hauteur définie et un affichage avec pour valeur la variable qui permet
-           de passer au bouton de recherche pour bureaux. */
-        color: var(--search-button-text-color);
-        background-color: var(--main-color);
-        border: none;
-        border-radius: 0 15px 15px 0;
-        width: 7em;
-        height: 2.75em;
-        display: var(--search-button-desktop);
-    }
 
-    button.mobile-search-button {
-        /* Le bouton de recherche pour les appareils mobiles a une couleur de fond définie et la bordure par défaut 
-           est supprimée. */
-        background-color: #fff;
-        border: none;
-    }
 
-    button.mobile-search-button img {
-        /* L'image dans le bouton de recherche pour les appareils mobiles a une largeur et une hauteur définies et
-           un affichage défini avec pour valeur la variable qui permet de passer au bouton de recherche pour mobiles. */
-        width: 3.75em;
-        height: 3.75em;
-        display: var(--search-button-mobile);
-    }
+            /* ########################################################################################################################### */
+            /* ########################################################################################################################### */      
+            /* ########################################################   #MARK   ######################################################## */
+            /* ########################################################################################################################### */      
+            /* ############### Voici le "design system". C'est un ensemble de variables definissant les valeurs des styles. ############## */        
+            /* ########################################################################################################################### */                
+            /* ########################################################################################################################### */ 
+            /***/                                                                                                                       /***/ 
+            /***/    /* Le bouton rechercher se change de texte en icône grace aux variables 
+            /***/       --search-button-desktop / --search-button--mobile (en les passant sur none ou inline) */ 
+            /***/    button.desktop-search-button {
+            /***/        /* Le bouton de recherche pour les appareils de bureau a une couleur de texte, une couleur de fond, une bordure,
+            /***/           un rayon de bordure, une largeur, une hauteur définie et un affichage avec pour valeur la variable qui permet
+            /***/           de passer au bouton de recherche pour bureaux. */
+            /***/        color: var(--search-button-text-color);
+            /***/        background-color: var(--main-color);
+            /***/        border: none;
+            /***/        border-radius: 0 15px 15px 0;
+            /***/        width: 7em;
+            /***/        height: 2.75em;
+            /***/        display: var(--search-button-desktop);
+            /***/    }
+            /***/
+            /***/    button.mobile-search-button {
+            /***/        /* Le bouton de recherche pour les appareils mobiles a une couleur de fond définie et la bordure par défaut 
+            /***/           est supprimée. */
+            /***/        background-color: #fff;
+            /***/        border: none;
+            /***/    }
+            /***/
+            /***/    button.mobile-search-button img {
+            /***/        /* L'image dans le bouton de recherche pour les appareils mobiles a une largeur et une hauteur définies et
+            /***/           un affichage défini avec pour valeur la variable qui permet de passer au bouton de recherche pour mobiles. */
+            /***/        width: 3.75em;
+            /***/        height: 3.75em;
+            /***/        display: var(--search-button-mobile);
+            /***/    }
+            /***/
+            /***/
+
+
+
 
     form input {
         /* La barre de recherche a la bordure et le contour par défaut supprimés et un padding à gauche pour l'espacement. */
