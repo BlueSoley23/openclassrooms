@@ -72,7 +72,7 @@
         /* La décoration de soulignement est supprimée pour les éléments <u>. */
         text-decoration: none;
     }
-
+    
 
 
 /* ####################### STYLES DES TITRES ####################### */
@@ -88,24 +88,41 @@
 
 /* ####################### STYLES DES CARTES ####################### */
 
-    .card {
-        /* Les cartes sont stylisées ici. La couleur de fond, le rayon de la bordure et le filtre d'ombre sont définis. */
-        background-color: #fff;
-        border-radius: 20px;
-        filter: drop-shadow(0 3px 15px rgba(0, 0, 0, 0.1));
-    }
 
-    .card img {
-        /* Les images dans les cartes sont stylisées ici. Un object-fit sur cover permet que l'image recouvre 
-           tout l'espace qui lui est alloué. */
-        object-fit: cover;
-    }
 
-    .card-title {
-        /* Les titres dans les cartes sont stylisés ici. La taille de la police et le poids de la police sont définis. */
-        font-size: var(--article-title-size);
-        font-weight: var(--article-title-weight);
-    }
+
+/* ########################################################################################################################### */
+/* ########################################################################################################################### */      
+/* ########################################################   #MARK   ######################################################## */
+/* ########################################################################################################################### */      
+/* ###### Ici, nous stylisons les cartes. La couleur de fond, le rayon de la bordure et le filtre d'ombre sont définis. ###### */
+/* ########################################################################################################################### */                
+/* ########################################################################################################################### */ 
+/***/                                                                                                                       /***/ 
+/***/    /* Les cartes sont stylisées ici. La couleur de fond, le rayon de la bordure et le filtre d'ombre sont définis.    /***/
+/***/    .card {                                                                                                            /***/
+/***/        background-color: #fff;                                                                                        /***/
+/***/        border-radius: 20px;                                                                                           /***/
+/***/        filter: drop-shadow(0 3px 15px rgba(0, 0, 0, 0.1));                                                          /***/
+/***/    }                                                                                                                  /***/
+/***/                                                                                                                       /***/
+/***/    /* Les images dans les cartes sont stylisées ici. Un object-fit sur cover permet que l'image recouvre              /***/
+/***/    /* tout l'espace qui lui est alloué. */                                                                            /***/
+/***/    .card img {                                                                                                        /***/
+/***/        object-fit: cover;                                                                                             /***/
+/***/    }                                                                                                                  /***/
+/***/                                                                                                                       /***/
+/***/    /* Les titres dans les cartes sont stylisés ici. La taille de la police et le poids de la police sont définis.     /***/
+/***/    .card-title {                                                                                                      /***/
+/***/        font-size: var(--article-title-size);                                                                          /***/
+/***/        font-weight: var(--article-title-weight);                                                                      /***/
+/***/    }                                                                                                                  /***/
+/***/                                                                                                                       /***/
+/* ########################################################################################################################### */                
+/* ########################################################################################################################### */                
+/* ########################################################################################################################### */ 
+
+
 
     .euro {
         /* Les éléments avec la classe .euro sont stylisés ici. Le poids de la police est défini. */
@@ -268,9 +285,9 @@
             /* ########################################################################################################################### */                
             /* ########################################################################################################################### */     
 
-
     
 
+            
 
 
 /* ####################### STYLES DE LA SECTION DE RECHERCHE ####################### */
@@ -322,41 +339,48 @@
             /* ########################################################################################################################### */      
             /* ########################################################   #MARK   ######################################################## */
             /* ########################################################################################################################### */      
-            /* ############### Voici le "design system". C'est un ensemble de variables definissant les valeurs des styles. ############## */        
+            /* ########## Ici, le changement du bouton de recherche, d'un bouton avec un titre "rechercher" à un bouton avec une ######### */
+            /* #################  icône rechercher, se fait grâce à des variables comme valeurs de la propriété display. ################# */        
             /* ########################################################################################################################### */                
             /* ########################################################################################################################### */ 
             /***/                                                                                                                       /***/ 
-            /***/    /* Le bouton rechercher se change de texte en icône grace aux variables 
-            /***/       --search-button-desktop / --search-button--mobile (en les passant sur none ou inline) */ 
-            /***/    button.desktop-search-button {
-            /***/        /* Le bouton de recherche pour les appareils de bureau a une couleur de texte, une couleur de fond, une bordure,
-            /***/           un rayon de bordure, une largeur, une hauteur définie et un affichage avec pour valeur la variable qui permet
-            /***/           de passer au bouton de recherche pour bureaux. */
-            /***/        color: var(--search-button-text-color);
-            /***/        background-color: var(--main-color);
-            /***/        border: none;
-            /***/        border-radius: 0 15px 15px 0;
-            /***/        width: 7em;
-            /***/        height: 2.75em;
-            /***/        display: var(--search-button-desktop);
-            /***/    }
-            /***/
-            /***/    button.mobile-search-button {
-            /***/        /* Le bouton de recherche pour les appareils mobiles a une couleur de fond définie et la bordure par défaut 
-            /***/           est supprimée. */
-            /***/        background-color: #fff;
-            /***/        border: none;
-            /***/    }
-            /***/
-            /***/    button.mobile-search-button img {
-            /***/        /* L'image dans le bouton de recherche pour les appareils mobiles a une largeur et une hauteur définies et
-            /***/           un affichage défini avec pour valeur la variable qui permet de passer au bouton de recherche pour mobiles. */
-            /***/        width: 3.75em;
-            /***/        height: 3.75em;
-            /***/        display: var(--search-button-mobile);
-            /***/    }
-            /***/
-            /***/
+            /***/    /* Le bouton rechercher se change de texte en icône grace aux variables                                            /***/
+            /***/    /* --search-button-desktop / --search-button--mobile (en les passant sur none ou inline)                           /***/
+            /***/    button.desktop-search-button {                                                                                     /***/
+            /***/        /* Le bouton de recherche pour les appareils de bureau a une couleur de texte, une couleur de fond, une bordure, */
+            /***/        /* un rayon de bordure, une largeur, une hauteur définie et un affichage avec pour valeur la variable qui permet */
+            /***/        /* de passer au bouton de recherche pour bureaux. */                                                           /***/
+            /***/        color: var(--search-button-text-color);                                                                        /***/
+            /***/        background-color: var(--main-color);                                                                           /***/
+            /***/     #MARK   border: none;                                                                                                  /***/
+            /***/        border-radius: 0 15px 15px 0;                                                                                  /***/
+            /***/        width: 7em;                                                                                                    /***/
+            /***/        height: 2.75em;                                                                                                /***/
+            /***/        display: var(--search-button-desktop);                                                                         /***/
+            /***/    }                                                                                                                  /***/
+            /***/                                                                                                                       /***/
+            /***/    button.mobile-search-button {                                                                                      /***/
+            /***/        /* Le bouton de recherche pour les appareils mobiles a une couleur de fond définie et la bordure par défaut    /***/
+            /***/           est supprimée. */                                                                                           /***/
+            /***/        background-color: #fff;                                                                                        /***/
+            /***/        border: none;                                                                                                  /***/
+            /***/    }                                                                                                                  /***/
+            /***/                                                                                                                       /***/
+            /***/    button.mobile-search-button img {                                                                                  /***/
+            /***/        /* L'image dans le bouton de recherche pour les appareils mobiles a une largeur et une hauteur définies et     /***/
+            /***/        /* un affichage défini avec pour valeur la variable qui permet de passer au bouton de recherche pour mobiles.  /***/
+            /***/        width: 3.75em;                                                                                                 /***/
+            /***/        height: 3.75em;                                                                                                /***/
+            /***/        display: var(--search-button-mobile);                                                                          /***/
+            /***/    }                                                                                                                  /***/
+            /***/                                                                                                                       /***/
+            /***/                                                                                                                       /***/
+            /***/                                                                                                                       /***/
+            /* ########################################################################################################################### */                
+            /* ########################################################################################################################### */                
+            /* ########################################################################################################################### */   
+
+
 
 
 
