@@ -1,5 +1,5 @@
 // Récupération et affichage des oeuvres
-async function getAndPrintWorks(params) {
+export async function getAndPrintWorks() {
     try {
         // Récupération de l'élément du DOM qui contiendra les oeuvres
         const gallery = document.querySelector('.gallery');
@@ -31,4 +31,3 @@ async function getAndPrintWorks(params) {
         }
 }
 
-export default getAndPrintWorks;
