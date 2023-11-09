@@ -10,7 +10,20 @@
         import { printWorks } from './components/gallery.js';
         
 
-
     // Recupération et affichage des oeuvres avec l'appel des fonctions getWorks et printWorks
         getWorks().then(works => printWorks(works));
         
+
+
+//Affichage des boutons de catégories sur la page d'accueil
+
+    // Importation de la fonction getCategories déclarée dans le fichier FrontEnd/assets/scripts/components/gallery.js
+        import { getCategories } from './components/gallery.js';
+
+    // Importation de la fonction getCategories déclarée dans le fichier FrontEnd/assets/scripts/components/gallery.js
+        import { printCategories } from './components/gallery.js';
+
+
+    // Recupération et affichage des catégories avec l'appel de la fonction getCategories
+        getCategories().then(categories => printCategories(categories));
+    
