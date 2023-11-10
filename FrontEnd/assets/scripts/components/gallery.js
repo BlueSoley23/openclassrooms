@@ -28,9 +28,9 @@
 // ###################################################################################
 
     // Déclaration de la fonction asynchrone qui affiche les travaux sur la page d'accueil
-        export function printWorks(works) {
+        export default function printWorks(works) {
 
-            .then(
+            try {
 
                 // Récupération de l'élément du DOM qui contiendra les travaux
                     const gallery = document.querySelector('.gallery');
@@ -52,18 +52,15 @@
 
                     }
                     
-                );
+            }
 
                 
 
-            .catch(error => 
+            catch (error)
 
                 {
                     alert('Veuillez contacter votre administrateur système en lui indiquant ce message d\'erreur :\n\n' + error);
-                }
-
-            );
-    
+                }    
         }
 
 

@@ -7,7 +7,7 @@
         import { getWorks } from './components/gallery.js';
 
     // Importation de la fonction printWorks déclarée dans le fichier FrontEnd/assets/scripts/components/gallery.js
-        import { printWorks } from './components/gallery.js';
+        import printWorks from './components/gallery.js';
         
 
     // Recupération et affichage des oeuvres avec l'appel des fonctions getWorks et printWorks
