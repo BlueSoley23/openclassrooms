@@ -1,72 +1,69 @@
-// #######################################################################################################
-// ###################   Documentation Swagger : http://localhost:5678/api-docs/   #######################
-// ######################   Page Front-end : http://127.0.0.1:5500/FrontEnd/   ###########################
-// #######################################################################################################
-
-
-
-
 // #################################################################################################################
-// #################################################################################################################
-// ##################################   Fonctions relatives à la gallerie   ########################################
-// #################################################################################################################
+// #####################   Importation des modules JS contenant les fonctions utilisées  ###########################
 // #################################################################################################################
 
+    // Importation des fonctions déclarées dans le fichier gallery.js
+    import { getWorks, printWorks, getCategories, printCategories, sortByCategories } from './components/gallery.js';
 
-    // #######################################################################################################
-    // ############################   Affichage des oeuvres sur la page d'accueil   ##########################
-    // #######################################################################################################
+    // Importation des fonctions déclarées dans le fichier login .js
+    // import { functionLogin } from './components/login.js';
 
-        // Importation de la fonction getWorks déclarée dans le fichier gallery.js
-        import { getWorks } from './components/gallery.js';
 
-        // Importation de la fonction printWorks déclarée dans le fichier gallery.js
-        import { printWorks } from './components/gallery.js';
-            
+// Si la page actuelle est la page d'accueil
+if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('FrontEnd/')) {
+
+    // #################################################################################################################
+    // ##################################   Fonctions relatives à la gallerie   ########################################
+    // #################################################################################################################
+
+        // ############################   Affichage des oeuvres sur la page d'accueil   ##########################
 
             // Recupération et affichage des oeuvres avec l'appel des fonctions getWorks et printWorks
             getWorks().then(works => printWorks(works));
-            
 
 
-
-    // #######################################################################################################
-    // ####################   Affichage des boutons de catégories sur la page d'accueil   ####################
-    // #######################################################################################################
-
-        // Importation de la fonction getCategories déclarée dans le fichiergallery.js
-        import { getCategories } from './components/gallery.js';
-
-        // Importation de la fonction getCategories déclarée dans le fichier gallery.js
-        import { printCategories } from './components/gallery.js';
-
+        // ####################   Affichage des boutons de catégories sur la page d'accueil   ####################
 
             // Recupération et affichage des catégories avec l'appel de la fonction getCategories
             getCategories().then(categories => printCategories(categories));
-        
-        
 
 
-    // #######################################################################################################
-    // ###################   Filtre des oeuvres par catégories sur la page d'accueil   ######################
-    // #######################################################################################################
-
-        // Importation de la fonction filterWorks déclarée dans le fichier gallery.js
-        import { sortByCategories } from './components/gallery.js';
+        // ###################   Filtre des oeuvres par catégories sur la page d'accueil   #######################
 
             // Filtre des oeuvres par catégories avec l'appel de la fonction sortByCategories
             sortByCategories();
 
+            
+} 
+
+// Si la page actuelle est la page de login
+else if (window.location.pathname.endsWith('login.html')) {
+
+    // #################################################################################################################
+    // ########################################   Fonctions relatives au login   #######################################
+    // #################################################################################################################
+
+        // ############################                       ...                       ##########################
+
+            // Fonctions relatives au login
+            // functionLogin();
 
             
+}
 
-// #################################################################################################################
-// #################################################################################################################
-// ########################################   Fonctions relatives au login   #######################################
-// #################################################################################################################
-// #################################################################################################################
+// Si la page actuelle est la page de contact
+else if (window.location.pathname.endsWith('contact.html')) {
 
+    // #################################################################################################################
+    // ########################################   Fonctions relatives au contact   #####################################
+    // #################################################################################################################
 
-    // #######################################################################################################
-    // ############################                       ...                       ##########################
-    // #######################################################################################################
+        // ############################                       ...                       ##########################
+
+            // Fonctions relatives au contact
+            // functionContact();
+
+            
+}
+
+//

@@ -3,6 +3,10 @@
    License: none (public domain)
 */
 
+* {
+	background: #F5F5F5;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -31,6 +35,12 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -143,20 +153,9 @@ li:hover {
 	font-size: 1.2em;
 }
 
-.categories button:hover {
+.categories button.selected {
     background-color: #1D6154;
     color: white;
-}
-
-button.tous-button {
-	background-color: #1D6154;
-	color: white;
-
-}
-
-button.tous-button:hover {
-	background-color: white;
-	color: #1D6154;
 }
 
 .gallery {
@@ -175,6 +174,7 @@ button.tous-button:hover {
 	width: 50%;
 margin: auto;
 }
+
 #contact > * {
 	text-align: center;
 
