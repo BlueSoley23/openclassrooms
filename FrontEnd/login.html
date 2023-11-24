@@ -6,7 +6,7 @@
 		<title>Sophie Bluel - Architecte d'intérieur - Connexion</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>	
 		<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
 		<meta name="description" content="Page de connexion de l'artiste pour accéder aux fonctionnalités d'édition des travaux.">
 		<link rel="stylesheet" href="./assets/css/style.css">
@@ -14,40 +14,49 @@
 	</head>
 
 	<body>
-		<header>
-			<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
-			<nav>
-				<ul>
-					<li>projets</li>
-					<li>contact</li>
-					<li>login</li>
-					<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
-				</ul>
-			</nav>
-		</header>
-		<main>
-			</section>
-			<section id="contact">
-				<h2>Contact</h2>
-				<p>Vous avez un projet ? Discutons-en !</p>
-				<form action="#" method="post">
-					<label for="name">Nom</label>
-					<input type="text" name="name" id="name">
-					<label for="email">Email</label>
-					<input type="email" name="email" id="email">
-					<label for="message">Message</label>
-					<textarea name="message" id="message" cols="30" rows="10"></textarea>
-					<input type="submit" value="Envoyer">
-				</form>
-			</section>
-		</main>
 
-		<footer>
-			<nav>
-				<ul>
-					<li>Mentions Légales</li>
-				</ul>
-			</nav>
+        <header class="header">
+
+            <h1 class="header__title">Sophie Bluel <span class="header__subtitle">Architecte d'intérieur</span></h1>
+
+            <nav class="header__nav">
+                <ul class="nav-list">
+                    <li class="nav-list__item">projets</li>
+                    <li class="nav-list__item">contact</li>
+                    <li class="nav-list__item--active">login</li>
+                    <li class="nav-list__item"><img src="./assets/icons/instagram.png" alt="Instagram"></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main class="main">
+            
+            <section class="login">
+
+                <h2 class="login__title">Log In</h2>
+                
+                <form action="#" method="post" class="login__form">
+                    <label for="name" class="form__label">E-mail</label>
+                    <input type="text" name="mail" class="form__input form__input--email">
+                    <label for="password" class="form__label">Mot de passe</label>
+                    <input type="password" name="password" class="form__input form__input--password">
+                    <input type="submit" class="form__submit" value="Se connecter">
+                    <a href="#" class="form__link form__link--forgotten-password">Mot de passe oublié</a>
+                </form>
+
+            </section>
+
+        </main>
+
+        <footer class="footer">
+
+            <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item">Mentions Légales</li>
+                </ul>
+            </nav>
+
 		</footer>
 	</body>
 
