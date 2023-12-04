@@ -37,7 +37,7 @@
 		--submit-button-background-color: #1D6154;
 		--submit-button-color: #FFFFFF;
 
-		/* Tailles de police */
+		/* Tailles de police (bases de l'unité em, utilisée pour définir les dimensions et les marges) */
 		--main-font-size: 87.5%;
 		--h1-font-size: 160%;
 		--h2-font-size: 215%;
@@ -68,6 +68,7 @@
 
 
 
+/*    																												   */
 /* ################################################################################################################### */
 /* ####################################################### RESET CSS ################################################# */
 /* ################################################################################################################### */
@@ -134,11 +135,10 @@
 		border-spacing: 0;
 	}
 
+/*    																												   */
 /* ################################################################################################################### */
 /* ################################################## END RESET CSS ################################################## */
 /* ################################################################################################################### */
-
-
 
 
 
@@ -154,7 +154,7 @@
 		margin: auto;
 	}
 
-	header {
+	.header {
 		display: flex;
 		justify-content: space-between;
 		margin: 3.5em 0;
@@ -173,7 +173,7 @@
 		color: var(--main-color);
 	}
 
-	h1 > span {
+	.header__subtitle {
 		font-family: var(--main-font-family);
 		font-size: 0.5em;
 		letter-spacing: 0.1em;
@@ -188,18 +188,19 @@
 
 
 
+/*    																												   */
 /* ################################################################################################################### */
-/* ######################################### Définition des styles de menu de navigation ############################# */
+/* ################################### Définition des styles de menu de navigation ################################### */
 /* ################################################################################################################### */
 
-	nav ul {
+	.nav-list {
 		display: flex;
 		align-items: center;
 		list-style-type: none;
 
 	}
 
-	nav li {
+	.nav-list__item {
 		padding: 0 0.5em;
 		font-size: var(--nav-font-size);
 	}
@@ -208,8 +209,9 @@
 		color: var(--main-color);
 	}
 
+/*    																												   */
 /* ################################################################################################################### */
-/* ######################################### Définition des styles du paragraphe d'introduction ###################### */
+/* ################################ Définition des styles du paragraphe d'introduction ############################### */
 /* ################################################################################################################### */
 
 	.introduction {
@@ -217,7 +219,7 @@
 		align-items: center;
 	}
 
-	.introduction figure {
+	.introduction__figure {
 		flex: 1
 	}
 
@@ -227,23 +229,24 @@
 		width: 80%;
 	}
 
-	.introduction article {
+	.introduction__article {
 		flex: 1
 	}
 
-	.introduction h2 {
+	.introduction__title {
 		margin-bottom: 1em;
 	}
 
-	.introduction p {
+	.introduction__paragraph {
 		margin-bottom: 0.5em;
 	}
 
 
 
+/*    																												   */
 /* ################################################################################################################### */
-/* ######################################### Définition des styles du titre de la gallerie ########################### */
-/* ##########################################################6em######################################################### */
+/* ################################### Définition des styles du titre de la gallerie ################################# */
+/* ################################################################################################################### */
 
 	.portfolio__title {
 		text-align: center;
@@ -252,8 +255,9 @@
 
 
 
+/*    																												   */
 /* ################################################################################################################### */
-/* ######################################### Définition des styles de la gallerie ################################# */
+/* ###################################### Définition des styles de la gallerie ####################################### */
 /* ################################################################################################################### */
 
 	.categories {
@@ -293,8 +297,9 @@
 	
 
 
+/*    																												   */
 /* ################################################################################################################### */
-/* ######################################### Définition des styles de la section contact ############################# */
+/* ################################### Définition des styles de la section contact ################################### */
 /* ################################################################################################################### */
 
 	.contact {
@@ -302,18 +307,18 @@
 		margin: auto;
 	}
 
-	.contact > * {
+	.contact {
 		text-align: center;
-
 	}
 
-	.contact h2{
+	.contact__title{
 		margin-bottom: 0.65em;
 	}
 
 	.contact__form {
 		text-align: left;
 		margin-top: 2.15em;
+		padding: 0 5em;
 		display: flex;
 		flex-direction: column;
 	}
@@ -338,13 +343,6 @@
 		margin: 2.5em 0 1.5em 0;
 	}
 
-	.contact__form {
-		margin-top: 2.15em;
-		display: flex;
-		flex-direction: column;
-		padding: 0 5em;
-	}
-
 	.contact__form--textaera {
 		border: none;
 		box-shadow: var(--box-shadow);
@@ -359,6 +357,10 @@
 
 	.contact__form--submit {
 		padding: 0.65em 4em;
+	}
+
+	.login__form--submit {
+		padding: 0.65em 2.5em;
 	}
 
 	.contact__form--submit, .login__form--submit {
@@ -377,51 +379,36 @@
 		border: none;
 	}
 
-	.login__form--submit {
-		padding: 0.65em 2.5em;
-	}
 
 
 
+/*    																												   */
 /* ################################################################################################################### */
-/* ######################################### Définition des styles du formulaire de connexion ######################## */
+/* ################################# Définition des styles du formulaire de connexion ################################ */
 /* ################################################################################################################### */
 
 	.login {
 		display: flex;
 		align-items: center;
-		margin: 2em 0;
 		flex-direction: column;
-	}
-
-	.login {
 		width: 50%;
 		margin: 9.25em auto;
 	}
 
-	.login > * {
+	.logi {
 		text-align: center;
 	}
 
-	.login h2{
+	.login__title {
 		margin-bottom: 0.75em;
 	}
 
-	.login form {
+	.login__form {
 		text-align: left;
 		margin-top: 30px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-	}
-
-	.login label {
-		margin: 2em 0 1em 0;
-	}
-
-	.login textarea {
-		border: none;
-		box-shadow: var(--box-shadow);
 	}
 
 	.nav-list__item--active {
@@ -446,6 +433,7 @@
 		font-style: normal;
 		font-weight: 500;
 		line-height: normal;
+		margin: 2em 0 1em 0;
 	}
 
 
@@ -470,8 +458,9 @@
 
 
 
+/*    																												   */
 /* ################################################################################################################### */
-/* ######################################### Définition des styles du pied de page ################################### */
+/* ###################################### Définition des styles du pied de page ###################################### */
 /* ################################################################################################################### */
 
 	.footer__nav-list {
@@ -490,4 +479,23 @@
 		position: sticky;
 		bottom: 2em;
 		right: 12em;
+	}
+
+
+
+/*    																												   */
+/* ################################################################################################################### */
+/* ####### Désactivation de l'affichage des titres qui sont des élements obligatoires selon les normes du W3C ######## */
+/* ######################## et d'accessibilité mais qui ne sont pas conformes à la maquette ########################## */
+/* ################################################################################################################### */
+
+	.hidden {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0,0,0,0);
+		border: 0;
 	}

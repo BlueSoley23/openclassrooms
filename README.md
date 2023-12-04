@@ -35,3 +35,14 @@ Dans le cadre de ce projet, j'ai mis en application les compétences suivantes :
 - **Manipuler les éléments du DOM avec JavaScript** : J'ai utilisé JavaScript pour manipuler les éléments du DOM afin de mettre à jour dynamiquement le contenu de la page en fonction des actions de l'utilisateur et des données récupérées de l'API.
 
 - **Récupérer les données utilisateurs dans le JavaScript via des formulaires** : J'ai utilisé JavaScript pour récupérer les données des utilisateurs via des formulaires, y compris les informations de connexion de l'utilisateur et les données des nouveaux médias à télécharger.
+
+
+
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px;text-align:center;"
+            src="./assets/icons/w3c_validated_icon.png"
+            alt="CSS Valide !" />
+    </a>
+</p>
+
