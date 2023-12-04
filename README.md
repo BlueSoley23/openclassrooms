@@ -41,7 +41,7 @@ Dans le cadre de ce projet, j'ai mis en application les compétences suivantes :
 <p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px;text-align:center;"
-            src="./assets/icons/w3c_validated_icon.png"
+            src="./FrontEnd/assets/icons/w3c_validated_icon.png"
             alt="CSS Valide !" />
     </a>
 </p>
