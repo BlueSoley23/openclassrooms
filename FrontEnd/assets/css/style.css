@@ -37,13 +37,15 @@
 		--submit-button-background-color: #1D6154;
 		--submit-button-color: #FFFFFF;
 
-		/* Tailles de police (bases de l'unité em, utilisée pour définir les dimensions et les marges) */
-		--main-font-size: 87.5%;
-		--h1-font-size: 160%;
-		--h2-font-size: 215%;
-		--nav-font-size: 123%;
-		--category-button-font-size: 120%;
-		--submit-button-font-size: 123%;
+		/* Tailles de police (bases de l'unité em, utilisée pour définir les dimensions et les marges / dimensions
+		   conforme à la maquette Figma); toutes les dimensions des pages peuvent être modifiées en agissant uniquement
+		   sur ces valeurs (affichage modulable & dynamique) */
+		--main-font-size: 14px;
+		--h1-font-size: 22px;
+		--h2-font-size: 30px;
+		--nav-font-size: 16px;
+		--category-button-font-size: 16px;
+		--submit-button-font-size: 14px;
 
 		/* Poids de police */
 		--h1-font-weight: 800;
@@ -51,6 +53,7 @@
 		--nav-font-weight: normal;
 		--category-button-font-weight: 700;
 		--submit-button-font-weight: 700;
+		--footer-weight: 300;
 
 		/* Familles de polices */
 		--main-font-family: 'Work Sans';
@@ -73,6 +76,12 @@
 /* ####################################################### RESET CSS ################################################# */
 /* ################################################################################################################### */
 
+/* ############################################################################################
+
+Réinitialisation [à compléter...] 
+
+
+##########################################################################################*/
 	* {
 		background: var(--background-color);
 	}
@@ -107,7 +116,6 @@
 
 	body {
 		line-height: 1;
-		background: var(--background-color);
 		margin: 0 auto;
 	}
 
@@ -124,10 +132,14 @@
 		quotes: none;
 	}
 
-	blockquote:before, blockquote:after,
-	q:before, q:after {
-		content: '';
-		content: none;
+	blockquote:before, blockquote:after,/*
+	footer {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		margin-top: auto;
+	}*/
+
 	}
 
 	table {
@@ -152,6 +164,14 @@
 		font-size: var(--main-font-size);
 		background: var(--background-color);
 		margin: auto;
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+	}
+
+	main {
+		padding: 0 8em;
+		flex: 1 0 auto;
 	}
 
 	.header {
@@ -175,8 +195,9 @@
 
 	.header__subtitle {
 		font-family: var(--main-font-family);
-		font-size: 0.5em;
+		font-size: 10px;
 		letter-spacing: 0.1em;
+		margin-top: 0.3em;
 	}
 
 	h2 {
@@ -186,22 +207,31 @@
 		color: var(--secondary-color);
 	}
 
+	.form__label {
+		color: var(--text-color);
+		font-family: var(--main-font-family);
+		font-size: var(--main-font-size);
+		font-style: normal;
+		font-weight: var(--label-weight);
+		line-height: normal;
+		margin: 2em 0 1em 0;
+	}
 
 
-/*    																												   */
-/* ################################################################################################################### */
-/* ################################### Définition des styles de menu de navigation ################################### */
-/* ################################################################################################################### */
+/*    																												  */
+/* ################################################################################################################## */
+/* ################################### Définition des styles de menu de navigation ################################## */
+/* ################################################################################################################## */
 
 	.nav-list {
 		display: flex;
+		flex-direction: row;
 		align-items: center;
 		list-style-type: none;
-
 	}
 
 	.nav-list__item {
-		padding: 0 0.5em;
+		padding: 0 1em;
 		font-size: var(--nav-font-size);
 	}
 
@@ -217,6 +247,9 @@
 	.introduction {
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
+		margin: 6em 0;
+		
 	}
 
 	.introduction__figure {
@@ -225,12 +258,12 @@
 
 	.introduction img {
 		display: block;
-		margin: auto;
-		width: 80%;
+		width: 105%;
 	}
 
 	.introduction__article {
-		flex: 1
+		flex: 1;
+		margin-left: 7em;
 	}
 
 	.introduction__title {
@@ -238,7 +271,8 @@
 	}
 
 	.introduction__paragraph {
-		margin-bottom: 0.5em;
+		margin: 1.5em 0;
+		line-height: 1.15;
 	}
 
 
@@ -250,7 +284,7 @@
 
 	.portfolio__title {
 		text-align: center;
-		margin-bottom: 1.1em;
+		margin: 3.25em 0 1.1em 0;
 	}
 
 
@@ -271,7 +305,7 @@
 		border: 1px solid var(--button-border-color);
 		border-radius: 14em;
 		padding: 0.6em 1.2em;
-		margin: 0 0.6em;
+		margin: 1.5em 0.6em;
 		font-family: var(--category-button-font-family);
 		font-weight: var(--category-button-font-weight);
 		font-size: var(--category-button-font-size);
@@ -318,9 +352,13 @@
 	.contact__form {
 		text-align: left;
 		margin-top: 2.15em;
-		padding: 0 5em;
 		display: flex;
 		flex-direction: column;
+	}
+
+	.contact__form--label {
+		position: relative;
+		left: 0.75em;
 	}
 
 	.contact__form--input:not([type="submit"])  {
@@ -331,16 +369,6 @@
 		font-size: 1.2em;
 		border: none;
 		box-shadow: var(--box-shadow);
-	}
-
-	.contact__form--label {
-		color: #3D3D3D;
-		font-family: var(--main-font-family);
-		font-size: var(--main-font-size);
-		font-style: normal;
-		font-weight: 500;
-		line-height: normal;
-		margin: 2.5em 0 1.5em 0;
 	}
 
 	.contact__form--textaera {
@@ -395,7 +423,7 @@
 		margin: 9.25em auto;
 	}
 
-	.logi {
+	.login {
 		text-align: center;
 	}
 
@@ -426,17 +454,6 @@
 		flex-direction: column;
 	}
 
-	.login__form--label {
-		color: #3D3D3D;
-		font-family: Work Sans;
-		font-size: 14px;
-		font-style: normal;
-		font-weight: 500;
-		line-height: normal;
-		margin: 2em 0 1em 0;
-	}
-
-
 	.login__form--input {
 		width: 22.5em;
 		padding: 0.9em 0.6em;
@@ -466,19 +483,18 @@
 	.footer__nav-list {
 		display: flex;
 		justify-content: flex-end;
-		margin: 2em
 	}
 
-	.footer__nav-item, .footer__nav-item--login {
-		color: #000;
+	.footer__nav-item {
+		color: var(--footer-color);
 		font-family: var(--main-font-family);
 		font-size: var(--main-font-size);
 		font-style: normal;
-		font-weight: 300;
+		font-weight: var(--footer-weight);
 		line-height: normal;
-		position: sticky;
-		bottom: 2em;
-		right: 12em;
+	    margin-top: auto;
+		margin-bottom: 1em;
+		transform: translateX(4em);
 	}
 
 
