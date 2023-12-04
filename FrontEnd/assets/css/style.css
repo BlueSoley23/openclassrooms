@@ -38,12 +38,12 @@
 		--submit-button-color: #FFFFFF;
 
 		/* Tailles de police */
-		--main-font-size: 14px;
-		--h1-font-size: 22px;
-		--h2-font-size: 30px;
-		--nav-font-size: 1.2em;
-		--category-button-font-size: 1.2em;
-		--submit-button-font-size: 16px;
+		--main-font-size: 87.5%;
+		--h1-font-size: 160%;
+		--h2-font-size: 215%;
+		--nav-font-size: 123%;
+		--category-button-font-size: 120%;
+		--submit-button-font-size: 123%;
 
 		/* Poids de police */
 		--h1-font-weight: 800;
@@ -60,7 +60,7 @@
 		--submit-button-font-family: 'Syne';
 
 		/* Autres */
-		--max-width: 103em;
+		--max-width: 1140px;
 		--box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
 	}
 
@@ -107,6 +107,7 @@
 	body {
 		line-height: 1;
 		background: var(--background-color);
+		margin: 0 auto;
 	}
 
 	a {
@@ -147,11 +148,10 @@
 
 	body {
 		max-width: var(--max-width);
-		margin: auto;
 		font-family: var(--main-font-family);
 		font-size: var(--main-font-size);
 		background: var(--background-color);
-		min-width: 1440px;
+		margin: auto;
 	}
 
 	header {
@@ -161,7 +161,7 @@
 	}
 
 	section {
-		margin: 7em 15.5em;
+		margin: 4em 0;
 	}
 
 	h1 {
@@ -175,7 +175,7 @@
 
 	h1 > span {
 		font-family: var(--main-font-family);
-		font-size: 10px;
+		font-size: 0.5em;
 		letter-spacing: 0.1em;
 	}
 
@@ -200,7 +200,7 @@
 	}
 
 	nav li {
-		padding: 0 0.6em;
+		padding: 0 0.5em;
 		font-size: var(--nav-font-size);
 	}
 
@@ -243,11 +243,11 @@
 
 /* ################################################################################################################### */
 /* ######################################### Définition des styles du titre de la gallerie ########################### */
-/* ################################################################################################################### */
+/* ##########################################################6em######################################################### */
 
-	.portfolio h2 {
+	.portfolio__title {
 		text-align: center;
-		margin-bottom: 2em;
+		margin-bottom: 1.1em;
 	}
 
 
@@ -258,7 +258,7 @@
 
 	.categories {
 		text-align: center;
-		margin-bottom: 4.5em;
+		margin-bottom: 2em;
 	}
 
 	.categories button {
@@ -329,21 +329,20 @@
 	}
 
 	.contact__form--label {
-		margin: 2.5em auto 1em 10em;
 		color: #3D3D3D;
 		font-family: var(--main-font-family);
 		font-size: var(--main-font-size);
 		font-style: normal;
 		font-weight: 500;
 		line-height: normal;
+		margin: 2.5em 0 1.5em 0;
 	}
 
 	.contact__form {
-		text-align: left;
 		margin-top: 2.15em;
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start; /* Ajout de cette ligne */
+		padding: 0 5em;
 	}
 
 	.contact__form--textaera {
@@ -352,15 +351,17 @@
 		max-width: var(--max-width);
 		font-family: var(--main-font-family);
 		font-size: 1.2em;
-		padding: 1em 0.5em 1.1em 0.5em;
+		padding: 1em 0.5em 0 0.5em;
 		width: 25em;
+		height: 9em;
 		margin: auto;
-		text-align: left;
+	}
+
+	.contact__form--submit {
+		padding: 0.65em 4em;
 	}
 
 	.contact__form--submit, .login__form--submit {
-		padding: 0.65em 2.5em 0.65em 2em;
-		min-width: 11.2em;
 		flex-shrink: 0;
 		margin: 2em auto;
 		background-color: var(--submit-button-background-color);
@@ -374,6 +375,10 @@
 		text-align: center;
 		box-shadow: none;
 		border: none;
+	}
+
+	.login__form--submit {
+		padding: 0.65em 2.5em;
 	}
 
 

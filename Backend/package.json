@@ -7,8 +7,8 @@
     "start": "node server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Antoine Gauer (FrontEnd)",
+  "license": "UNLICENSED",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
@@ -24,5 +24,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlueSoley23/OC-P3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BlueSoley23/OC-P3/issues"
+  },
+  "homepage": "https://github.com/BlueSoley23/OC-P3#readme"
 }
