@@ -1,48 +1,30 @@
-# Projet Portfolio Architecte d'Intérieur
+# Parcours de formation OpenClassrooms en développement web Full-Stack
 
-Ce projet est un site portfolio pour une architecte d'intérieur. Il a été développé en utilisant la méthodologie BEM pour l'organisation et la stylisation des éléments de la page, l'harmonie d'unités CSS relatives (les em), et l'utilisation d'un design system.
+Ce répertoire contient tous les projets que je réalise dans le cadre de ma formation en développement web Full-Stack chez OpenClassrooms. Cette formation couvre un large éventail de compétences, allant du développement front-end avec HTML, CSS et JavaScript, au développement back-end avec Node.js, Express et MongoDB.
 
-## Fonctionnalités
+## Projets
 
-1. **Page de présentation des travaux de l'architecte** : Cette page affiche les différents projets réalisés par l'architecte. Les projets sont filtrés et affichés dans une galerie.
+1. **Démarrez votre formation de développeur web** : Ce projet a marqué le début de ma formation en développement web. Il m'a permis de me familiariser avec les bases du développement web et de mettre en place un environnement de travail efficace.
 
-2. **Page de connexion de l'administrateur du site** : Cette page permet à l'administrateur du site de se connecter. Une fois connecté, l'administrateur a accès à des fonctionnalités supplémentaires.
+2. **Créez la page d'accueil d'une agence de voyage avec HTML & CSS** : Dans ce projet, j'ai créé la page d'accueil d'une agence de voyage en utilisant HTML et CSS. J'ai appris à structurer une page web et à la styliser en utilisant CSS. (Projet validé)
 
-3. **Modale d'upload de nouveaux médias** : Cette fonctionnalité permet à l'administrateur de télécharger de nouveaux médias sur le site.
+3. **Créez une page web dynamique avec JavaScript** : Actuellement, je travaille sur ce projet qui consiste à créer une page web dynamique avec JavaScript. J'apprends à manipuler le DOM et à rendre une page web interactive. (Projet en cours)
 
-## Appels à l'API
+4. **Planifiez le développement du site de votre client** : Ce projet est à venir. Il consistera à planifier le développement du site d'un client. Je vais apprendre à gérer un projet de développement web de bout en bout.
 
-Les données sont récupérées via des appels à l'API. Les données récupérées sont ensuite utilisées pour afficher les projets dans la galerie. Lorsqu'un utilisateur est connecté, des appels supplémentaires à l'API sont effectués pour récupérer les données de l'utilisateur.
+5. **Débuggez et optimisez un site de photographe** : Ce projet est à venir. Il consistera à déboguer et optimiser un site de photographe. J'apprendrai à résoudre les problèmes de performance et à optimiser un site web pour une meilleure expérience utilisateur. (Projet à compléter)
 
-## Gestion de la connexion de l'utilisateur
+6. **Créez une application web de location immobilière avec React** : Ce projet est à venir. Il consistera à créer une application web de location immobilière avec React. J'apprendrai à utiliser React, une bibliothèque JavaScript populaire pour la création d'interfaces utilisateur. 
 
-La connexion de l'utilisateur est gérée via JavaScript. Une fois qu'un utilisateur est connecté, il a accès à des fonctionnalités supplémentaires. La différence entre un utilisateur connecté et non connecté est gérée via JavaScript.
+7. **Développez le back-end d'un site de notation de livres** : Ce projet est à venir. Il consistera à développer le back-end d'un site de notation de livres. J'apprendrai à utiliser Node.js et Express pour créer un serveur web et à utiliser MongoDB pour stocker les données. (Projet à compléter)
 
-## Filtre des projets dans la galerie
+8. **Créez et publiez votre portfolio de développeur** : Ce projet est à venir. Il consistera à créer et publier mon portfolio de développeur. J'apprendrai à présenter mes projets et à mettre en valeur mes compétences en tant que développeur web.
 
-Le filtre des projets dans la galerie est réalisé via JavaScript. Les utilisateurs peuvent filtrer les projets en fonction de différents critères.
+## Contact
 
-## Envoi de nouvelles images à l'API
+Si vous avez des questions ou des commentaires, n'hésitez pas à me contacter :
 
-L'envoi de nouvelles images à l'API est réalisé via JavaScript. Cette fonctionnalité est accessible uniquement aux utilisateurs connectés.
-
-## Mise en application des compétences
-
-Dans le cadre de ce projet, j'ai mis en application les compétences suivantes :
-
-- **Gérer les événements utilisateurs avec JavaScript** : J'ai utilisé JavaScript pour gérer les interactions des utilisateurs avec le site, y compris la connexion de l'utilisateur et le filtrage des projets dans la galerie.
-
-- **Manipuler les éléments du DOM avec JavaScript** : J'ai utilisé JavaScript pour manipuler les éléments du DOM afin de mettre à jour dynamiquement le contenu de la page en fonction des actions de l'utilisateur et des données récupérées de l'API.
-
-- **Récupérer les données utilisateurs dans le JavaScript via des formulaires** : J'ai utilisé JavaScript pour récupérer les données des utilisateurs via des formulaires, y compris les informations de connexion de l'utilisateur et les données des nouveaux médias à télécharger.
-
-
-
-<p>
-    <a href="http://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px;text-align:center;"
-            src="./FrontEnd/assets/icons/w3c_validated_icon.png"
-            alt="CSS Valide !" />
-    </a>
-</p>
+- GitHub : [bluesoley23](https://github.com/bluesoley23)
+- Email : bluegauer@gmail.com
+- Slack : Antoine Gauer
 
