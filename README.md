@@ -2,7 +2,7 @@
 
 ## Description
 
-Ce projet m'a permis de découvrir ma formation de développeur web Full-Stack, ses modalités, le fonctionnement, les intervenant et le dééroulement des projets et de leur évaluation.
+Ce projet m'a permis de découvrir ma formation de développeur web Full-Stack, ses modalités, le fonctionnement, les intervenant et le dééroulement des projets et de leur évaluation. L'objectif de ce projet est de me mettre dans les meilleures conditions pour réussir mon parcours, puis mon évolution professionnelle. Ce projet est une opportunité pour moi de développer mes compétences en développement web et de me préparer pour ma future carrière.
 
 ## Étapes du projet
 
