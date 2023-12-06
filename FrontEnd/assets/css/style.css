@@ -27,8 +27,8 @@
 		--background-color: #FFFEF8;
 		--main-color: #B1663C;
 		--secondary-color: #1D6154;
-		--text-color: black;
-		--link-color: inherit;
+		--text-color: #3D3D3D;
+		--link-color: #000000;
 		--selected-button-background: #1D6154;
 		--selected-button-color: white;
 		--button-border-color: #1D6154;
@@ -37,8 +37,10 @@
 		--submit-button-background-color: #1D6154;
 		--submit-button-color: #FFFFFF;
 
+
+
 		/* Tailles de police (bases de l'unité em, utilisée pour définir les dimensions et les marges / dimensions
-		   conforme à la maquette Figma); toutes les dimensions des pages peuvent être modifiées en agissant uniquement
+		   conforme à la maquette Figma); toutes les dimensions des pages peuvent être modifiées en agissant uniquement-
 		   sur ces valeurs (affichage modulable & dynamique) */
 		--main-font-size: 14px;
 		--h1-font-size: 22px;
@@ -50,10 +52,9 @@
 		/* Poids de police */
 		--h1-font-weight: 800;
 		--h2-font-weight: 700;
-		--nav-font-weight: normal;
+		--nav-font-weight: 400;
 		--category-button-font-weight: 700;
 		--submit-button-font-weight: 700;
-		--footer-weight: 300;
 
 		/* Familles de polices */
 		--main-font-family: 'Work Sans';
@@ -76,12 +77,6 @@
 /* ####################################################### RESET CSS ################################################# */
 /* ################################################################################################################### */
 
-/* ############################################################################################
-
-Réinitialisation [à compléter...] 
-
-
-##########################################################################################*/
 	* {
 		background: var(--background-color);
 	}
@@ -132,14 +127,10 @@ Réinitialisation [à compléter...]
 		quotes: none;
 	}
 
-	blockquote:before, blockquote:after,/*
-	footer {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-end;
-		margin-top: auto;
-	}*/
-
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
 	}
 
 	table {
@@ -217,6 +208,11 @@ Réinitialisation [à compléter...]
 		margin: 2em 0 1em 0;
 	}
 
+	.portfolio__title {
+		text-align: center;
+		margin: 3.25em 0 1.1em 0;
+	}
+
 
 /*    																												  */
 /* ################################################################################################################## */
@@ -231,8 +227,13 @@ Réinitialisation [à compléter...]
 	}
 
 	.nav-list__item {
-		padding: 0 1em;
+		padding: 0 1.35em;
 		font-size: var(--nav-font-size);
+	}
+
+	.nav-list__item--img {
+		width: 1.4em;	
+		margin-top: 0.1em;
 	}
 
 	li:hover {
@@ -271,20 +272,9 @@ Réinitialisation [à compléter...]
 	}
 
 	.introduction__paragraph {
-		margin: 1.5em 0;
-		line-height: 1.15;
-	}
-
-
-
-/*    																												   */
-/* ################################################################################################################### */
-/* ################################### Définition des styles du titre de la gallerie ################################# */
-/* ################################################################################################################### */
-
-	.portfolio__title {
-		text-align: center;
-		margin: 3.25em 0 1.1em 0;
+		color: var(--text-color);
+		line-height: 1.2;
+		margin: 1em auto;
 	}
 
 
@@ -302,10 +292,11 @@ Réinitialisation [à compléter...]
 	.categories button {
 		background-color: var(--button-background-color);
 		color: var(--button-color);
+		min-width: 6em;
 		border: 1px solid var(--button-border-color);
 		border-radius: 14em;
-		padding: 0.6em 1.2em;
-		margin: 1.5em 0.6em;
+		padding: 0.6em 1em;
+		margin: 1.5em 0.4em;
 		font-family: var(--category-button-font-family);
 		font-weight: var(--category-button-font-weight);
 		font-size: var(--category-button-font-size);
@@ -326,7 +317,10 @@ Réinitialisation [à compléter...]
 
 	.gallery img {
 		width: 100%;
+	}
 
+	.gallery figcaption {
+		color: var(--text-color);
 	}
 	
 
@@ -339,9 +333,6 @@ Réinitialisation [à compléter...]
 	.contact {
 		width: 50%;
 		margin: auto;
-	}
-
-	.contact {
 		text-align: center;
 	}
 
@@ -357,18 +348,22 @@ Réinitialisation [à compléter...]
 	}
 
 	.contact__form--label {
-		position: relative;
-		left: 0.75em;
+		margin-left: 2em;
+	}
+
+	.contact__paragraph {
+		color: var(--text-color);	
 	}
 
 	.contact__form--input:not([type="submit"])  {
 		height: 3em;
-		width: 24em;
+		width: 22.5em;
 		margin: auto;
 		padding: 0 1em;
 		font-size: 1.2em;
 		border: none;
 		box-shadow: var(--box-shadow);
+		background-color: white;
 	}
 
 	.contact__form--textaera {
@@ -378,17 +373,14 @@ Réinitialisation [à compléter...]
 		font-family: var(--main-font-family);
 		font-size: 1.2em;
 		padding: 1em 0.5em 0 0.5em;
-		width: 25em;
+		width: 23em;
 		height: 9em;
 		margin: auto;
+		background-color: white;
 	}
 
 	.contact__form--submit {
 		padding: 0.65em 4em;
-	}
-
-	.login__form--submit {
-		padding: 0.65em 2.5em;
 	}
 
 	.contact__form--submit, .login__form--submit {
@@ -460,11 +452,12 @@ Réinitialisation [à compléter...]
 		font-size: 1.2em;
 		border: none;
 		box-shadow: var(--box-shadow);
+		background-color: white;
 	}
 
 	.login__form--forgotten-password-link {
 		text-align: center;
-		color: #3D3D3D;
+		color: var(--text-color);
 		font-family: Work Sans;
 		font-size: 14px;
 		font-style: normal;
@@ -473,6 +466,9 @@ Réinitialisation [à compléter...]
 		text-decoration-line: underline;
 	}
 
+	.login__form--submit {
+		padding: 0.65em 2.5em;
+	}
 
 
 /*    																												   */
@@ -492,7 +488,7 @@ Réinitialisation [à compléter...]
 		font-style: normal;
 		font-weight: var(--footer-weight);
 		line-height: normal;
-	    margin-top: auto;
+	    margin-top: 4em;
 		margin-bottom: 1em;
 		transform: translateX(4em);
 	}

@@ -1,5 +1,5 @@
 {
-  "name": "dwf-projet6-backend",
+  "name": "p3-create-dynamic-webpage",
   "version": "0.0.1",
   "description": "Ce repo contient le code backend de l'architecte Sophie Bluel.",
   "main": "server.js",
@@ -27,10 +27,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BlueSoley23/OC-P3.git"
+    "url": "git+https://github.com/BlueSoley23/openclassrooms.git"
   },
   "bugs": {
-    "url": "https://github.com/BlueSoley23/OC-P3/issues"
+    "url": "https://github.com/BlueSoley23/openclassrooms/tree/p3-create-dynamic-webpage-js/issues"
   },
-  "homepage": "https://github.com/BlueSoley23/OC-P3#readme"
+  "homepage": "https://github.com/BlueSoley23/openclassrooms/tree/p3-create-dynamic-webpage-js#readme",
+  "keywords": [
+    "js",
+    "sophie",
+    "bluel",
+    "design",
+    "openclassrooms",
+    "antoine",
+    "gauer",
+    "node",
+    "portfolio"
+  ]
 }
