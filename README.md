@@ -3,7 +3,7 @@
 Ce répertoire contient tous les projets que je réalise dans le cadre de ma formation en développement web Full-Stack chez OpenClassrooms. Cette formation couvre un large éventail de compétences, allant du développement front-end avec HTML, CSS et JavaScript, au développement back-end avec Node.js, Express et MongoDB.
 
   
-## Projets (cliquer sur le nom du projet pour accédert à la branche du dépot correspondante)
+## Projets 
 
 <a href='https://github.com/BlueSoley23/openclassrooms/tree/p1-formation-overview-env-setup'>1. **Démarrez votre formation de développeur web**</a> : Ce projet a marqué le début de ma formation en développement web. Il m'a permis de me familiariser avec les bases du développement web et de mettre en place un environnement de travail efficace.
 
