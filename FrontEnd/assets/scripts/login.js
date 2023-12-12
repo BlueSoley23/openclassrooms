@@ -1,70 +1,85 @@
-// #######################################################################################################
-// #######################################################################################################
-// ########################   DECLARATION DES FONCTIONS ET CONSTANTES DU LOGIN   #########################
-// #######################################################################################################
-// #######################################################################################################
+// ####################################################################################################
+// ####################################################################################################
+// ########################   IMPORTATION DES FONCTIONS PRINCIPALES CONTENANT  ########################
+// ########################     LES MÉTHODES DU MODULE errorHandlerMod.js      ########################
+// ####################################################################################################
+// ####################################################################################################
+
+    import { loginErrorHandler } from './lib/errorHandlerMod/errorHandlerMod.js';
+    import { checkErrorHandler } from './lib/errorHandlerMod/errorHandlerMod.js';
+    import { printErrorHandler } from './lib/errorHandlerMod/errorHandlerMod.js';
 
 
-    export function checkLogin() {
-        
-        // Sélectionnez le formulaire de connexion
+
+
+
+
+        // Sélectionne le formulaire de connexion dans login.html
         const loginForm = document.querySelector('.login__form');
 
-        // Ajoutez un gestionnaire d'événements pour le formulaire de connexion
-        loginForm.addEventListener('submit', function(event) {
+        // Ajoutez un gestionnaire d'événements pour le formulaire de connexion, sur le bouton d'envoi
+        loginForm.addEventListener('submit', async function(event) {
+
             // Empêchez le formulaire d'être soumis normalement
             event.preventDefault();
 
             // Récupérez les valeurs des champs du formulaire
-            const username = document.querySelector('#email').value;
-            const password = document.querySelector('#password').value;
-
+            const email = document.querySelector('#email').value;
+            const password = document.querySelector('#password').value
+            
             // Créez l'objet de données à envoyer à l'API
             const data = {
-                email: username,
+                email: email,
                 password: password
             };
 
-            // Envoyez une requête POST à l'API
-            fetch('http://localhost:5678/api/users/login', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(data)
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.token) {
-                    // Stockez le token dans le localStorage
-                    localStorage.setItem('token', data.token);
+            // Déclaration de la variable response qui contiendra la réponse de l'API, en dehors du bloc try
+            // afin de pouvoir l'utiliser dans le bloc catch
+            let response;
 
-                    // Redirigez l'utilisateur vers la page d'accueil
-                    window.location.href = './index.html';
-                    
-                } else if (data.error) {
-                    // Affichez le message d'erreur
-                    const errorMessage = document.querySelector('#error-message');
-                    errorMessage.textContent = data.error;
-                    errorMessage.style.display = 'block';
+            try 
+            {
+
+                // Vérification des erreurs de connexion avant l'envoi de la requête à l'API avec la fonction loginErrorHandler()
+                loginErrorHandler(data.email, data.password);
+
+
+                // Envoi de la requête POST à l'API avec la combinaison saisie dans le formulaire, stockée dans la constante data
+                // et décodée en JSON avec la méthode JSON.stringify()
+                response = await fetch('http://localhost:5678/api/users/login', 
+                {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                // Stockage et décodage JSON de la réponse de l'API dans la constante responseData
+                const responseData = await response.json(); 
+
+                // Vérification des erreurs de connexion après l'envoi de la requête à l'API avec la fonction checkErrorHandler()
+                checkErrorHandler(response, responseData);
+
+                // Si aucune erreur n'est détectée, on redirige l'utilisateur vers la page d'accueil des utilisateurs connectés
+                window.location.href = 'http://localhost:5500//FrontEnd/connected/index.html';
+
                 }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
+
+            
+            
+            // Si une erreur est attrapée, une erreur imprévue (erreur 404 de page introvable, erreur 500 de serveur, etc.),  
+            // on affiche un message d'erreur avec les informations définies dans le bloc try
+            catch (error) 
+            {
+                // Affichage d'une alerte avec les informations définies dans l'objet error, avec la fonction printErrorHandler()
+                printErrorHandler(error);
+    
+            }
         });
-    }
+    
 
 
 
-/*                                                                                                      */
-// #######################################################################################################
-// #######################################################################################################
-// #################################   EXECUTION DES FONCTIONS DU LOGIN  #################################
-// #######################################################################################################
-// #######################################################################################################
 
 
-    // Exectution de la fonction checkLogin(), qui permet de vérifier les informations de connexion et 
-    // de rediriger l'utilisateur vers la page d'accueil ou d'afficher un message d'erreur
-    checkLogin();
