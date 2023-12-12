@@ -6,7 +6,7 @@ Ce projet est un site portfolio pour une architecte d'intérieur. Il a été dé
 
 1. **Page de présentation des travaux de l'architecte** : Cette page affiche les différents projets réalisés par l'architecte. Les projets sont filtrés et affichés dans une galerie.
 
-2. **Page de connexion de l'administrateur du site** : Cette page permet à l'administrateur du site de se connecter. Une fois connecté, l'administrateur a accès à des fonctionnalités supplémentaires.
+2. **Page de connexion de l'administrateur du site** : Cette page permet à l'administrateur du site de se connecter. Une fois connecté, l'administrateur a accès à des fonctionnalités supplémentaires. De plus, la gestion des erreurs liées au login ou à la requête sont gérées par un module en développement, errorHandlerMod.js, développé par mes soins.
 
 3. **Modale d'upload de nouveaux médias** : Cette fonctionnalité permet à l'administrateur de télécharger de nouveaux médias sur le site.
 
