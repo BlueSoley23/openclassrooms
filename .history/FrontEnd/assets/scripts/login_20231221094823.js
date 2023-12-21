@@ -51,9 +51,7 @@
                     },
                     body: JSON.stringify(data)
                 });
-                                
-                // Stockage et décodage JSON de la réponse de l'API dans la constante responseData
-                const responseData = await response.json(); 
+
                 
                 // On vérifie si l'API renvoie une erreur de satut 401 (mot de passe incorrect)
                 if (response.status === 401) {
@@ -61,15 +59,17 @@
                 }
                 
                 // On vérifie si l'API renvoie une erreur de statut 404 avec la valeur "user not found" dans l'attribut message (utilisateur introuvable)
-                else if (response.status === 404 && responseData.message === 'user not found') {
+                else if (response.status === 404 && response.message === 'user not found') {
+                    console.log(response.message);
                     throw new Error('Utilisateur introuvable !');
                 }
 
                 else if (!response.ok) {
-                    console.log(response.message);
-
                     throw new Error(`Erreur du serveur : ${response.status}`);
                 }
+                
+                // Stockage et décodage JSON de la réponse de l'API dans la constante responseData
+                const responseData = await response.json(); 
 
                 // Stockage du token de connexion dans le localStorage
                 localStorage.setItem('token', responseData.token);

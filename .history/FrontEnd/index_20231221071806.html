@@ -64,7 +64,6 @@
 
 	<!-- Import du fichier JavaScript -->
 	<script type="module" src="./assets/scripts/gallery.js "></script>
-	<script src="./assets/scripts/auth.js" defer></script>
 
 </head>
 
@@ -76,12 +75,12 @@
 
 		<!-- Borderau du mode édition (pour les utilisateurs connctés) -->
 		<!-- Element : edit-bar -->
-		<div class="edit-bar hidden">
+		<div class="edit-bar" id="hidden">
 			<img src="/FrontEnd/assets/icons/edit.svg" alt="Icône du mode édition" class="edit-bar__icon"></img>
 			<p class="edit-bar__title">Mode édition</p>
 		</div>
 
-		<div class="header-block guest">
+		<div class="header-block">
 			<!-- En-tête de la page contenant un titre et un sous titre-->
 			<!-- Elements : title /  subtitle -->
 			<a href="./index.html"><h1 class="header__title">Sophie Bluel <span class="header__subtitle">Architecte d'intérieur</span></h1></a>

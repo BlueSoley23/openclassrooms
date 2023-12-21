@@ -554,18 +554,18 @@
 		align-items: auto;
 	}
 
-	.header.logged {
+	.header {
 		display: flex;
 		flex-direction: column;
 	}
 
-	.header-block.logged {
+	.header-block {
 		margin-top: 59px;
 		display: flex;
 		justify-content: space-between;
 	  }
 	  
-	.portfolio__title--section.logged {
+	.portfolio__title--section {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -574,7 +574,7 @@
 		margin-bottom: 4.5em;
 	  }
 
-	.modifier-link__content.logged {
+	.modifier-link__content {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
@@ -592,16 +592,7 @@
 	color: #000;
 	}
 
-
-	.guest {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-	}
-
-	.hidden {
+	  .hidden {
 		display: none;
 	}
 

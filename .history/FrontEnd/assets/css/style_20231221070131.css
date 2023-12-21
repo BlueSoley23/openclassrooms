@@ -520,6 +520,14 @@
 /* ##################### Définition des styles de la page en mode édition (utiliusateur connecté ##################### */
 /* ################################################################################################################### */
 
+	.hidden {
+		display: none;
+	}
+
+	.visible {
+		display: inherit;
+	}
+
 	.edit-bar {
 		display: flex;
 		margin: 0;
@@ -537,7 +545,6 @@
 	.edit-bar__icon {
 		background-color: #000;
 		width: 15.58px;
-		margin-right: 1em;
 
 	}
 
@@ -554,27 +561,33 @@
 		align-items: auto;
 	}
 
-	.header.logged {
+	.header {
 		display: flex;
 		flex-direction: column;
 	}
 
-	.header-block.logged {
-		margin-top: 59px;
-		display: flex;
-		justify-content: space-between;
-	  }
-	  
-	.portfolio__title--section.logged {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		justify-content: center;
-		align-items: center;
-		margin-bottom: 4.5em;
-	  }
+	.header-block {
+	margin-top: 59px;.modifier-link__content {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	display: flex;
+	justify-content: space-between;
+	}
 
-	.modifier-link__content.logged {
+	.modifier-link__content--icon {
+	color: #000;
+	}
+
+	.portfolio__title--section {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	justify-content: center;
+	align-items: center;
+	}
+
+	.modifier-link__content {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
@@ -586,25 +599,4 @@
 	.modifier-link__content--title {
 	margin-left: 0.35em;
 	align-items: flex-end;
-	}
-
-	.modifier-link__content--icon {
-	color: #000;
-	}
-
-
-	.guest {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-	}
-
-	.hidden {
-		display: none;
-	}
-
-	.visible {
-		display: inherit;
 	}

@@ -51,25 +51,16 @@
                     },
                     body: JSON.stringify(data)
                 });
-                                
-                // Stockage et décodage JSON de la réponse de l'API dans la constante responseData
-                const responseData = await response.json(); 
-                
-                // On vérifie si l'API renvoie une erreur de satut 401 (mot de passe incorrect)
-                if (response.status === 401) {
-                    throw new Error('Mot de passe incorrect !');
-                }
-                
-                // On vérifie si l'API renvoie une erreur de statut 404 avec la valeur "user not found" dans l'attribut message (utilisateur introuvable)
-                else if (response.status === 404 && responseData.message === 'user not found') {
-                    throw new Error('Utilisateur introuvable !');
-                }
 
-                else if (!response.ok) {
-                    console.log(response.message);
-
+                /* En cas d'erreur serveur, le module errorHandlerMod.js n'a pas le temps de vérifier les erreurs de connexion
+                Solution temporaire*/
+                
+                if (!response.ok) {
                     throw new Error(`Erreur du serveur : ${response.status}`);
                 }
+                
+                // Stockage et décodage JSON de la réponse de l'API dans la constante responseData
+                const responseData = await response.json(); 
 
                 // Stockage du token de connexion dans le localStorage
                 localStorage.setItem('token', responseData.token);
@@ -79,6 +70,7 @@
 
                 // Si aucune erreur n'est détectée, on redirige l'utilisateur vers la page d'accueil des utilisateurs connectés
                 window.location.href = '../FrontEnd/index.html';
+
                 }
 
             
@@ -87,7 +79,9 @@
             // on affiche un message d'erreur avec les informations définies dans le bloc try
             catch (error) 
             {
-                alert(error);
+                // Affichage d'une alerte avec les informations définies dans l'objet error, avec la fonction printErrorHandler()
+                //printErrorHandler(error);
+    
             }
         });
     

@@ -1,11 +1,11 @@
 const token = localStorage.getItem('token');
 
 if (token) {
-    // On ajoute la classe .logged à .header, .header-block, .portfolio__title--section et .modifier-link__content
+    // On ajoute la classe .logged à .header, .header-block, .portfolio__title--section et .modifier__link--content
     document.querySelector('.header').classList.add('logged');
     document.querySelector('.header-block').classList.add('logged');
     document.querySelector('.portfolio__title--section').classList.add('logged');
-    document.querySelector('.modifier-link__content').classList.add('logged');0
+    document.querySelector('.modifier__link--content').classList.add('logged');0
 
     // On ajoute la classe .hidden à .nav-list__item--login et .categories
     document.querySelector('.nav-list__item--login').classList.add('hidden');
@@ -24,11 +24,11 @@ else {
     // On ajoute la classe .guest à .header-block
     document.querySelector('.header-block').classList.add('guest');
 
-    // On supprime la classe .logged de .header, .header-block, .portfolio__title--section et .modifier-link__content
+    // On supprime la classe .logged de .header, .header-block, .portfolio__title--section et .modifier__link--content
     document.querySelector('.header').classList.remove('logged');
     document.querySelector('.header-block').classList.remove('logged');
     document.querySelector('.portfolio__title--section').classList.remove('logged');
-    document.querySelector('.modifier-link__content').classList.remove('logged');
+    document.querySelector('.modifier__link--content').classList.remove('logged');
 
     // On supprime la classe .hidden de .nav-list__item--login et .categories
     document.querySelector('.nav-list__item--login').classList.remove('hidden');
