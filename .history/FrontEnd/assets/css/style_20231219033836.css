@@ -520,9 +520,9 @@
 /* ##################### Définition des styles de la page en mode édition (utiliusateur connecté ##################### */
 /* ################################################################################################################### */
 
-	.hidden {
-		display: none;
-	}
+.none {
+    display: none;
+}
 
 	.visible {
 		display: inherit;
@@ -567,11 +567,7 @@
 	}
 
 	.header-block {
-		margin-top: 59px;.modifier-link__content {
-			display: flex;
-			justify-content: flex-end;
-			align-items: flex-end;
-		}
+		margin-top: 59px;
 		display: flex;
 		justify-content: space-between;
 	  }
@@ -579,26 +575,4 @@
 
 	  .modifier-link__content--icon {
 		color: #000;
-	  }
-
-	  .portfolio__title--section {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		justify-content: center;
-		align-items: center;
-	  }
-
-	  .modifier-link__content {
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-end;
-		align-items: flex-end;
-		padding-top: 4.5em;
-		padding-left: 1.5em;
-	  }
-
-	  .modifier-link__content--title {
-		margin-left: 0.35em;
-		align-items: flex-end;
 	  }

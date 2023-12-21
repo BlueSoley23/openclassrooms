@@ -146,10 +146,10 @@
 		<!-- Section du portfolio -->
 		<!-- Block : portfolio -->
 		<section class="portfolio">
-			<div class="portfolio__title--section">
-				<!-- Titre de la section -->
-				<!-- Element : title -->
-				<h2 class="portfolio__title">Mes Projets</h2>
+			<div>
+			<!-- Titre de la section -->
+			<!-- Element : title -->
+			<h2 class="portfolio__title">Mes Projets</h2>
 				<a href= # class="modifier-link__url">
 					<div class="modifier-link__content">
 						<svg width="17" height="17" viewBox="0 0 17 17" fill="black" xmlns="http://www.w3.org/2000/svg">
@@ -160,9 +160,10 @@
 					</div>
 				</a>
 			</div>
+
 			<!-- Navigation des catégories du portfolio -->
 			<!-- Element : categories -->
-			<nav class="portfolio__categories categories hidden">
+			<nav class="portfolio__categories categories">
 
 				<!-- ###### BOUTONS DE CATÉGORIES AFFICHÉS DYNAMIQUEMENT EN JAVASCRIPT ###### -->
 
@@ -211,7 +212,7 @@
 					placeholder="Votre e-mail">
 
 				<!-- Message -->
-				<label for="message" class="contact__form--label form__label">Message</label>
+				<label for="message" class="contact__form--label form__label">Message<div>Ceci est un texte caché.</div></label>
 				<textarea name="message" id="message" cols="30" rows="10" class="contact__form--textaera"
 					placeholder="  Votre message"></textarea>
 

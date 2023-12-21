@@ -55,6 +55,13 @@
                     body: JSON.stringify(data)
                 });
 
+                /* En cas d'erreur serveur, le module errorHandlerMod.js n'a pas le temps de vérifier les erreurs de connexion
+                Solution temporairte*/
+                
+                if (!response.ok) {
+                    throw new Error(`Erreur du serveur : ${response.status}`);
+                }
+                
                 // Stockage et décodage JSON de la réponse de l'API dans la constante responseData
                 const responseData = await response.json(); 
 
@@ -62,7 +69,7 @@
                 checkErrorHandler(response, responseData);
 
                 // Si aucune erreur n'est détectée, on redirige l'utilisateur vers la page d'accueil des utilisateurs connectés
-                window.location.href = 'http://localhost:5500//FrontEnd/connected/index.html';
+                window.location.href = '../FrontEnd/index.html';
 
                 }
 

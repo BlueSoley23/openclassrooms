@@ -511,7 +511,7 @@
 		clip: rect(0,0,0,0);
 		border: 0;
 	}
-
+.
 
 
 
@@ -538,8 +538,8 @@
 		position: fixed;
 		top: 0;
 		left: 0;	
-		justify-content: center; 
-		align-items: center; 
+		justify-content: center; /* aligne les éléments horizontalement au centre */
+		align-items: center; /* aligne les éléments verticalement au centre */
 	}
 
 	.edit-bar__icon {
@@ -567,11 +567,7 @@
 	}
 
 	.header-block {
-		margin-top: 59px;.modifier-link__content {
-			display: flex;
-			justify-content: flex-end;
-			align-items: flex-end;
-		}
+		margin-top: 59px;
 		display: flex;
 		justify-content: space-between;
 	  }
@@ -579,26 +575,4 @@
 
 	  .modifier-link__content--icon {
 		color: #000;
-	  }
-
-	  .portfolio__title--section {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		justify-content: center;
-		align-items: center;
-	  }
-
-	  .modifier-link__content {
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-end;
-		align-items: flex-end;
-		padding-top: 4.5em;
-		padding-left: 1.5em;
-	  }
-
-	  .modifier-link__content--title {
-		margin-left: 0.35em;
-		align-items: flex-end;
 	  }
